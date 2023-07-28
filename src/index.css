@@ -1,13 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+  overflow: hidden;
+ 
+ 
+}
+.start-screen {
+  background-image: url("./assets/background.png");
+  background-size: cover; /* Ustawienie, aby obraz wypełnił całe tło */
+  background-position: center; /* Ustawienie pozycji tła na środku */
+  width: 100vw; /* 100% szerokości ekranu */
+  height: 100vh; /* 100% wysokości ekranu */
+  overflow: hidden;
+}
+.button{ transition: transform 2s linear;
+  transform: scale(1.1);
+  
+  transform: scale(1,1);
+  animation: zoomInOut 6s infinite;}
+
+.button_txt{
+  position: absolute;
+  color: var(--white, #FFF);
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 9px;
+  left: 632px;
+  top:863px;
+ 
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.title {
+  position: absolute;
+  left: 96px;
+  top:376px;
+  width: 585px;
+height: 328px;
+flex-shrink: 0;
+color: #FFF;
+font-family: Poppins;
+font-size: 150px;
+font-style: normal;
+ /* 177px */
+
 }
+.slider {
+  background-image: url("./assets/bckground2.png");
+  background-size: cover; /* Ustawienie, aby obraz wypełnił całe tło */
+  background-position: center; /* Ustawienie pozycji tła na środku */
+  width: 100vw; /* 100% szerokości ekranu */
+  height: 100vh; /* 100% wysokości ekranu */
+}
+
+
+
+.logo {
+ 
+  cursor: pointer;
+  position: absolute;
+  top: 823px; /* Position the button vertically at 50% from the top */
+  left: 832px;
+  width: 134px;
+  height: 134px; /* I'm assuming you intended 40px height, not 4000px */
+  /* The following line is the key to center horizontally */
+  margin: 0 auto; /* Set the left and right margins to "auto" */
+  overflow: hidden
+}
+
+
+
+.union {
+  position: absolute;
+  top: -155px; /* Position the button vertically at 50% from the top */
+  left: 682px;
+  overflow: hidden;
+}
+
+.polygon {
+
+  position: absolute;
+ 
+  left: 1597.07px;
+  top: 1042.76px;
+  
+  /* Gradient  Banana 
+  background: linear-gradient(99.99deg, #FFCF3D 7.49%, #EE5E22 92.51%);*/
+
+  overflow: hidden;
+
+  
+}
+
+
+
+
+
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1); /* Stan początkowy i końcowy - brak skalowania */
+  }
+  50% {
+    transform: scale(1.008); 
+  }}
+/* Polygon 3 */
