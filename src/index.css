@@ -99,6 +99,27 @@ font-style: normal;
   
 }
 
+.tile_left {
+  position: absolute;
+  left: 390px;
+  top: 154px;
+
+}
+
+.tile_right {
+  position: absolute;
+  left: 1010.05px;
+  top: 154px;
+
+}
+
+
+.home_b {
+  position: absolute;
+left: 41px;
+top: 42 px;
+
+}
 
 
 

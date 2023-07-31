@@ -1,4 +1,16 @@
 {
+  
     "welcomeMessage": "Fizyka lotu",
-    "buttonText": "START"
+    "buttonText": "START",
+    
+    "images": [
+      {
+        "name": "tile_img1",
+        "path": "./public/assets/tile_img1.png"
+      },
+      { 
+        "name": "tile_img2",
+        "path": "./assets/tile_img2.png"
+      }
+    ]
   }
