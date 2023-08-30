@@ -1,12 +1,12 @@
 {
   
-    "welcomeMessage": "Fizyka lotu",
+    "welcomeMessage": "<b>Fizyka</b> lotu",
     "buttonText": "START",
     
     "images": [
       {
         "name": "tile_img1",
-        "path": "./public/assets/tile_img1.png"
+        "path": "./assets/tile_img2.png"
       },
       { 
         "name": "tile_img2",

@@ -18,8 +18,8 @@ function App() {
        
         <div className="content">
           <Routes>
-          <Route path="/" element={<StartScreen />} />
-          <Route path="/slider" element={<Slider />} />
+          <Route path="/" element={<StartScreen />}/>
+          <Route path="/slider" element={<Slider />}/>
           </Routes>
         </div>
       </div>

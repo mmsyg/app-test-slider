@@ -121,7 +121,13 @@ top: 42 px;
 
 }
 
+.slider img {
+ 
+  width: 983px;
+  height: 655px;
+  flex-shrink: 0;
 
+}
 
 
 @keyframes zoomInOut {
