@@ -1,22 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-  margin: 0;
-  font-family: "Quicksand", sans-serif;
+  
+  font-family: "Rubik", sans-serif;
   color: #333;
   overflow: hidden;
+  display: flex;
  
  
 }
-.start-screen {
-  background-image: url("./assets/background.png");
-  background-size: cover; /* Ustawienie, aby obraz wypełnił całe tło */
-  background-position: center; /* Ustawienie pozycji tła na środku */
-  width: 100vw; /* 100% szerokości ekranu */
-  height: 100vh; /* 100% wysokości ekranu */
-  overflow: hidden;
-}
+
 .button{ transition: transform 2s linear;
   transform: scale(1.1);
   
@@ -26,7 +19,7 @@ body {
 .button_txt{
   position: absolute;
   color: var(--white, #FFF);
-  font-family: Poppins;
+  font-family: Rubik;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -46,7 +39,7 @@ body {
 height: 328px;
 flex-shrink: 0;
 color: #FFF;
-font-family: Poppins;
+font-family: Rubik;
 font-size: 150px;
 font-style: normal;
  /* 177px */
@@ -62,7 +55,7 @@ font-style: normal;
 
 
 
-.logo {
+.start_button {
  
   cursor: pointer;
   position: absolute;
@@ -77,11 +70,11 @@ font-style: normal;
 
 
 
-.union {
+.unionGreen {
   position: absolute;
-  top: -155px; /* Position the button vertically at 50% from the top */
+  top: -100px; /* Position the button vertically at 50% from the top */
   left: 682px;
-  overflow: hidden;
+ 
 }
 
 .polygon {
@@ -128,6 +121,62 @@ top: 42 px;
   flex-shrink: 0;
 
 }
+.left_shape { 
+  width: 2993.175px;
+  height: 1096px;
+  flex-shrink: 0;
+  position: absolute;
+  left: -1000px;
+  flex-shrink: 0;
+ 
+}
+  
+.right_shape {
+position: absolute;
+left: 400px;
+
+}
+
+.start_button_quizz {
+position:absolute;
+width: 392px;
+height: 100px;
+flex-shrink: 0;
+left: 1488px;
+top: 932px
+}
+
+.stork {
+  position: absolute;
+  left:670px;
+  top: 0px
+}
+
+.set_right_buttons {
+
+  display: flex;
+width: 243px;
+height: 65px;
+justify-content: center;
+align-items: flex-start;
+gap: 24px;
+flex-shrink: 0;
+left: 1636px;
+top: 32px;
+position: absolute
+}
+
+
+.set_right_bg {
+
+
+
+
+left: 1580px;
+top: -20px;
+position: absolute
+}
+
 
 
 @keyframes zoomInOut {
