@@ -6,6 +6,7 @@ import QuizzStart from "./QuizzStart";
 const { invoke } = window.__TAURI__.tauri
 
 
+
 function App() {
    // now we can call our Command!
   // Right-click the application background and open the developer tools.

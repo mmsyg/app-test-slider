@@ -1,16 +1,16 @@
 {
   
-    "welcomeMessage": "Fizyka lotu",
-    "buttonText": "START",
-    
-    "images": [
-      {
-        "name": "tile_img1",
-        "path": "./assets/tile_img2.png"
-      },
-      { 
-        "name": "tile_img2",
-        "path": "./assets/tile_img2.png"
-      }
-    ]
-  }
+  "welcomeMessage": "Fizyka lotu",
+  "buttonText": "START",
+  
+  "images": [
+    {
+      "name": "Dowiedz się więcej o ptakach i fizyce ich lotu",
+      "path": "img/t1_left.png"
+    },
+    { 
+      "name": "Rozwiąż quiz",
+      "path": "img/t2_right.png"
+    }
+  ]
+}
