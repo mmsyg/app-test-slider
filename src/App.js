@@ -2,6 +2,7 @@ import StartScreen from "./StartScreen";
 import Slider from "./Slider";
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import QuizzStart from "./QuizzStart";
+import Quizz from "./Quizz";
 
 const { invoke } = window.__TAURI__.tauri
 
@@ -23,7 +24,9 @@ function App() {
           <Routes>
           <Route path="/" element={<StartScreen />}/>
           <Route path="/slider" element={<Slider />}/>
-          <Route path="/quizz" element={<QuizzStart />}/>
+          <Route path="/quizzstart" element={<QuizzStart />}/>
+          <Route path="/quizz1" element={<Quizz />}/>
+
           </Routes>
         </div>
       </div>

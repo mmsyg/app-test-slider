@@ -2,6 +2,7 @@
   
   "welcomeMessage": "Fizyka lotu",
   "buttonText": "START",
+  "quizTitle": "Sprawdź swoją wiedzę o ptakach i fizyce ich lotu!",
   
   "images": [
     {
@@ -12,5 +13,23 @@
       "name": "Rozwiąż quiz",
       "path": "img/t2_right.png"
     }
+  ],
+
+  "questionPack": [
+    {
+      "id": "1",
+      "question": "Najcięższy ptak w Polsce to:",
+      "answerA": "Bielik",
+      "answerB": "Bocian",
+      "answerC": "Łabędź trąbiący"
+    },
+    { 
+      "id": "2",
+      "question": "Największy polak w Polsce to: ",
+      "answerA": "Mariusz Pudzianowski",
+      "answerB": "Jan Paweł II",
+      "answerC": "Stanisław Wyspiański"
+    }
   ]
+
 }
