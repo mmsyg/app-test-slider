@@ -18,17 +18,25 @@
   "questionPack": [
     {
       "id": "1",
+      "correct" : "c",
       "question": "Najcięższy ptak w Polsce to:",
-      "answerA": "Bielik",
-      "answerB": "Bocian",
-      "answerC": "Łabędź trąbiący"
+      "answerA": "bielik",
+      "imgA": "img/orzel.png",
+      "answerB": "bocian",
+      "imgB": "img/bocian.png",
+      "answerC": "łabędź trąbiący",
+      "imgC": "img/labedz.png"
     },
-    { 
+    {
       "id": "2",
-      "question": "Największy polak w Polsce to: ",
-      "answerA": "Mariusz Pudzianowski",
-      "answerB": "Jan Paweł II",
-      "answerC": "Stanisław Wyspiański"
+      "correct" : "a",
+      "question": "Jaki ptak specjalizuje się w atakowaniu nietoperzy, gdy te budzą się ze snu zimowego?",
+      "answerA": "wrona siwa",
+      "imgA": "img/orzel.png",
+      "answerB": "mazurek",
+      "imgB": "img/bocian.png",
+      "answerC": "wrona siwa",
+      "imgC": "img/labedz.png"
     }
   ]
 
