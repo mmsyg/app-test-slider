@@ -343,6 +343,61 @@ position: fixed;
 
 }
 
+.quiz_description_long {
+  color: #000;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138%;
+  width: 606px;
+
+  position: absolute;
+  left: 91px;
+  top: 489px;
+
+}
+
+
+.quiz_description_title {
+
+width: 557px;
+color: var(--blueberry-900, #06252D);
+font-family: Rubik;
+font-size: 55px;
+font-style: normal;
+font-weight: 600;
+line-height: 138%; /* 75.9px */
+
+position: absolute;
+left: 91px;
+top: 365px;
+}
+
+.answer_photo_description {
+
+position: absolute;
+left: 1170px;
+top: 224px;
+width: 556px;
+height: 648px;
+flex-shrink: 0;
+
+}
+
+.quiz_description_question {
+  color: var(--blueberry-900, #06252D);
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 138%; 
+  position: absolute;
+  left: 91px;
+  top: 316px;/* 33.12px */
+
+}
+
 
 @keyframes zoomInOut {
   0%, 100% {
