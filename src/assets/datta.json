@@ -37,6 +37,18 @@
       "imgB": "img/bocian.png",
       "answerC": "wrona siwa",
       "imgC": "img/labedz.png"
+    },
+
+    {
+      "id": "3",
+      "correct" : "a",
+      "question": "Jaki ptak specjalizuje się w atakowaniu nietoperzy, gdy te budzą się ze snu zimowego?",
+      "answerA": "wrona siwa",
+      "imgA": "img/orzel.png",
+      "answerB": "mazurek",
+      "imgB": "img/bocian.png",
+      "answerC": "wrona siwa",
+      "imgC": "img/labedz.png"
     }
   ]
 

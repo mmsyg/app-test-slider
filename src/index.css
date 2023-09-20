@@ -271,8 +271,8 @@ width: 600px;
 
 .quiz_bar {
 position: absolute;
-  left:300px;
-  top:42px;
+  left:400px;
+  top:32px;
 
 }
 .answer_tile {
@@ -321,6 +321,26 @@ line-height: 138%; /* 41.4px */
 left: 269px;
 top: 685px;
 position: absolute
+}
+
+
+
+.quiz_answer {
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  left: 50px;
+  top: 100px;
+
+  border-radius: 100px;
+  position:absolute;
+  gap: 570px;
+
+} 
+.quizz {
+
+position: fixed;
+
 }
 
 

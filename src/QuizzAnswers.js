@@ -1,15 +1,16 @@
 import React from 'react';
-import data from './assets/datta.json'; 
-import { ReactComponent as answerRectangle } from './assets/answerRectangle.svg';
-import { ReactComponent as QuestionNumber } from './assets/numberQuestion.svg';
 
+import QuizzTile from "./QuizzTile";
 
 const QuizzAnswer = (props) => {
+    let correct =props.correct
     
-    
-    return (<div className="quiz_answer">
+    return ( 
+    <div className="quiz_answer">
 
-
+<div className='jp'><QuizzTile className="jp" answer='default' id="1" abc='A'/></div>
+<div className='op'><QuizzTile className='ee' answer='default' id="1" abc='B'/></div>
+<div className='wo'><QuizzTile className='aa'answer='default' id="1" abc='C'/></div>
 
 
     </div>  );
