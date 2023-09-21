@@ -1,8 +1,8 @@
 import React from 'react';
 import data from './assets/datta.json'; 
 import { ReactComponent as QuestionRectangle } from './assets/rectangleQuestion.svg';
-import { ReactComponent as QuestionNumber } from './assets/numberQuestion.svg';
-
+// import { ReactComponent as QuestionNumber } from './assets/numberQuestion.svg';
+import QuestionNumber from './QuestionNumber';
 
 
 
@@ -13,7 +13,7 @@ const QuestionBar = (props) => {
 
     
 <QuestionRectangle className='question_rectagle' />
-<QuestionNumber className='question_number' />
+<QuestionNumber className='question_number' id ={props.id}/>
 <p className='question'>{que[0].question}</p>
 <p className='question_number_txt'></p>
 </div>

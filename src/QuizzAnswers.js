@@ -2,9 +2,10 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-
-
+import mapLetterToNumber from "./WhichCorrect"
 import QuizzTile from "./QuizzTile";
+
+
 
 const QuizzAnswer = (props) => {
     const navigate = useNavigate()
@@ -22,7 +23,7 @@ const QuizzAnswer = (props) => {
         navigate("/quizzdescription");
       }
 
-    let correct = 2;
+    const correct = mapLetterToNumber(props.answer);
 
     let wrongOrBad = ["wrong", "wrong", "wrong"]
  
@@ -37,7 +38,7 @@ const QuizzAnswer = (props) => {
   function ifCorrect(i) {
     arraySetIsCorrect[i](arrayIsCorrect[i]=wrongOrBad[i] );
     arraySetIsCorrect[correct](arrayIsCorrect[correct]=wrongOrBad[correct] );
-    goToPage();
+   goToPage();
   }
 
 wrongOrBad[correct]="correct";

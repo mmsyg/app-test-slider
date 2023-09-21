@@ -398,6 +398,38 @@ flex-shrink: 0;
 
 }
 
+.number_id {
+  color: var(--White, #FFF);
+  font-family: Rubik;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 138%;
+  position: absolute;
+  left: 27.81px;
+  top: 20px;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  justify-content: center;
+}
+
+.number_all {
+  color: var(--blueberry-900, #06252D);
+font-family: Rubik;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 138%;
+  position: absolute;
+  left: 139.2px;
+  top: 40px;
+  
+  text-align: center;
+  justify-content: center;
+}
+
+
 
 @keyframes zoomInOut {
   0%, 100% {

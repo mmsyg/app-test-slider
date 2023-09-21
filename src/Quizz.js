@@ -5,12 +5,13 @@ import SetRight from "./SetRight";
 import QuestionBar from "./QuestionBar";
 import data from './assets/datta.json'; 
 import QuizzAnswers from "./QuizzAnswers";
+import QuizzDescription from "./QuizzDescription";
 
 
 
 
 const Quizz = () => {
-
+  
     
 return (<div className="quizz">
     
@@ -19,8 +20,8 @@ return (<div className="quizz">
     <SetRight />
     <QuestionBar id="1" />
     <div className="quiz_answer">
-        <QuizzAnswers id="1" /> 
-    < Link to= "/quizzdescription"></Link > 
+       <QuizzAnswers id="1" answer='c'/>
+   
 
 
 
