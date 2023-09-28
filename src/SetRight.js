@@ -3,7 +3,7 @@ import { ReactComponent as LanguageButton } from './assets/language_button.svg';
 import { ReactComponent as SizeButton } from './assets/size_button.svg';
 import { ReactComponent as ContrastButton } from './assets/contrast_button.svg';
 import { ReactComponent as IconBackground } from './assets/rightSetBackground.svg';
-import QuizzTile from "./QuizzTile";
+
 const SetRight = () => {
 
 

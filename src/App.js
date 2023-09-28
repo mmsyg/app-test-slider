@@ -14,8 +14,11 @@ function App() {
   // Right-click the application background and open the developer tools.
   // You will see "Hello, World!" printed in the console!
   invoke('greet', { name: 'World' })
+
   // `invoke` returns a Promise
-  .then((response) => console.log(response))
+  .then((response) => console.log(response))  
+  
+
   return (
     <Router>
       <div className="App">
@@ -27,7 +30,7 @@ function App() {
           <Route path="/slider" element={<Slider />}/>
           <Route path="/quizzstart" element={<QuizzStart />}/>
           <Route path="/quizz1" element={<Quizz />}/>
-          <Route path="/quizzdescription" element={<QuizzDescription />}/> 
+          <Route path="/quizzdescription" element={<QuizzDescription  />}/> 
           </Routes>
         </div>
       </div>

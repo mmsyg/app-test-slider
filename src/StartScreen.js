@@ -7,6 +7,10 @@ import rightShape from './assets/rightShape.png'
 
 
 const StartScreen = () => {
+
+
+
+  
   return (
    
       <div className="start-screen">

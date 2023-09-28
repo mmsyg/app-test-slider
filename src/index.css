@@ -156,7 +156,21 @@ align-items: flex-start;
 gap: 24px;
 flex-shrink: 0;
 left: 1636px;
-top: 32px;
+top: 42px;
+position: absolute
+}
+
+.set_left {
+
+  display: flex;
+width: 154px;
+height: 65px;
+justify-content: center;
+align-items: flex-start;
+gap: 24px;
+flex-shrink: 0;
+left: 40px;
+top: 42px;
 position: absolute
 }
 
@@ -167,7 +181,7 @@ position: absolute
 
 
 left: 1580px;
-top: -20px;
+top: -10px;
 position: absolute
 }
 
