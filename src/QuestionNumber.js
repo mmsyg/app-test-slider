@@ -7,8 +7,8 @@ const QuestionNumber = (props) => {
 
 <QuestionNumberBG  className='question_nmber' />
 <p className='number_id'>{"0"+props.id}</p>
-<p className='number_all'>{basicNumber}</p>
-<p className="/">{""}</p>
+<p className='number_all'>{"0"+props.max}</p>
+<p className="slash">{"/"}</p>
     </div>  );
 }
  

@@ -13,7 +13,7 @@ const QuestionBar = (props) => {
 
     
 <QuestionRectangle className='question_rectagle' />
-<QuestionNumber className='question_number' id ={props.id}/>
+
 <p className='question'>{que[0].question}</p>
 <p className='question_number_txt'></p>
 </div>

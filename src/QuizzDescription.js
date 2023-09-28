@@ -4,7 +4,7 @@ import { ReactComponent as Home } from './assets/home_button.svg';
 import data from './assets/datta.json'; 
 import SetRight from "./SetRight";
 import { ReactComponent as NextButtonQuizz } from './assets/buttonNext.svg';
-
+import QuestionNumber from './QuestionNumber';
 const QuizzDescription = () => {
     
     
@@ -18,7 +18,10 @@ const QuizzDescription = () => {
     </div>
     <img src={`${data.questionPack[0].imgC}`} alt="answer_pht" className="answer_photo_description" />
     <SetRight />
+
+    <QuestionNumber  id={1} max={4} />
     <Link to="/quizz1"> <NextButtonQuizz className="start_button_quizz"/></Link>
+    
     </div> 
     );
 }

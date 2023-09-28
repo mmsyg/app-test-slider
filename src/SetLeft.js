@@ -6,17 +6,17 @@ import { Link } from 'react-router-dom';
 const SetLeft = (props) => {
 
     let back;
-    back = "/quizzstart";
+   
     switch(props.back){
-
+        
     case "quizz":
-     
+     back = "/quizzstart";
         break;
     default:
         back="/slider"
     }
 
-   if(props.backNotVisible === 1) {return ( <div className="set_left">
+   if(props.backNotVisible === 1) {return ( <div className="set_left_home">
     <Link to="/"><HomeButton /></Link>
 
     </div> );}

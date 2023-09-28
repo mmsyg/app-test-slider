@@ -47,10 +47,11 @@ font-style: normal;
 }
 .slider {
   background-image: url("./assets/bckground2.png");
-  background-size: cover; /* Ustawienie, aby obraz wypełnił całe tło */
-  background-position: center; /* Ustawienie pozycji tła na środku */
-  width: 100vw; /* 100% szerokości ekranu */
-  height: 100vh; /* 100% wysokości ekranu */
+  background-size: cover; 
+  background-position: center; 
+  width: 100vw; 
+  height: 100vh;
+  position: fixed;
 }
 
 
@@ -174,6 +175,15 @@ top: 42px;
 position: absolute
 }
 
+.set_left_home {
+  display: flex;
+  width: 65px;
+  height: 65px;
+  left: 40px;
+top: 42px;
+position: absolute
+}
+
 
 .set_right_bg {
 
@@ -236,6 +246,9 @@ height: 562px;
   top:800px;
   width: 425.848px;
 }
+.quiz_start {
+  position: fixed; 
+}
 
 .quiz_title {
   width: 606px;
@@ -261,8 +274,8 @@ position: absolute;
 }
 .question_number{
   position: absolute;
-  left: 834px;
-  top:-4px;
+  left: 1267px;
+  top:28px;
 
 
 }
@@ -435,21 +448,51 @@ font-size: 30px;
 font-style: normal;
 font-weight: 700;
 line-height: 138%;
-  position: absolute;
-  left: 139.2px;
-  top: 40px;
-  
-  text-align: center;
-  justify-content: center;
+position: absolute;
+left: 139.2px;
+top: 40px;
+
+text-align: center;
+justify-content: center;
+}
+.slash {
+
+position:absolute;
+top: 38px;
+left: 117px;
+font-family: Rubik;
+color: var(--blueberry-900, #06252D);
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 138%;
+
 }
 
+.knowledge_slider {
+  position:fixed;
+}
+
+.polygon_blue_small_knowledge {
+
+  position: absolute;
+  left: 521px;
+  top: 55px;
+}
+
+.union_green_knowledge{
+position:absolute;
+left: -326px;
+top: 935px;
+
+
+}
 
 
 @keyframes zoomInOut {
   0%, 100% {
-    transform: scale(1); /* Stan początkowy i końcowy - brak skalowania */
+    transform: scale(1); 
   }
   50% {
     transform: scale(1.008); 
   }}
-/* Polygon 3 */
