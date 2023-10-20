@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 import mapLetterToNumber from "./WhichCorrect"
 import QuizzTile from "./QuizzTile";
 
@@ -9,17 +9,29 @@ import QuizzTile from "./QuizzTile";
 
 const QuizzAnswer = (props) => {
     const navigate = useNavigate()
-
+    let timeout;
     
+    const history = useNavigate();
+
+    function delayandgo(e, path) {
+      e.preventdefault();
+
+      setTimeout(() => history.push(path), 3000);
+    }
+  
+
     function wait(time) {
+
       return new Promise(resolve => {
-        setTimeout(resolve, time);
+        console.log("settimeout")
+        timeout = setTimeout(resolve, time);
       });
     }
     
     // this is the routing function
     async function goToPage() {
-        await wait(3000);
+      clearTimeout(timeout) 
+      await wait(3000);
         navigate("/quizzdescription");
       }
 
@@ -38,7 +50,8 @@ const QuizzAnswer = (props) => {
   function ifCorrect(i) {
     arraySetIsCorrect[i](arrayIsCorrect[i]=wrongOrBad[i] );
     arraySetIsCorrect[correct](arrayIsCorrect[correct]=wrongOrBad[correct] );
-   goToPage();
+   clearTimeout(timeout);
+    goToPage();
   }
 
 wrongOrBad[correct]="correct";
@@ -49,9 +62,12 @@ wrongOrBad[correct]="correct";
 <div className='op'onClick={() => ifCorrect(1)}><QuizzTile className='ee' answer={arrayIsCorrect[1]} id={props.id} abc='B'/></div>
 <div className='wo'onClick={() => ifCorrect(2)}><QuizzTile className='aa'answer={arrayIsCorrect[2]} id={props.id} abc='C'/></div>
 
-
+<Link to="/slider" onclick={(e) => delayandgo(e, "/quizzdescription")}>
+about
+</Link>
     </div>  );
+
+
     
 }
- 
 export default QuizzAnswer;

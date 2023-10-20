@@ -488,6 +488,51 @@ top: 935px;
 
 }
 
+.knowledge_slider_text {
+
+  position: absolute;
+  left:143px;
+  top: 342px;
+  width: 515px;
+  height: 543px;
+  
+  /* //overflow-y: auto; */
+  display: flex;
+  flex-direction: column;
+
+  
+}
+.konwledge_title {
+  color: var(--blueberry-900, #06252D);
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 138%; /* 33.12px */
+
+}
+
+.konwledge_subtitle {
+ 
+  color: var(--blueberry-900, #06252D);
+font-family: Rubik;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 138%; /* 24.84px */
+
+}
+
+.konwledge_text {
+  color: var(--blueberry-900, #06252D);
+font-family: Rubik;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 165%; /* 26.4px */
+overflow-y: auto;
+}
+
 
 @keyframes zoomInOut {
   0%, 100% {

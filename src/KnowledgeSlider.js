@@ -5,7 +5,7 @@ import data from './assets/datta.json';
 import { ReactComponent as PolygonBlueSmall}from './assets/polygonBlueSmallKnowledge.svg';
 import { ReactComponent as UnionGreenKn}from './assets/unionGreen_knowledge.svg';
 import QuestionNumber from './QuestionNumber';
-import { ReactComponent as PolygonYellowSmall}from './assets/polygonYellowSmallKnowledge.svg'
+import KnowledgeSliderText from './KnowledgeSliderText';
 
 const KnowledgeSlider = () => {
     return ( <div className="knowledge_slider">
@@ -14,11 +14,7 @@ const KnowledgeSlider = () => {
 <SetLeft backNotVisible = {0}  />
 <PolygonBlueSmall className='polygon_blue_small_knowledge' />
 <UnionGreenKn className='union_green_knowledge'/>
-<div className="text">
-    <p className="knowledge_title"></p>
-
-</div>
-    
+<KnowledgeSliderText id='1'/>
 
 
     </div> );
