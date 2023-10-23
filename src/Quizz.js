@@ -20,8 +20,9 @@ return (<div className="quizz">
      <SetRight />
     <SetLeft backNotVisible = {0} back="quizz"/>
    
-    <QuestionBar id="1" />
-    <QuestionNumber className='question_number' id ="1" max="4"/>
+    <QuestionBar id="1" /> 
+    <div className="question_number">
+    <QuestionNumber id ="1" max="4"/></div>
     <div className="quiz_answer">
        <QuizzAnswers id="1" answer='c'/>
    

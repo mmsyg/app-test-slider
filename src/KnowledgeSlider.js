@@ -6,15 +6,23 @@ import { ReactComponent as PolygonBlueSmall}from './assets/polygonBlueSmallKnowl
 import { ReactComponent as UnionGreenKn}from './assets/unionGreen_knowledge.svg';
 import QuestionNumber from './QuestionNumber';
 import KnowledgeSliderText from './KnowledgeSliderText';
+import {ReactComponent as SwipeLeft} from './assets/swipeLeft.svg'
+import KnowledgeSliderBackgroundPhotos from "./KnowledgeSliderBackgroundPhotos"
+
 
 const KnowledgeSlider = () => {
+    let id = '1';
     return ( <div className="knowledge_slider">
-        <QuestionNumber className='question_nr_knowledge' id ="1" max="4"/>
+         <KnowledgeSliderBackgroundPhotos id= {id}/>
+       <img className='blur_knowledge' src='./img/Blur.png' alt='blur' />
+        <div  className='question_nr_knowledge'><QuestionNumber id ={id} max="4"/></div>
         <SetRight />
 <SetLeft backNotVisible = {0}  />
 <PolygonBlueSmall className='polygon_blue_small_knowledge' />
 <UnionGreenKn className='union_green_knowledge'/>
-<KnowledgeSliderText id='1'/>
+<KnowledgeSliderText id={id}/>
+<SwipeLeft className='swipe_left'/>
+
 
 
     </div> );
