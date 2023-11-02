@@ -582,6 +582,19 @@ left: 812px;
 
 }
 
+.scrollArea {
+
+  margin: 0 auto;
+  border: 0px solid #efefef;
+  height: 400px;
+  /* padding: 1rem; */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  /* gap: 1rem; */
+  flex: 1;
+}
+
 
 @keyframes zoomInOut {
   0%, 100% {
