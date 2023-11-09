@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import mapLetterToNumber from "./WhichCorrect"
 import QuizzTile from "./QuizzTile";
-
+import randomLetters from "./randomLetter"
 
 
 const QuizzAnswer = (props) => {
@@ -58,13 +58,11 @@ wrongOrBad[correct]="correct";
     return ( 
     <div className="quiz_answer">
 
-<div className='jp' onClick={() => ifCorrect(0)}><QuizzTile className="jp" answer={arrayIsCorrect[0]} id={props.id} abc='A'/></div>
-<div className='op'onClick={() => ifCorrect(1)}><QuizzTile className='ee' answer={arrayIsCorrect[1]} id={props.id} abc='B'/></div>
-<div className='wo'onClick={() => ifCorrect(2)}><QuizzTile className='aa'answer={arrayIsCorrect[2]} id={props.id} abc='C'/></div>
+<div className='jp' onClick={() => ifCorrect(0)}><QuizzTile className="jp" answer={arrayIsCorrect[0]} id={props.id} abc='A' letterABC='A'/></div>
+<div className='op'onClick={() => ifCorrect(1)}><QuizzTile className='ee' answer={arrayIsCorrect[1]} id={props.id} abc='B' letterABC='B'/></div>
+<div className='wo'onClick={() => ifCorrect(2)}><QuizzTile className='aa'answer={arrayIsCorrect[2]} id={props.id} abc='C' letterABC='C'/></div>
 
-<Link to="/slider" onclick={(e) => delayandgo(e, "/quizzdescription")}>
-about
-</Link>
+
     </div>  );
 
 

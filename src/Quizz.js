@@ -12,19 +12,19 @@ import QuestionNumber from './QuestionNumber';
 
 
 const Quizz = () => {
-  
+ let id = '2';
     
 return (<div className="quizz">
-    
+    <button>kolejne pytanie</button>
     
      <SetRight />
     <SetLeft backNotVisible = {0} back="quizz"/>
    
-    <QuestionBar id="1" /> 
+    <QuestionBar id={id} /> 
     <div className="question_number">
-    <QuestionNumber id ="1" max="4"/></div>
+    <QuestionNumber id ={id} max="4"/></div>
     <div className="quiz_answer">
-       <QuizzAnswers id="1" answer='c'/>
+       <QuizzAnswers id={id} answer='c'/>
    
 
 
