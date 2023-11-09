@@ -5,11 +5,10 @@ import data from './assets/datta.json';
 import SetRight from "./SetRight";
 import { ReactComponent as NextButtonQuizz } from './assets/buttonNext.svg';
 import QuestionNumber from './QuestionNumber';
-const QuizzDescription = () => {
+const QuizzDescription = (props) => {
     
     
     return ( <div className="quizz_description">
-    <Link to="/"><Home className ="home_b"/></Link> 
     <div className="quiz_descriotion_txt">
     <p className='quiz_description_question'>{data.questionPack[0].question}</p>
     <p className='quiz_description_long'>{data.questionPack[0].answerDescription}</p>
@@ -20,7 +19,7 @@ const QuizzDescription = () => {
     <SetRight />
 
     <QuestionNumber  id={1} max={4} />
-    <Link to="/quizz1"> <NextButtonQuizz className="start_button_quizz"/></Link>
+    
     
     </div> 
     );

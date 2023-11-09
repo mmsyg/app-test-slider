@@ -5,6 +5,7 @@ import QuizzStart from "./QuizzStart";
 import Quizz from "./Quizz";
 import QuizzDescription from "./QuizzDescription";
 import Carousel from "./Carousel";
+import Test from "./Test";
 
 const { invoke } = window.__TAURI__.tauri
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/quizz1" element={<Quizz />}/>
           <Route path="/quizzdescription" element={<QuizzDescription  />}/>
           <Route path="/carousel" element={<Carousel />} />
+          <Route path="/test" element={<Test />} />
           </Routes>
         </div>
       </div>

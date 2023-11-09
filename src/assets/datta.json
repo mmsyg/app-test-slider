@@ -18,7 +18,7 @@
   "questionPack": [
     {
       "id": "1",
-      "correct" : "c",
+      "correct" : "C",
       "question": "Najcięższy ptak w Polsce to:",
       "answerA": "bielik",
       "imgA": "img/orzel.png",
@@ -31,7 +31,7 @@
     },
     {
       "id": "2",
-      "correct" : "a",
+      "correct" : "A",
       "question": "Jaki ptak specjalizuje się w atakowaniu nietoperzy, gdy te budzą się ze snu zimowego?",
       "answerA": "wrona siwa",
       "imgA": "img/orzel.png",
@@ -44,7 +44,7 @@
 
     {
       "id": "3",
-      "correct" : "a",
+      "correct" : "A",
       "question": "Jaki ptak specjalizuje się w atakowaniu nietoperzy, gdy te budzą się ze snu zimowego?",
       "answerA": "wrona siwa",
       "imgA": "img/orzel.png",

@@ -1,41 +1,21 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
-
+import data from './assets/datta.json'; 
 import mapLetterToNumber from "./WhichCorrect"
 import QuizzTile from "./QuizzTile";
-import randomLetters from "./randomLetter"
 
+ let q = 0;
+ let score =0;
 
 const QuizzAnswer = (props) => {
+ 
     const navigate = useNavigate()
     let timeout;
+    const que = data.questionPack.filter(questionx => questionx.id === props.id);
     
-    const history = useNavigate();
 
-    function delayandgo(e, path) {
-      e.preventdefault();
-
-      setTimeout(() => history.push(path), 3000);
-    }
-  
-
-    function wait(time) {
-
-      return new Promise(resolve => {
-        console.log("settimeout")
-        timeout = setTimeout(resolve, time);
-      });
-    }
-    
-    // this is the routing function
-    async function goToPage() {
-      clearTimeout(timeout) 
-      await wait(3000);
-        navigate("/quizzdescription");
-      }
-
-    const correct = mapLetterToNumber(props.answer);
+    const correct = mapLetterToNumber(que[0].correct);
 
     let wrongOrBad = ["wrong", "wrong", "wrong"]
  
@@ -48,21 +28,29 @@ const QuizzAnswer = (props) => {
  
  
   function ifCorrect(i) {
+    if(i===correct){
+      score++;
+    }
+    
+   if(q===0){
+
     arraySetIsCorrect[i](arrayIsCorrect[i]=wrongOrBad[i] );
     arraySetIsCorrect[correct](arrayIsCorrect[correct]=wrongOrBad[correct] );
-   clearTimeout(timeout);
-    goToPage();
+    q++;
+    }
+    setTimeout(function() {
+      q=0;
+    }, props.delayy); 
   }
 
 wrongOrBad[correct]="correct";
     return ( 
     <div className="quiz_answer">
 
-<div className='jp' onClick={() => ifCorrect(0)}><QuizzTile className="jp" answer={arrayIsCorrect[0]} id={props.id} abc='A' letterABC='A'/></div>
-<div className='op'onClick={() => ifCorrect(1)}><QuizzTile className='ee' answer={arrayIsCorrect[1]} id={props.id} abc='B' letterABC='B'/></div>
-<div className='wo'onClick={() => ifCorrect(2)}><QuizzTile className='aa'answer={arrayIsCorrect[2]} id={props.id} abc='C' letterABC='C'/></div>
-
-
+<div className='jp' onClick={() => ifCorrect(0)}><QuizzTile className="jp" answer={arrayIsCorrect[0]} id={props.id} abc='A' tileLetter='A'/></div>
+<div className='op'onClick={() => ifCorrect(1)}><QuizzTile className='ee' answer={arrayIsCorrect[1]} id={props.id} abc='B' tileLetter='B'/></div>
+<div className='wo'onClick={() => ifCorrect(2)}><QuizzTile className='aa'answer={arrayIsCorrect[2]} id={props.id} abc='C' tileLetter='C'/></div>
+{console.log(score)}
     </div>  );
 
 

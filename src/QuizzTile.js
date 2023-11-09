@@ -33,7 +33,7 @@ function QuizTile(props) {
                     <AnswerCorrect />
                     <p className='answer_txt'>{answerABC}</p>
                     <img src={`${imgABC}`} alt="answer_pht" className="answer_photo" />
-                    <p className="question_letter">{props.letterABC}</p>
+                    <p className="question_letter">{props.tileLetter}</p>
                 </div>
             );
          
@@ -43,7 +43,7 @@ function QuizTile(props) {
                     <AnswerWrong />
                     <p className='answer_txt'>{answerABC}</p>
                     <img src={`${imgABC}`} alt="answer_pht" className="answer_photo" />
-                    <p className="question_letter">{props.letterABC}</p>
+                    <p className="question_letter">{props.tileLetter}</p>
                 </div>
             );
         
@@ -53,7 +53,7 @@ function QuizTile(props) {
                     <AnswerDafault />
                     <p className='answer_txt'>{answerABC}</p>
                     <img src={`${imgABC}`} alt="answer_pht" className="answer_photo" />
-                    <p className="question_letter">{props.letterABC}</p>
+                    <p className="question_letter">{props.tileLetter}</p>
                 </div>
             );
    }

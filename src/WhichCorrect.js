@@ -5,11 +5,11 @@
 
     function mapLetterToNumber(letter) {
         switch (letter) {
-          case 'a':
+          case "A":
             return 0;
-          case 'b':
+          case "B":
             return 1;
-          case 'c':
+          case "C":
             return 2;
           default:
            return -1; 
