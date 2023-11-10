@@ -48,9 +48,21 @@
       "question": "Jaki ptak specjalizuje się w atakowaniu nietoperzy, gdy te budzą się ze snu zimowego?",
       "answerA": "wrona siwa",
       "imgA": "img/orzel.png",
-      "answerB": "mazurek",
+      "answerB": "mazurek213",
       "imgB": "img/bocian.png",
       "answerC": "wrona siwa",
+      "imgC": "img/labedz.png",
+      "answerDescription": "Ptak lubi latać, ale nie lubi spadać:("
+    },
+    {
+      "id": "4",
+      "correct" : "B",
+      "question": "Jaki ptak je dżdżownice?",
+      "answerA": "kruk",
+      "imgA": "img/orzel.png",
+      "answerB": "gołąb",
+      "imgB": "img/bocian.png",
+      "answerC": "pelikan",
       "imgC": "img/labedz.png",
       "answerDescription": "Ptak lubi latać, ale nie lubi spadać:("
     }
