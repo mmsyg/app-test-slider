@@ -1,6 +1,21 @@
 import React from 'react';
-const QuizzSummary = () => {
+import data from './assets/datta.json'; 
+import { ReactComponent as StartButtonQuizz } from './assets/buttonStart_quizz.svg';
+import stork from './assets/Bocian.png'
+import { ReactComponent as Intersect } from "./assets/Intersect.svg";
+import { ReactComponent as GrayShape } from "./assets/grayShape.svg";
+import QuizzAnswer from './QuizzAnswers';
+import { useState } from 'react';
+const QuizzSummary = (props) => {
+
     return ( <div className="quiz_summary">
+       <Intersect className="intersect_qzz_strt"/> 
+       <GrayShape className="gray_shape_qzz_strt"/>
+       <div className="stork">
+        
+          <img src={stork} alt="stork" />
+          
+        </div>
         
     </div> );
 

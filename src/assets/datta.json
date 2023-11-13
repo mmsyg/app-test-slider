@@ -26,7 +26,7 @@
       "imgB": "img/bocian.png",
       "answerC": "łabędź trąbiący",
       "imgC": "img/labedz.png",
-      "answerDescription": "Sikorka bogatka jest bardzo wrażliwa na dźwięki wydawane przez budzące się nietoperze. Warunki środowiskowe prowadzą do wytworzenia niezwykłych rozwiązań anatomicznych służących zdobywaniu pożywienia. Weźmy takiego dzięcioła – spośród ptaków ma najdłuższy język. Jest on tak długi, że musi owijać się wokół jego czaszki!"
+      "answerDescription": "labedz Sikorka bogatka jest bardzo wrażliwa na dźwięki wydawane przez budzące się nietoperze. Warunki środowiskowe prowadzą do wytworzenia niezwykłych rozwiązań anatomicznych służących zdobywaniu pożywienia. Weźmy takiego dzięcioła – spośród ptaków ma najdłuższy język. Jest on tak długi, że musi owijać się wokół jego czaszki!"
       
     },
     {
@@ -39,7 +39,7 @@
       "imgB": "img/bocian.png",
       "answerC": "wrona siwa",
       "imgC": "img/labedz.png",
-      "answerDescription": "Sto lat, Sto lat!"
+      "answerDescription": "Sto lat, Sto lat wrona!"
     },
 
     {
@@ -50,9 +50,9 @@
       "imgA": "img/orzel.png",
       "answerB": "mazurek213",
       "imgB": "img/bocian.png",
-      "answerC": "wrona siwa",
+      "answerC": "wrona szara",
       "imgC": "img/labedz.png",
-      "answerDescription": "Ptak lubi latać, ale nie lubi spadać:("
+      "answerDescription": "Wroooooonaaaa"
     },
     {
       "id": "4",
@@ -64,7 +64,7 @@
       "imgB": "img/bocian.png",
       "answerC": "pelikan",
       "imgC": "img/labedz.png",
-      "answerDescription": "Ptak lubi latać, ale nie lubi spadać:("
+      "answerDescription": "Ptak lubi latać, ale nie lubi spadać:( golab"
     }
   ],
 

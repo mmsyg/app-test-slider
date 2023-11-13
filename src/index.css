@@ -160,7 +160,8 @@ gap: 24px;
 flex-shrink: 0;
 left: 1636px;
 top: 42px;
-position: absolute
+position: absolute;
+z-index: 99;
 }
 
 .set_left {
@@ -191,7 +192,7 @@ position: absolute
 
 
 
-
+  z-index: 99;
 left: 1580px;
 top: -10px;
 position: absolute
@@ -274,13 +275,7 @@ position: absolute;
 
 
 }
-.question_number{
-  position: absolute;
-  left: 40px;
-  top:208px;
 
-
-}
 
 .question_nr_knowledge{
   position: absolute;
@@ -614,6 +609,11 @@ left: 812px;
   background-color: #1796b5;
   border-radius: 100px;
   border: 4px none #ffffff;
+}
+.question_number {
+  position: absolute;
+left:620px;
+top:14px;
 }
 
 
