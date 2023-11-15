@@ -53,7 +53,7 @@ const Test = () => {
           </div>
           <div className="quiz_title">{data.quizTitle}</div> 
           <Intersect className="intersect_qzz_strt"/>
-     <StartButtonQuizz onClick={()=>{handleLiClick('component1'); rN = randomNumbers(4);setCounter(1)}}  className="start_button_quizz"/>
+     <StartButtonQuizz onClick={()=>{handleLiClick('component1'); rN = randomNumbers(4);setCounter(1);setId(rN[0])}}  className="start_button_quizz"/>
  
    
   

@@ -4,6 +4,8 @@ import data from './assets/datta.json';
 import mapLetterToNumber from './WhichCorrect';
 import QuizzTile from './QuizzTile';
 import { ReactComponent as RightAnswers } from './assets/rightAnswers.svg';
+import { ReactComponent as WrongAnswers } from './assets/wrongAnswers.svg';
+
 
 let q = 0;
 let score = 0;
@@ -46,7 +48,13 @@ const QuizzAnswer = (props) => {
     showResult++;
     return (
       <div className="score">
-        <RightAnswers /> {result}
+        <div className="correct"><RightAnswers className='right_answer_tile'/>
+          <p className="score_number">{"0"+result}</p>
+          <p className="score_text">Poprawne odpowiedzi</p></div>
+        <div className="wrong"><WrongAnswers className='wrong_answer_tile'/> 
+          <p className="score_number">{"0"+(4-result)}</p>
+          <p className="score_text">Błędne odpowiedzi</p></div>
+
       </div>
     );
   }if(showResult===-1){
