@@ -50,10 +50,10 @@ const QuizzAnswer = (props) => {
       <div className="score">
         <div className="correct"><RightAnswers className='right_answer_tile'/>
           <p className="score_number">{"0"+result}</p>
-          <p className="score_text">Poprawne odpowiedzi</p></div>
+          <p className="score_text">{data.quizSummaryCorrect}</p></div>
         <div className="wrong"><WrongAnswers className='wrong_answer_tile'/> 
           <p className="score_number">{"0"+(4-result)}</p>
-          <p className="score_text">Błędne odpowiedzi</p></div>
+          <p className="score_text">{data.quizSummaryWrong}</p></div>
 
       </div>
     );

@@ -16,9 +16,15 @@ const Slider = () => {
     return ( <div className="slider">
         <SetRight/>
         <SetLeft backNotVisible = {1} back="quizz"/>
-   <Link to="/test"> <Tile className = "tile_left" /><img src={`${data.images[0].path}` } alt="tile_left_pht" className="tile_left_photo" /> <p className="tile1_title">{data.images[0].name}</p>
+    <Link to="/carousel"> 
+        <Tile className = "tile_left" />
+        <img src={`${data.images[0].path}` } alt="tile_left_pht" className="tile_left_photo" /> 
+        <p className="tile1_title">{data.images[0].name}</p>
     </Link>
-    <Link to="/quizzstart"><Tile className = "tile_right" /><img src={`${data.images[1].path}` } alt="tile_right_pht" className="tile_right_photo" /> <p className="tile2_title">{data.images[1].name}</p>  </Link>
+    <Link to="/test"><Tile className = "tile_right" />
+        <img src={`${data.images[1].path}` } alt="tile_right_pht" className="tile_right_photo" /> 
+        <p className="tile2_title">{data.images[1].name}</p>  
+    </Link>
     
   
 

@@ -10,14 +10,13 @@ import {ReactComponent as SwipeLeft} from './assets/swipeLeft.svg'
 import KnowledgeSliderBackgroundPhotos from "./KnowledgeSliderBackgroundPhotos"
 
 
-const KnowledgeSlider = () => {
-  let id='1'
+const KnowledgeSlider = (props) => {
+  let id=String(props.id)
        return ( <div className="knowledge_slider">
          <KnowledgeSliderBackgroundPhotos id= {id}/>
        <img className='blur_knowledge' src='./img/Blur.png' alt='blur' />
         <div  className='question_nr_knowledge'><QuestionNumber id ={id} max="4"/></div>
-        <SetRight />
-<SetLeft backNotVisible = {0}  />
+      
 <PolygonBlueSmall className='polygon_blue_small_knowledge' />
 <UnionGreenKn className='union_green_knowledge'/>
 <KnowledgeSliderText id={id}/>
