@@ -175,7 +175,8 @@ gap: 24px;
 flex-shrink: 0;
 left: 40px;
 top: 42px;
-position: absolute
+position: absolute;
+z-index: 99;
 }
 
 .set_left_home {

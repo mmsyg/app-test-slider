@@ -30,10 +30,10 @@ const Carousel = () => {
   const Component0 = () =><div className="kn_slider"><KnowledgeSlider id={counter}/></div>
   return (
     <div>
-      <SetRight />
-      <SetLeft backNotVisible={0} back="slider" />
+     
       <button onClick={()=>handleLiClick('component0')}>next</button>
-      
+       <SetRight />
+      <SetLeft backNotVisible={0} back="slider" />
    
       {activeComponent === 'component0' && <Component0 />}
       
