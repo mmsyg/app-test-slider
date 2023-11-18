@@ -16,7 +16,7 @@ const QuizzDescription = (props) => {
     
     </div>
     <img src={`${data.questionPack[id].imgC}`} alt="answer_pht" className="answer_photo_description" />
-    <SetRight />
+    
     
     
     </div> 
