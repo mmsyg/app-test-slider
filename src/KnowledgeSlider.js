@@ -17,10 +17,9 @@ const KnowledgeSlider = (props) => {
        <img className='blur_knowledge' src='./img/Blur.png' alt='blur' />
         <div  className='question_nr_knowledge'><QuestionNumber id ={id} max="4"/></div>
       
-<PolygonBlueSmall className='polygon_blue_small_knowledge' />
-<UnionGreenKn className='union_green_knowledge'/>
+
 <KnowledgeSliderText id={id}/>
-<SwipeLeft className='swipe_left'/>
+
 
 
 
