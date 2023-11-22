@@ -26,11 +26,11 @@ const StartScreen = () => {
         <div className="right_shape">
           <img src={rightShape} alt="right_shape" />
         </div>
-        <UnionGreen className="unionGreen" />
+        <UnionGreen className={`unionGreen ${isAnimating ? 'animateUnionGreen' : ''}`}  />
         <PolygonBlueSmall className='polygonBlueSmalll'/>
         <PolygonYellowSmall className='polygonYellowSmalll'/>
         <div className="button">
-           <DelayLink  to="/slider" delay={5000}>   
+           <DelayLink  to="/slider" delay={10000}>   
         <YellowButton onClick={startAnimation}className="start_button" />
         <div className="button_txt">{parse(data.buttonText)}</div>
            </DelayLink>  </div>

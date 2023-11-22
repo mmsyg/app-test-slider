@@ -9,7 +9,7 @@ const DelayedLink = ({ to, delay, children }) => {
     setClicked(true);
 
     setTimeout(() => {
-      // Po upływie zadanego opóźnienia, przejdź do ścieżki 'to'
+    
       navigate(to);
     }, delay);
   };

@@ -56,9 +56,9 @@
     },
     "windows": [
       {
-        "fullscreen":true,
+        "fullscreen":false,
         "height": 1080,
-        "resizable": true,
+        "resizable": false,
         "title": "app-test-slider",
         "width":1920
       }
