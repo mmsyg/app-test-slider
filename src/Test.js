@@ -6,21 +6,24 @@ import QuestionNumber from './QuestionNumber';
 import QuizzAnswers from './QuizzAnswers';
 import QuizzDescription from './QuizzDescription';
 import { randomNumbers } from './randomNumbers';
-import { ReactComponent as NextButtonQuizz } from './assets/buttonNext.svg';
+import { ReactComponent as NextButtonQuizz } from './assets/buttonNextQuiz.svg';
 import QuizzSummary from './QuizzSumary';
 import { ReactComponent as StartButtonQuizz } from './assets/buttonStart_quizz.svg';
 import { ReactComponent as SummaryTryAgain } from './assets/summaryTryAgain.svg';
 import { ReactComponent as Intersect } from "./assets/Intersect.svg";
 import { ReactComponent as GrayShape } from "./assets/grayShape.svg";
+import { ReactComponent as UnionBlueQuiz } from "./assets/unionBlueQuiz.svg";
 import { ReactComponent as ArrowLeft } from "./assets/arrowLeft.svg";
 import { ReactComponent as ArrowRight } from "./assets/arrowRight.svg";
 import stork from './assets/Bocian.png';
 import data from './assets/datta.json'; 
 import QuizzAnswer from './QuizzAnswers';
+import parse from 'html-react-parser';
 
 let rN = randomNumbers(4);
 console.log(rN)
 const Test = () => {
+  const [click, setClick] = useState(0);
   const delay = 2000;
   const x =rN[0]
   const [id, setId] = useState(x);
@@ -41,22 +44,32 @@ const Test = () => {
   };
 
   const handleLiClickDelay = (component) => {
-    setTimeout(() => {
+    if(click===0){
+    setTimeout(() => {setClick(1)
       setActiveComponent(component);
     }, delay);
+    setTimeout(() => {
+      setClick(0);
+    }, delay+100);} 
   };
 
   const Component0 = () => <div className="quiz_start">
        
        <QuizzAnswer score={-1} id={'1'}/>
-  <GrayShape className="gray_shape_qzz_strt"/>
+  
    
      <div className="stork">
             <img src={stork} alt="stork" />
           </div>
-          <div className="quiz_title">{data.quizTitle}</div> 
-          <Intersect className="intersect_qzz_strt"/>
-     <StartButtonQuizz onClick={()=>{handleLiClick('component1'); rN = randomNumbers(4);setCounter(1);setId(rN[0])}}  className="start_button_quizz"/>
+          <div className="quiz_title">{parse(data.quizTitle)}<p className='quiz_under_title'>{parse(data.quizTextUnderTitle)}</p></div> 
+          
+          
+          <div className="start_quiz_btn" onClick={()=>{handleLiClick('component1'); rN = randomNumbers(4);setCounter(1);setId(rN[0])}}>
+          
+     <StartButtonQuizz   className="start_button_quizz"/>
+    <p className='strt'>{data.quizStartButton}</p>
+    </div>
+     
  
    
   
@@ -66,10 +79,8 @@ const Test = () => {
 
   const Component1 = () => (
     <div className="quizz">
-      <QuestionBar id={id} />
-      <div className="question_number">
-        <QuestionNumber  id={counter} max="4" />
-      </div>
+      <QuestionBar id={id} counter={counter} />
+      
       
       <div className="quiz_answer">
         <div onClick={() => handleLiClickDelay('component2')}>
@@ -81,17 +92,28 @@ const Test = () => {
 
   const Component2 = () => (
     <div>
-      <QuestionNumber  id={counter} max="4" />
+      <div className="quiz_desc_number">
+      <QuestionNumber id={counter} height={1} max='4'/></div>
       <QuizzDescription id={id} />
-      <NextButtonQuizz onClick={() => { if(counter===4){handleLiClick('component3');}else {handleLiClick('component1'); handleButtonClick();} }} className="start_button_quizz" ><button onClick={handleButtonClick}></button></NextButtonQuizz>
+      <div className="next_quiz_btn" onClick={() => { if(counter===4){handleLiClick('component3');}else {handleLiClick('component1'); handleButtonClick();} }}>
+          
+          <NextButtonQuizz  className="start_button_quizz" />
+         <p className='nxt'>{parse(data.quizNextButton)}</p></div>
+      
     </div>
   );
 
   const Component3 = () => (<div>
-                                <QuizzSummary id={id}/> 
-                                <QuizzAnswer score={1} id={'1'}/>{console.log('summary')}   
-                                <StartButtonQuizz onClick={()=>{handleLiClick('component4'); setId(1);setCounter(1)}} />
-                                <SummaryTryAgain onClick={()=>handleLiClick('component0')} className="start_button_quizz"/></div>);
+    <QuizzSummary id={id}/> 
+    <QuizzAnswer score={1} id={'1'}/>{console.log('summary')}   
+    
+    <div className="try_again_btn" onClick={()=>{handleLiClick('component4'); setId(1);setCounter(1)}} >
+
+    <NextButtonQuizz />
+    <p className='nxt'>{parse(data.quizTriviaButton)}</p></div>
+    <div className="next_quiz_btn" onClick={()=>handleLiClick('component0')}>
+    <SummaryTryAgain  className="start_button_quizz"/>
+    <p className='nxt'>{parse(data.quizTryAgain)}</p></div></div>);
 
   const Component4 = () => (
     <div>
@@ -105,11 +127,12 @@ const Test = () => {
 
 
   return (
-    <div>
+    <div className='test'>
       <SetRight />
       <SetLeft backNotVisible={0} back="slider" />
-      
-      
+      <UnionBlueQuiz className='union_quiz'/>
+      <GrayShape className="gray_shape_qzz_strt"/>
+<Intersect className="intersect_qzz_strt"/>
    
       {activeComponent === 'component0' && <Component0 />}
       {activeComponent === 'component1' && <Component1 />}

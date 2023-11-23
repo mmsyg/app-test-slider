@@ -31,7 +31,7 @@ const MySlider = () => {
       <SwiperSlide key={i}>
         <div className="knowledge_slider">
          <KnowledgeSliderBackgroundPhotos id= {i.toString()}/>
-       <img className='blur_knowledge' src='./img/Blur.png' alt='blur' />
+         <img className='blur_knowledge' src='./img/Blur.png' alt='blur' />
         <div  className='question_nr_knowledge'><p className='number_id'>{"0"+i.toString()}</p>
 <p className='number_all'>{"0"+numberOfSlides}</p>
 <p className="slash">{"/"}</p></div>
@@ -51,6 +51,7 @@ const MySlider = () => {
     <div className="swiper-container">
       <SetLeft backNotVisible={0} back="slider" />
       <SetRight />
+      <img className='blur_knowledge' src='./img/blur_blue.png' alt='blur' />
       <PolygonBlueSmall className='polygon_blue_small_knowledge' />
 <UnionGreenKn className='union_green_knowledge'/>
 <QuestionNumberBG  className='question_nr' />

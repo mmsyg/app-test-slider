@@ -58,7 +58,7 @@
       {
         "fullscreen":false,
         "height": 1080,
-        "resizable": false,
+        "resizable": true,
         "title": "app-test-slider",
         "width":1920
       }

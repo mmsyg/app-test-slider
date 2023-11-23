@@ -6,8 +6,7 @@ import { countLinesOfText } from './countLinesOfText';
 
 const QuestionBar = (props) => {
   const textRef = useRef(null);
-  const [numberOfLines, setNumberOfLines] = useState(1); // Użyjemy stanu do przechowywania liczby wierszy tekstu
-
+  const [numberOfLines, setNumberOfLines] = useState(1); 
   useEffect(() => {
     const lines = countLinesOfText(textRef);
     console.log('Liczba linii tekstu:', lines);
@@ -17,18 +16,24 @@ const QuestionBar = (props) => {
   const que = data.questionPack.filter((questionx) => questionx.id === props.id);
 
   const dynamicHeight = {
-    height: `${80+numberOfLines * 25}px`, // Ustawiamy wysokość w zależności od liczby linii tekstu
+    height: `${104+(numberOfLines-1) * 24}px`, // Ustawiamy wysokość w zależności od liczby linii tekstu
+
   };
+  const dynamicBarTop = {
+    top: `${40-(numberOfLines-1)*12}px`,
+  }
 
   return (
-    <div className="quiz_bar">
+    <div className="quiz_bar" style ={dynamicBarTop}>
       <div className="question_rectagle" style={dynamicHeight}>
        
         <p ref={textRef} className="question">
           {parse(que[0].question)}
         </p>
-      </div>
+      </div><div className="question_number">
+<QuestionNumber id={props.counter} height={numberOfLines} max='4'/></div>
     </div>
+    
   );
 };
 

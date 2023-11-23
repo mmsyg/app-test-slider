@@ -25,20 +25,21 @@ const QuizzAnswer = (props) => {
   let arraySetIsCorrect = [setIsCorrect, setIsCorrect1, setIsCorrect2];
 
   function ifCorrect(i) {
-    if (i === correct) {
+   
+
+    if (q === 0) {
+      console.log('klik')
+      arraySetIsCorrect[i]((arrayIsCorrect[i] = wrongOrBad[i]));
+      arraySetIsCorrect[correct]((arrayIsCorrect[correct] = wrongOrBad[correct]));
+      q++; if (i === correct) {
       score++;
      
     }
-
-    if (q === 0) {
-      arraySetIsCorrect[i]((arrayIsCorrect[i] = wrongOrBad[i]));
-      arraySetIsCorrect[correct]((arrayIsCorrect[correct] = wrongOrBad[correct]));
-      q++;
-    }
+    
     setTimeout(function () {
       q = 0;
     }, props.delayy);
-  }
+  }}
 
   wrongOrBad[correct] = 'correct';
   if (showResult === 1 ) {
