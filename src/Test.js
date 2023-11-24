@@ -118,10 +118,14 @@ const Test = () => {
   const Component4 = () => (
     <div>
       <QuizzDescription id={id} />
-      <QuestionNumber  id={counter} max="4" />
+      <div className="quiz_desc_number">
+      <QuestionNumber  id={counter} max="4" height={1}/></div>
       <ArrowLeft onClick={()=>{if(id>1){setId(id-1)}else setId(4); if(counter>1){setCounter(counter-1)}else setCounter(4)}} className='left_arrow_quiz'/>
       <ArrowRight onClick={()=>{if(id<4){setId(id+1)}else setId(1); if(counter<4){setCounter(counter+1)}else setCounter(1)}} className='right_arrow_quiz'/>
-      <StartButtonQuizz onClick={()=>handleLiClick('component0')} className="start_button_quizz"/>
+      
+      <div className="next_quiz_btn" onClick={()=>handleLiClick('component0')}>
+      <NextButtonQuizz />
+    <p className='nxt'>{parse(data.quizTryAgain)}</p></div>
     </div>
   );
 

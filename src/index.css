@@ -902,7 +902,38 @@ top:900px;
 left:-61px;
 }
 
+.zoom_tile{
+  position:absolute;
+  z-index: 99;
+  left: 1740px;
+  top:880px;
+  display: flex;
+}
+.zoom_button{
+position: absolute;
+top:80px;
+left:70px;
+}
 
+.num_of_slides{
+position: absolute;
+z-index: 110;
+top:228px;
+left: -360px;
+}
+
+.swipe_txt{
+  position: absolute;
+  left: 101px;
+  top: 5px;
+width: 175px;
+  color: #FFF;
+font-family: Rubik;
+font-size: 20.923px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
 
 
 @keyframes zoomInOut {

@@ -11,6 +11,7 @@
   "quizSummary": "Gratulacje! Udało ci się odpowiedzieć na wszystkie pytania w quizie.",
   "quizSummaryCorrect": "Poprawne odpowiedzi",
   "quizSummaryWrong":"Błędne odpowiedzi",
+  "swipe":"Przesuń, aby zmienić slajd",
   "images": [
     {
       "name": "Dowiedz się więcej o ptakach i fizyce ich lotu",
@@ -52,12 +53,12 @@
     {
       "id": "3",
       "correct" : "A",
-      "question": "Jaki ptak specjalizuje się w atakowaniu nietoperzy, gdy te budzą się ze snu zimowego?",
-      "answerA": "wrona siwa",
+      "question": "Która odpowiedź jest dobra? Która odpowiedź jest dobra? Która odpowiedź jest dobra? Która odpowiedź jest dobra?",
+      "answerA": "dobra",
       "imgA": "img/orzel.png",
-      "answerB": "mazurek213",
+      "answerB": "zła",
       "imgB": "img/bocian.png",
-      "answerC": "wrona szara",
+      "answerC": "zła",
       "imgC": "img/labedz.png",
       "answerDescription": "Wroooooonaaaa"
     },
@@ -115,6 +116,17 @@
       "title":"Ostatnie polskie kokosy",
       "subtitle": "Ostatnie polskie samoloty subtitle",
       "text": "Lorem321 ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum nec nunc nec placerat. Morbi vehicula, nisl sit amet sollicitudin dignissim, ipsum dolor feugiat arcu, et luctus quam velit sed massa. Pellentesque rutrum urna ut porttitor hendrerit. Donec scelerisque, nulla a pharetra semper, mauris ex viverra risus, at dictum ex nibh in urna. Nullam eget tempor turpis. Nulla facilisi.  Phasellus eget urna suscipit, feugiat felis non, imperdiet sapien. Fusce aliquet sed tellus et aliquam. Quisque et facilisis diam. Integer molestie blandit maximus. Nulla id dolor eget lectus commodo euismod eget eu justo. Curabitur sagittis bibendum neque ac imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper justo ac nisl condimentum, a dictum libero consequat. Ut nec tortor eleifend, lobortis odio id, sollicitudin lacus. Duis sit amet volutpat erat, non tristique sapien. Ut vitae rhoncus ligula, ut rhoncus ligula. Pellentesque vel cursus nulla, sed venenatis ante. Donec id nisi odio. Fusce justo erat, consectetur id lorem sed, tempor accumsan odio. Etiam ex ex, pe         llentesque et placerat at, suscipit ac neque. Suspendisse potenti. Donec vestibulum ligula nisi, sed commodo urna pellentesque id. Suspendisse sodales consequat quam in pharetra. Donec sollicitudin in elit quis euismod. Donec suscipit lacinia egestas. Fusce bibendum vel neque non suscipit. Sed ut faucibus nunc. Nulla aliquam enim id arcu viverra, quis ultrices ligula ornare. In tristique vestibulum lectus, eget aliquet tellus tincidunt sit amet. Fusce justo quam, dignissim nec nulla sed,  ignissim nec nulla sed, dignissim dapibus ligula. Ut id nunc maximus, tincidunt sem vel, hendrerit orci. Quisque vehicula fermentum lorem, a venenatis elit malesuada eu. Sed mauris nulla, efficitur pellentesque sagittis vitae, semper nec dui. In finibus molestie porta. In id dictum ex, sed porttitor massa. Nullam tortor risus,",
+      "img":[
+        {
+          "source":"./img/gallery1.png"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title":"Ostatnie ",
+      "subtitle": "Ostatnie polskie samoloty subtitle",
+      "text": "Lorem321432432624 7 25 4575 452 ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum nec nunc nec placerat. Morbi vehicula, nisl sit amet sollicitudin dignissim, ipsum dolor feugiat arcu, et luctus quam velit sed massa. Pellentesque rutrum urna ut porttitor hendrerit. Donec scelerisque, nulla a pharetra semper, mauris ex viverra risus, at dictum ex nibh in urna. Nullam eget tempor turpis. Nulla facilisi.  Phasellus eget urna suscipit, feugiat felis non, imperdiet sapien. Fusce aliquet sed tellus et aliquam. Quisque et facilisis diam. Integer molestie blandit maximus. Nulla id dolor eget lectus commodo euismod eget eu justo. Curabitur sagittis bibendum neque ac imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper justo ac nisl condimentum, a dictum libero consequat. Ut nec tortor eleifend, lobortis odio id, sollicitudin lacus. Duis sit amet volutpat erat, non tristique sapien. Ut vitae rhoncus ligula, ut rhoncus ligula. Pellentesque vel cursus nulla, sed venenatis ante. Donec id nisi odio. Fusce justo erat, consectetur id lorem sed, tempor accumsan odio. Etiam ex ex, pe         llentesque et placerat at, suscipit ac neque. Suspendisse potenti. Donec vestibulum ligula nisi, sed commodo urna pellentesque id. Suspendisse sodales consequat quam in pharetra. Donec sollicitudin in elit quis euismod. Donec suscipit lacinia egestas. Fusce bibendum vel neque non suscipit. Sed ut faucibus nunc. Nulla aliquam enim id arcu viverra, quis ultrices ligula ornare. In tristique vestibulum lectus, eget aliquet tellus tincidunt sit amet. Fusce justo quam, dignissim nec nulla sed,  ignissim nec nulla sed, dignissim dapibus ligula. Ut id nunc maximus, tincidunt sem vel, hendrerit orci. Quisque vehicula fermentum lorem, a venenatis elit malesuada eu. Sed mauris nulla, efficitur pellentesque sagittis vitae, semper nec dui. In finibus molestie porta. In id dictum ex, sed porttitor massa. Nullam tortor risus,",
       "img":[
         {
           "source":"./img/gallery1.png"
