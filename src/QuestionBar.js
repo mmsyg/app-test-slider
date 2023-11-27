@@ -24,14 +24,13 @@ const QuestionBar = (props) => {
   }
 
   return (
-    <div className="quiz_bar" style ={dynamicBarTop}>
+    <div style ={dynamicBarTop}>
       <div className="question_rectagle" style={dynamicHeight}>
        
         <p ref={textRef} className="question">
           {parse(que[0].question)}
         </p>
-      </div><div className="question_number">
-<QuestionNumber id={props.counter} height={numberOfLines} max='4'/></div>
+      </div>
     </div>
     
   );

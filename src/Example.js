@@ -15,7 +15,7 @@ import 'swiper/css';
 import 'swiper/css/effect-creative';
 import { EffectCreative } from 'swiper/modules';
 import data from './assets/datta.json'; 
-
+import { Pagination, Navigation } from 'swiper/modules';
 import QuestionNumber from './QuestionNumber';
 import KnowledgeSliderText from './KnowledgeSliderText';
 
@@ -56,19 +56,12 @@ const MySlider = () => {
       <PolygonBlueSmall className='polygon_blue_small_knowledge' />
 <UnionGreenKn className='union_green_knowledge'/>
       <Swiper
-       grabCursor={false}
-       effect={'creative'}
-       creativeEffect={{
-         prev: {
-           shadow: false,
-           translate: ['-20%', 0, -1],
-         },
-         next: {
-           translate: ['100%', 0, 0],
-         },
-       }}
-       modules={[EffectCreative]}
-       className="mySwiper3"
+        pagination={{
+          type: 'fraction',
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper3"
       >
         {slides}
       </Swiper><div className="swipe_left">

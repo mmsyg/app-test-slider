@@ -10,7 +10,7 @@ const QuestionNumber = (props) => {
       }
     
 
-    return (<div className="question_number">
+    return (<div >
 
 
 

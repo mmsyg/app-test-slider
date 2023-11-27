@@ -19,10 +19,13 @@ import stork from './assets/Bocian.png';
 import data from './assets/datta.json'; 
 import QuizzAnswer from './QuizzAnswers';
 import parse from 'html-react-parser';
+import { ReactComponent as BackButton } from './assets/backButton.svg';
+import { ReactComponent as HomeButton } from './assets/homeButton.svg';
+import { Link } from 'react-router-dom';
 
 let rN = randomNumbers(4);
 console.log(rN)
-const Test = () => {
+const Quiz = () => {
   const [click, setClick] = useState(0);
   const delay = 2000;
   const x =rN[0]
@@ -54,7 +57,7 @@ const Test = () => {
   };
 
   const Component0 = () => <div className="quiz_start">
-       
+       <SetLeft backNotVisible={0} back="slider" />
        <QuizzAnswer score={-1} id={'1'}/>
   
    
@@ -79,8 +82,12 @@ const Test = () => {
 
   const Component1 = () => (
     <div className="quizz">
+      <SetLeft backNotVisible={1} back="slider" />
+      <div className='quiz_bar'>
       <QuestionBar id={id} counter={counter} />
-      
+      <div className="question_number">
+<QuestionNumber id={counter} top={1} height={1} max='4'/></div>
+      </div>
       
       <div className="quiz_answer">
         <div onClick={() => handleLiClickDelay('component2')}>
@@ -92,6 +99,7 @@ const Test = () => {
 
   const Component2 = () => (
     <div>
+      <SetLeft backNotVisible={1} back="slider" />
       <div className="quiz_desc_number">
       <QuestionNumber id={counter} height={1} max='4'/></div>
       <QuizzDescription id={id} />
@@ -104,6 +112,7 @@ const Test = () => {
   );
 
   const Component3 = () => (<div>
+    <SetLeft backNotVisible={1} />
     <QuizzSummary id={id}/> 
     <QuizzAnswer score={1} id={'1'}/>{console.log('summary')}   
     
@@ -117,6 +126,13 @@ const Test = () => {
 
   const Component4 = () => (
     <div>
+     
+      <div className="set_left">
+    <Link to="/"><HomeButton /></Link>
+    <BackButton  onClick={()=>handleLiClick('component3')}/>
+   
+    
+        </div> 
       <QuizzDescription id={id} />
       <div className="quiz_desc_number">
       <QuestionNumber  id={counter} max="4" height={1}/></div>
@@ -133,7 +149,7 @@ const Test = () => {
   return (
     <div className='test'>
       <SetRight />
-      <SetLeft backNotVisible={0} back="slider" />
+      
       <UnionBlueQuiz className='union_quiz'/>
       <GrayShape className="gray_shape_qzz_strt"/>
 <Intersect className="intersect_qzz_strt"/>
@@ -147,4 +163,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default Quiz;
