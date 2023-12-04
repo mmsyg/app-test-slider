@@ -9,7 +9,7 @@
     "@uidotdev/usehooks": "^2.4.0",
     "axios": "^1.5.0",
     "bootstrap": "^5.3.1",
-    "framer-motion": "^10.16.4",
+    "framer-motion": "^10.16.12",
     "gasp": "^0.0.2",
     "gsap": "^3.12.2",
     "html-react-parser": "^5.0.6",

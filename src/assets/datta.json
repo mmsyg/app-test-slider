@@ -4,6 +4,7 @@
   "buttonText": "START",
   "quizTitle": "<strong>Sprawdź</strong> swoją wiedzę o ptakach i fizyce ich lotu!",
   "quizTextUnderTitle": "Odpowiedz na pytania dotyczące ptaków i poznaj ciekawostki na ich temat. Dotknij odpowiedzi, którą uznasz za poprawną, i przekonaj się, czy intuicja cię nie zawiodła. Na każde pytanie jest tylko jedna poprawna odpowiedź. Powodzenia!",
+  "tileChoose":"WYBIERZ",
   "quizStartButton":"ZACZYNAMY!",
   "quizNextButton":"NASTĘPNE PYTANIE",
   "quizTriviaButton":"CIEKAWOSTKI",

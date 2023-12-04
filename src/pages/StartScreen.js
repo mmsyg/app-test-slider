@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ReactComponent as YellowButton } from './assets/yellowButton.svg';
-import { ReactComponent as UnionGreen } from './assets/unionGreen.svg';
-import { ReactComponent as LeftShape } from './assets/leftShape.svg';
-import { ReactComponent as PolygonBlueSmall } from './assets/polygonBlueSmall.svg';
-import { ReactComponent as PolygonYellowSmall } from './assets/polygonYellowSmall.svg';
-import data from './assets/datta.json'; 
-import rightShape from './assets/rightShape.png'
+import { ReactComponent as YellowButton } from '../assets/yellowButton.svg';
+import { ReactComponent as UnionGreen } from '../assets/unionGreen.svg';
+import { ReactComponent as LeftShape } from '../assets/leftShape.svg';
+import { ReactComponent as PolygonBlueSmall } from '../assets/polygonBlueSmall.svg';
+import { ReactComponent as PolygonYellowSmall } from '../assets/polygonYellowSmall.svg';
+import data from '../assets/datta.json'; 
+import rightShape from '../assets/rightShape.png'
 import parse from 'html-react-parser';
-import DelayLink from './DelayLink';
+import DelayLink from '../helpers/DelayLink';
 
 const StartScreen = () => {
 

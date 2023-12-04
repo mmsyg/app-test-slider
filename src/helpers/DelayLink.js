@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const DelayedLink = ({ to, delay, children }) => {
   const [clicked, setClicked] = useState(false);
@@ -9,13 +9,12 @@ const DelayedLink = ({ to, delay, children }) => {
     setClicked(true);
 
     setTimeout(() => {
-    
       navigate(to);
     }, delay);
   };
 
   return (
-    <div onClick={handleClick} style={{ cursor: 'pointer' }}>
+    <div onClick={handleClick} style={{ cursor: "pointer" }}>
       {children}
     </div>
   );

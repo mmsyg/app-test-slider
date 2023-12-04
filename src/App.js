@@ -1,12 +1,11 @@
-import StartScreen from "./StartScreen";
-import Slider from "./Slider";
+import StartScreen from "./pages/StartScreen";
+import ChooseMenu from "./pages/ChooseMenu";
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import QuizzStart from "./QuizzStart";
+import QuizzStart from "./pages/quiz_pages/QuizzStart";
 
-import QuizzDescription from "./QuizzDescription";
-import Carousel from "./Carousel";
-import Quiz from "./Quiz";
-import Example from "./Example";
+import QuizzDescription from "./pages/quiz_pages/QuizzDescription";
+import Quiz from "./pages/Quiz";
+import Example from "./pages/KnowledgeSlider";
 
 const { invoke } = window.__TAURI__.tauri
 
@@ -15,11 +14,6 @@ const { invoke } = window.__TAURI__.tauri
 function App() {
 
 
-  
-  invoke('greet', { name: 'World' })
-
-
-  .then((response) => console.log(response))  
   
 
   return (
@@ -30,7 +24,7 @@ function App() {
         <div className="content">
           <Routes>
           <Route path="/" element={<StartScreen />}/>
-          <Route path="/slider" element={<Slider />}/>
+          <Route path="/slider" element={<ChooseMenu />}/>
           <Route path="/carousel" element={<Example />} />
           <Route path="/quiz" element={<Quiz />} />
           </Routes>
