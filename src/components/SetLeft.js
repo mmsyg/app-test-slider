@@ -36,4 +36,4 @@ const SetLeft = (props) => {
 };
 
 export default SetLeft;
-<div className="set_left"></div>;
+

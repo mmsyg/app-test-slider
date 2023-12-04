@@ -205,8 +205,7 @@ const Quiz = () => {
         className="next_quiz_btn"
         onClick={() => handleLiClick("component0")}
       >
-        <NextButtonQuizz />
-        <p className="nxt">{parse(data.quizTryAgain)}</p>
+        
       </div>
     </div>
   );
