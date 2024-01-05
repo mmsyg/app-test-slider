@@ -31,7 +31,7 @@ const StartScreen = () => {
       <PolygonBlueSmall className="polygonBlueSmalll" />
       <PolygonYellowSmall className="polygonYellowSmalll" />
       <div className="button">
-        <DelayLink to="/slider" delay={3000}>
+        <DelayLink to="/slider" delay={1200}>
           <YellowButton onClick={startAnimation} className="start_button" />
           <div className="button_txt">{parse(data.buttonText)}</div>
         </DelayLink>{" "}

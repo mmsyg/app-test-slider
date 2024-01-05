@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import SetLeft from "../components/SetLeft";
@@ -20,9 +20,10 @@ import KnowledgeSliderBackgroundPhotos from "../components/KnowledgeSliderBackgr
 import { useState } from "react";
 
 const Slider = () => {
-  const numberOfSlides = data.knowledgeSlider.length.toString(); // Określ liczbę slajdów, które chcesz wyrenderować
+  const numberOfSlides = data.knowledgeSlider.length.toString(); 
   const [counter, setCounter] = useState(1);
-  // Generowanie slajdów z różnymi id dla KnowledgeSlider
+  const [isActive, setIsActive] = useState(false);
+
   const [firstSwiper, setFirstSwiper] = useState(null);
   const [secondSwiper, setSecondSwiper] = useState(null);
   const slides = [];
@@ -38,7 +39,10 @@ const Slider = () => {
     slides2.push(
       <SwiperSlide key={i}>
         <div className="knowledge_slider">
-          <KnowledgeSliderBackgroundPhotos id={i.toString()} />
+          <KnowledgeSliderBackgroundPhotos
+            id={i.toString()}
+            isActive={isActive}
+          />
         </div>
       </SwiperSlide>
     );
@@ -48,19 +52,35 @@ const Slider = () => {
     <div className="swiper-container">
       <SetLeft backNotVisible={0} back="slider" />
       <SetRight />
-      <Zoom />
-      <div className="shadow_white_left" />
-      <div className="shadow_white_right" />
+      <Zoom isActive={isActive} setIsActive={setIsActive} />
 
-      <img className="blur_knowledge" src="./img/Blur.png" alt="blur" />
+      <div
+        className={isActive ? "shadow_white_left_zoom" : "shadow_white_left"}
+      />
+      <div
+        className={isActive ? "shadow_white_right_zoom" : "shadow_white_right"}
+      />
+
       <img
-        className="blur_knowledge_blue"
+        className={isActive ? "blur_knowledge_zoom" : "blur_knowledge"}
+        src="./img/Blur.png"
+        alt="blur"
+      />
+      <img
+        className={isActive ? "blur_zoom" : "blur_zoom_hidden"}
+        src="./img/blur_zoom.png"
+        alt="blur"
+      />
+      <img
+        className={
+          isActive ? "blur_knowledge_blue_zoom" : "blur_knowledge_blue"
+        }
         src="./img/blur_blue.png"
         alt="blur"
       />
-      <PolygonBlueSmall className="polygon_blue_small_knowledge" />
-      <UnionGreenKn className="union_green_knowledge" />
-      <div className="st_slider">
+      {/* <PolygonBlueSmall className="polygon_blue_small_knowledge" />
+      <UnionGreenKn className="union_green_knowledge" /> */}
+      <div className={isActive ? "st_slider_zoom" : "st_slider"}>
         <Swiper
           pagination={{
             type: "fraction",
@@ -73,7 +93,7 @@ const Slider = () => {
           {slides}
         </Swiper>
       </div>
-      <div className="nd_slider">
+      <div className={isActive ? "nd_slider_zoom" : "nd_slider"}>
         <Swiper
           pagination={{
             type: "fraction",
@@ -86,7 +106,7 @@ const Slider = () => {
           {slides2}
         </Swiper>
       </div>
-      <div className="swipe_left">
+      <div className={isActive ? "swipe_left_zoom" : "swipe_left"}>
         <SwipeLeft />
         <p className="swipe_txt">{data.swipe}</p>
       </div>

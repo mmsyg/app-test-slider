@@ -6,8 +6,12 @@ const KnowledgeSliderBackgroundPhotos = (props) => {
     (questionx) => questionx.id === props.id
   );
   return (
-    <div className="gallery_bg">
-      <img className="gallery1" src={que[0].img[0].source} alt="gal1" />
+    <div className={props.isActive ? "bg1" : "bg"}>
+      <img
+        className={props.isActive ? "gallery_bg1" : "gallery_bg"}
+        src={que[0].img[0].source}
+        alt="gal1"
+      />
     </div>
   );
 };
