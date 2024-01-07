@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import data from "../assets/datta.json";
 import mapLetterToNumber from "../helpers/WhichCorrect";
@@ -8,6 +8,20 @@ import { ReactComponent as WrongAnswers } from "../assets/wrongAnswers.svg";
 
 let q = 0;
 let score = 0;
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]]; // Zamiana elementów
+  }
+  return array;
+}
+
+function numbersToLetters(array) {
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  return array.map(number => alphabet[number]);
+}
+
+
 
 const QuizzAnswer = (props) => {
   let showResult = props.score;
@@ -16,7 +30,7 @@ const QuizzAnswer = (props) => {
   );
 
   const correct = mapLetterToNumber(que[0].correct);
-
+  let ABC =["A","B", "C"]
   let wrongOrBad = ["wrong", "wrong", "wrong"];
 
   let [isCorrect, setIsCorrect] = useState("default");
@@ -25,6 +39,22 @@ const QuizzAnswer = (props) => {
   let arrayIsCorrect = [isCorrect, isCorrect1, isCorrect2];
   let arraySetIsCorrect = [setIsCorrect, setIsCorrect1, setIsCorrect2];
 
+  const [orderStyles, setOrderStyles] = useState({ jp: 0, op: 0, wo: 0 });
+  const [orders, setOrders] = useState([]);
+  useEffect(() => {
+    // Generowanie losowej permutacji od 0 do 2
+    const shuffledOrders = shuffleArray([0, 1, 2]);
+    setOrders(shuffledOrders);
+
+    setOrderStyles({
+      jp: shuffledOrders[0],
+      op: shuffledOrders[1],
+      wo: shuffledOrders[2]
+    });
+  }, []);
+
+  // Przekształcanie liczb na litery po aktualizacji orders
+  const letterArray = numbersToLetters(orders);
   function ifCorrect(i) {
     if (q === 0) {
       console.log("klik");
@@ -70,31 +100,31 @@ const QuizzAnswer = (props) => {
   } else {
     return (
       <div className="quiz_answer">
-        <div className="jp" onClick={() => ifCorrect(0)}>
+        <div className="jp" style={{ order: orderStyles.jp }}  onClick={() => ifCorrect(0)}>
           <QuizzTile
             className="jp"
             answer={arrayIsCorrect[0]}
             id={props.id}
             abc="A"
-            tileLetter="A"
+            tileLetter={letterArray[0]}
           />
         </div>
-        <div className="op" onClick={() => ifCorrect(1)}>
+        <div className="op" style={{ order: orderStyles.op }}  onClick={() => ifCorrect(1)}>
           <QuizzTile
             className="ee"
             answer={arrayIsCorrect[1]}
             id={props.id}
             abc="B"
-            tileLetter="B"
+            tileLetter={letterArray[1]}
           />
         </div>
-        <div className="wo" onClick={() => ifCorrect(2)}>
+        <div className="wo" style={{ order: orderStyles.wo }}  onClick={() => ifCorrect(2)}>
           <QuizzTile
             className="aa"
             answer={arrayIsCorrect[2]}
             id={props.id}
             abc="C"
-            tileLetter="C"
+            tileLetter={letterArray[2]}
           />
         </div>
         {console.log(score)}

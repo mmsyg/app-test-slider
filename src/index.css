@@ -6,6 +6,7 @@ body {
   overflow: hidden;
   display: flex;
   user-select: none;
+
 }
 :root {
   --global-font-size: 1px; /* Default font size */
@@ -45,6 +46,23 @@ p {
   height: 328px;
   flex-shrink: 0;
   color: #fff;
+  font-family: Rubik;
+  font-size: calc(var(--global-font-size) * 100);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 118%;
+}
+
+
+
+.contrast-mode .title {
+  position: absolute;
+  left: 96px;
+  top: 376px;
+  width: 385px;
+  height: 328px;
+  flex-shrink: 0;
+  color: #ff0000;
   font-family: Rubik;
   font-size: calc(var(--global-font-size) * 100);
   font-style: normal;
