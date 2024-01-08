@@ -34,7 +34,7 @@ const SetRight = (props) => {
   
     return (
     <div className="set_right">
-      <IconBackground className="set_right_bg" />
+      <IconBackground   className="set_right_bg" />
       <div className="set_right_buttons">
         <LanguageButton className="language_button" />
     
@@ -49,7 +49,7 @@ const SetRight = (props) => {
       <div className="set_right_buttons">
         <LanguageButton className="language_button" />
         <SizeButton className="size_button" onClick={toggleFontSize}/>
-        <ContrastButton onClick={toggleContrast} className="contrast_button" />
+        <ContrastButton  onClick={toggleContrast} className="contrast_button" />
       </div>
     </div>);
 };

@@ -18,7 +18,7 @@ const SetLeft = (props) => {
     return (
       <div className="set_left_home">
         <Link to="/">
-          <HomeButton />
+          <HomeButton className="home_button"/>
         </Link>
       </div>
     );
@@ -26,10 +26,10 @@ const SetLeft = (props) => {
     return (
       <div className="set_left">
         <Link to="/">
-          <HomeButton />
+          <HomeButton className="home_button" />
         </Link>
         <Link to={back}>
-          <BackButton />
+          <BackButton className="back_button"/>
         </Link>
       </div>
     );

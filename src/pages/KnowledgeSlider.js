@@ -61,22 +61,20 @@ const Slider = () => {
         className={isActive ? "shadow_white_right_zoom" : "shadow_white_right"}
       />
 
-      <img
+      <div
         className={isActive ? "blur_knowledge_zoom" : "blur_knowledge"}
-        src="./img/Blur.png"
-        alt="blur"
+       
       />
       <img
         className={isActive ? "blur_zoom" : "blur_zoom_hidden"}
         src="./img/blur_zoom.png"
         alt="blur"
       />
-      <img
+      <div
         className={
           isActive ? "blur_knowledge_blue_zoom" : "blur_knowledge_blue"
         }
-        src="./img/blur_blue.png"
-        alt="blur"
+      
       />
       {/* <PolygonBlueSmall className="polygon_blue_small_knowledge" />
       <UnionGreenKn className="union_green_knowledge" /> */}

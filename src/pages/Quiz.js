@@ -167,18 +167,19 @@ const Quiz = () => {
   );
 
   const Component4 = () => (
-    <div>
+    <div >
+      <div className="com4">
       <div className="set_left">
         <Link to="/">
-          <HomeButton />
+          <HomeButton className="home_button"/>
         </Link>
-        <BackButton onClick={() => handleLiClick("component3")} />
+        <BackButton className="back_button"onClick={() => handleLiClick("component3")} />
       </div>
       <QuizzDescription id={id} />
       <div className="quiz_desc_number">
         <QuestionNumber id={counter} max="4" height={1} />
-      </div>
-      <ArrowLeft
+      </div></div>
+      <ArrowLeft 
         onClick={() => {
           if (id > 1) {
             setId(id - 1);

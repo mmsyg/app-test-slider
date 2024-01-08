@@ -10,7 +10,7 @@ const QuestionNumber = (props) => {
 
   return (
     <div>
-      <div className="nr_BG_shadow/" />
+      <div className="nr_BG_shadow" />
       <div className="question_nmber" style={dynamicQuestionNumberBG}>
         <p className="number_id">{numberFormat(props.id)}</p>
         <div className="max_Nr_BG">

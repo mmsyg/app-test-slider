@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ReactComponent as Home } from "../../assets/home_button.svg";
+import { ReactComponent as Home } from "../../assets/homeButton.svg";
 import data from "../../assets/datta.json";
 import SetRight from "../../components/SetRight";
 import { ReactComponent as NextButtonQuizz } from "../../assets/buttonNext.svg";
@@ -9,7 +9,7 @@ const QuizzDescription = (props) => {
   const id = Number(props.id) - 1;
   return (
     <div className="quizz_description">
-      <div className="quiz_descriotion_txt">
+      <div className="quizz_description_txt">
         <p className="quiz_description_question">
           {data.questionPack[id].question}
         </p>
