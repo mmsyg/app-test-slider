@@ -56,6 +56,16 @@ p {
   line-height: 118%;
 }
 
+.title > p {
+  color: #fff;
+  font-family: Rubik;
+  font-size: calc(var(--global-font-size) * 100);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 118%;
+}
+
+
 
 .slider {
   background-image: url("./assets/bckground2.png");
