@@ -1,0 +1,397 @@
+{
+  "translations": [],
+  "presentationSettings": {
+    "presentationId": "1e33eecc-3b37-4406-a7b4-a4bc0140fcd4",
+    "key": "rad-st4-fizyka-lotu",
+    "name": "rad.st4.fizyka-lotu",
+    "defaultLanguage": {
+      "name": "Polish",
+      "value": 1,
+      "tag": "pl"
+    },
+    "mediaPath": "/content/",
+    "shouldIncludeMediaPath": true,
+    "stylePath": "presentation.css",
+    "resolution": {
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "dictionaries": {
+    "moduleTypes": [
+      {
+        "id": 0,
+        "name": "Custom",
+        "keys": [
+          "rad-st4-fizyka-lotu-screensaver",
+          "rad-st4-fizyka-lotu-selection-screen",
+          "rad-st4-fizyka-lotu-quiz",
+          "rad-st4-fizyka-lotu-question",
+          "rad-st4-fizyka-lotu-answer"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "RichTextArea",
+        "keys": [
+          "title",
+          "select-knowledge-title",
+          "quiz-title",
+          "start-title",
+          "text",
+          "details"
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Text",
+        "keys": [
+          "button-text",
+          "select-knowledge-button-text",
+          "quiz-button-text",
+          "start-description",
+          "start-text-button"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "File",
+        "keys": [
+          "select-knowledge-image",
+          "quiz-image",
+          "image"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "List",
+        "keys": [
+          "questions",
+          "answers"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Checkbox",
+        "keys": [
+          "correct"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "id": 1,
+        "tag": "pl",
+        "name": "Polish"
+      },
+      {
+        "id": 2,
+        "tag": "en",
+        "name": "English"
+      }
+    ],
+    "enumLists": []
+  },
+  "styleId": null,
+  "screens": [
+    {
+      "moduleId": "5a428f3a-95e9-4727-bc44-432aae873d14",
+      "key": "rad-st4-fizyka-lotu-screensaver",
+      "name": "rad.st4.fizyka-lotu.screensaver",
+      "referenceId": "1db9ee14-5560-4e16-a96e-53d428cfd685",
+      "subModules": [
+        {
+          "moduleType": 2,
+          "key": "title",
+          "name": "title",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p><strong>Fizyka</strong><br />\nlotu</p>\n",
+            "en": "<p>[EN]</p>\n\n<p><strong>Fizyka</strong><br />\nlotu</p>\n"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "button-text",
+          "name": "button-text",
+          "isTranslated": true,
+          "text": {
+            "pl": "START",
+            "en": "[EN] START"
+          }
+        }
+      ]
+    },
+    {
+      "moduleId": "83a97f81-4a32-407e-b2d3-1df5b99b70bb",
+      "key": "rad-st4-fizyka-lotu-selection-screen",
+      "name": "rad.st4.fizyka-lotu.selection-screen",
+      "referenceId": "9810fd28-9102-44b7-bbb2-41890a4fe7af",
+      "subModules": [
+        {
+          "moduleType": 2,
+          "key": "select-knowledge-title",
+          "name": "select-knowledge-title",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p>Dowiedz się więcej o ptakach i fizyce ich lotu</p>\n",
+            "en": "<p>[EN] -&nbsp;Dowiedz się więcej o ptakach i fizyce ich lotu</p>\n"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "select-knowledge-button-text",
+          "name": "select-knowledge-button-text",
+          "isTranslated": true,
+          "text": {
+            "pl": null,
+            "en": null
+          }
+        },
+        {
+          "moduleType": 4,
+          "key": "select-knowledge-image",
+          "name": "select-knowledge-image",
+          "isTranslated": false,
+          "files": "/content/a71e0922-12a1-4955-f767-08dc15a79750.png"
+        },
+        {
+          "moduleType": 2,
+          "key": "quiz-title",
+          "name": "quiz-title",
+          "isTranslated": true,
+          "text": {
+            "pl": null,
+            "en": null
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "quiz-button-text",
+          "name": "quiz-button-text",
+          "isTranslated": true,
+          "text": {
+            "pl": null,
+            "en": null
+          }
+        },
+        {
+          "moduleType": 4,
+          "key": "quiz-image",
+          "name": "quiz-image",
+          "isTranslated": false,
+          "files": "/content/84899203-8177-4c75-f766-08dc15a79750.png"
+        }
+      ]
+    },
+    {
+      "moduleId": "5c8130a1-8eed-489d-8449-3e159572c19c",
+      "key": "rad-st4-fizyka-lotu-quiz",
+      "name": "rad.st4.fizyka-lotu.quiz",
+      "referenceId": "425835fd-398d-4946-a4f0-be8ad594408c",
+      "subModules": [
+        {
+          "moduleType": 2,
+          "key": "start-title",
+          "name": "start-title",
+          "isTranslated": true,
+          "text": {
+            "pl": null,
+            "en": null
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "start-description",
+          "name": "start-description",
+          "isTranslated": true,
+          "text": {
+            "pl": null,
+            "en": null
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "start-text-button",
+          "name": "start-text-button",
+          "isTranslated": true,
+          "text": {
+            "pl": null,
+            "en": null
+          }
+        },
+        {
+          "moduleType": 5,
+          "key": "questions",
+          "name": "questions",
+          "selectedModule": {
+            "moduleType": 0,
+            "key": "rad-st4-fizyka-lotu-question",
+            "name": "rad.st4.fizyka-lotu.question"
+          },
+          "list": [
+            {
+              "moduleType": 0,
+              "key": "rad-st4-fizyka-lotu-question",
+              "name": "rad.st4.fizyka-lotu.question",
+              "moduleId": "d9b1b613-0e59-4af0-8349-4628bc8abd3b",
+              "referenceId": "57b31be8-96f2-4fd0-8bc2-55c63b117555",
+              "subModules": [
+                {
+                  "moduleType": 2,
+                  "key": "text",
+                  "name": "text",
+                  "isTranslated": true,
+                  "text": {
+                    "pl": "<p>Najcięższy ptak w Polsce to:</p>\n",
+                    "en": "<p>[EN] -&nbsp;Najcięższy ptak w Polsce to:</p>\n"
+                  }
+                },
+                {
+                  "moduleType": 5,
+                  "key": "answers",
+                  "name": "answers",
+                  "selectedModule": {
+                    "moduleType": 0,
+                    "key": "rad-st4-fizyka-lotu-answer",
+                    "name": "rad.st4.fizyka-lotu.answer"
+                  },
+                  "list": [
+                    {
+                      "moduleType": 0,
+                      "key": "rad-st4-fizyka-lotu-answer",
+                      "name": "rad.st4.fizyka-lotu.answer",
+                      "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
+                      "referenceId": "d41b7b2e-47ad-406c-9745-9992eb125714",
+                      "subModules": [
+                        {
+                          "key": "correct",
+                          "name": "correct",
+                          "moduleType": 11,
+                          "checked": true
+                        },
+                        {
+                          "moduleType": 2,
+                          "key": "text",
+                          "name": "text",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": "<p>1</p>\n",
+                            "en": null
+                          }
+                        },
+                        {
+                          "moduleType": 4,
+                          "key": "image",
+                          "name": "image",
+                          "isTranslated": false,
+                          "files": null
+                        },
+                        {
+                          "moduleType": 2,
+                          "key": "details",
+                          "name": "details",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": null,
+                            "en": null
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "moduleType": 0,
+                      "key": "rad-st4-fizyka-lotu-answer",
+                      "name": "rad.st4.fizyka-lotu.answer",
+                      "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
+                      "referenceId": "151fa114-1f59-40ed-b77e-b0b62ce72810",
+                      "subModules": [
+                        {
+                          "key": "correct",
+                          "name": "correct",
+                          "moduleType": 11,
+                          "checked": false
+                        },
+                        {
+                          "moduleType": 2,
+                          "key": "text",
+                          "name": "text",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": "<p>2</p>\n",
+                            "en": null
+                          }
+                        },
+                        {
+                          "moduleType": 4,
+                          "key": "image",
+                          "name": "image",
+                          "isTranslated": false,
+                          "files": null
+                        },
+                        {
+                          "moduleType": 2,
+                          "key": "details",
+                          "name": "details",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": null,
+                            "en": null
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "moduleType": 0,
+                      "key": "rad-st4-fizyka-lotu-answer",
+                      "name": "rad.st4.fizyka-lotu.answer",
+                      "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
+                      "referenceId": "0521457b-d166-41cb-80b7-08cac31f457b",
+                      "subModules": [
+                        {
+                          "key": "correct",
+                          "name": "correct",
+                          "moduleType": 11,
+                          "checked": false
+                        },
+                        {
+                          "moduleType": 2,
+                          "key": "text",
+                          "name": "text",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": "<p>3</p>\n",
+                            "en": null
+                          }
+                        },
+                        {
+                          "moduleType": 4,
+                          "key": "image",
+                          "name": "image",
+                          "isTranslated": false,
+                          "files": null
+                        },
+                        {
+                          "moduleType": 2,
+                          "key": "details",
+                          "name": "details",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": null,
+                            "en": null
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "screensavers": null,
+  "globalPopups": null
+}

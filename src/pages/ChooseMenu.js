@@ -7,7 +7,13 @@ import TileChooseMenu from "../components/TileChooseMenu";
 // import image1 from './assets/tile_img1.png';
 
 import React from "react";
+import {useAppContext} from "../context/app-data/useAppContext";
 const Slider = () => {
+
+    const appData = useAppContext();
+    const { selectedPage } = appData.screens;
+    console.log(selectedPage);
+
   return (
     <div className="slider">
       <SetRight />
@@ -16,7 +22,7 @@ const Slider = () => {
       <Link to="/carousel">
         <div className="tile_left">
           <TileChooseMenu
-            photo={data.images[0].path}
+            photo={selectedPage.selectKnowledgeImage}
             text={data.images[0].name}
             className="tile_left"
           />
@@ -25,7 +31,7 @@ const Slider = () => {
       <Link to="/quiz">
         <div className="tile_right">
           <TileChooseMenu
-            photo={data.images[1].path}
+            photo={selectedPage.quizImage}
             text={data.images[1].name}
             className="tile_right"
           />
