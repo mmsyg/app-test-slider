@@ -28,7 +28,10 @@ export const AppDataContextProvider = ({children}) => {
         <AppDataContext.Provider value={{
             screens: {
                 screensaver: artigioData.getAllLangScreenData("screensaver", true)[currentLang],
-                selectedPage: artigioData.getAllLangScreenData("selection-screen", true)[currentLang]
+                selectedPage: artigioData.getAllLangScreenData("selection-screen", true)[currentLang],
+                quiz: artigioData.getAllLangScreenData("quiz",true)[currentLang],
+                knowledge: artigioData.getAllLangScreenData("knowledge",true)[currentLang],
+                
             },
             changeLanguage: changeLang
         }}>

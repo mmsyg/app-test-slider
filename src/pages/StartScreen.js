@@ -43,7 +43,7 @@ const StartScreen = () => {
                   <div className="button_txt">{parse(screensaver.buttonText)}</div>
               </DelayLink>{" "}
           </div>
-          <div className="title" onClick={() => appData.changeLanguage("en") }>{parse(screensaver.title)}</div>
+          <div className="title" >{parse(screensaver.title)}</div>
       </div>
   );
 };

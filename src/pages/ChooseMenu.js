@@ -23,7 +23,8 @@ const Slider = () => {
         <div className="tile_left">
           <TileChooseMenu
             photo={selectedPage.selectKnowledgeImage}
-            text={data.images[0].name}
+            text={selectedPage.selectKnowledgeTitle}
+            tileChoose={selectedPage.selectKnowledgeButtonText}
             className="tile_left"
           />
         </div>
@@ -32,7 +33,8 @@ const Slider = () => {
         <div className="tile_right">
           <TileChooseMenu
             photo={selectedPage.quizImage}
-            text={data.images[1].name}
+            text={selectedPage.quizTitle}
+            tileChoose={selectedPage.selectKnowledgeButtonText}
             className="tile_right"
           />
         </div>

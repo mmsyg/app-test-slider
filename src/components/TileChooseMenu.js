@@ -15,7 +15,7 @@ const TileChooseMenu = (props) => {
       ></p>
       <p
         className="tile1_choose_txt"
-        dangerouslySetInnerHTML={{ __html: data.tileChoose }}
+        dangerouslySetInnerHTML={{ __html: props.tileChoose }}
       ></p>
     </div>
   );

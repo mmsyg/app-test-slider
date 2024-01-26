@@ -30,6 +30,10 @@ p {
 
 .button_txt {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: var(--white, #fff);
   font-family: Rubik;
   font-size: calc(var(--global-font-size) * 36);
@@ -43,6 +47,9 @@ p {
 
 .title {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 96px;
   top: 376px;
   width: 385px;
@@ -369,7 +376,7 @@ p {
   position: absolute;
 }
 
-.tile1_title {
+.tile1_title >p{
   position: absolute;
   color: var(--blueberry-900, #06252d);
   font-family: Rubik;
@@ -382,27 +389,24 @@ p {
   width: 425.848px;
 }
 
-.tile2_title {
-  position: absolute;
-  color: var(--blueberry-900, #06252d);
-  font-family: Rubik;
-  font-size: calc(var(--global-font-size) * 30);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 138%; /* 41.4px */
-  left: 1055px;
-  top: 800px;
-  width: 425.848px;
-}
+
 
 .contrast-mode .quiz_start {
   position: fixed;
   background-color: #000;
 }
 
-.quiz_title {
+.quiz_title  {
   width: 606px;
   flex-shrink: 0;
+
+
+  left: 91px;
+  top: 356px;
+  position: absolute;
+}
+
+.quiz_titlee  > p{
 
   color: #06252d;
   font-family: Rubik;
@@ -410,9 +414,6 @@ p {
   font-style: normal;
   font-weight: 500;
   line-height: 138%;
-  left: 91px;
-  top: 356px;
-  position: absolute;
 }
 
 .contrast-mode .quiz_title {
@@ -430,7 +431,19 @@ p {
   position: absolute;
 }
 
-.quiz_under_title {
+.contrast-mode .quiz_titlee > p{
+
+
+  color: #ffffff;
+  font-family: Rubik;
+  font-size: calc(var(--global-font-size) * 46);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 138%;
+
+}
+
+.quiz_under_title>p {
   position: relative;
   top: 28px;
   width: 606px;
@@ -443,7 +456,7 @@ p {
   line-height: 159.5%; /* 38.28px */
 }
 
-.contrast-mode .quiz_under_title {
+.contrast-mode .quiz_under_title >p{
   position: relative;
   top: 28px;
   width: 606px;
@@ -486,7 +499,7 @@ p {
   top: 288px;
 }
 
-.question {
+.question  >p{
   position: relative;
   left: 39px;
 
@@ -1515,7 +1528,7 @@ button {
   transition: opacity 0.1s;
 }
 
-.tile1_choose_txt {
+.tile1_choose_txt{
   position: absolute;
   left: 256px;
   top: 745px;
@@ -1672,3 +1685,34 @@ button {
 .com4{
   position: absolute;
   left: 50px;}
+
+  .custom_tile{
+    position: fixed;
+    width: 502px;
+height: 704px;
+flex-shrink: 0;
+border-radius: 24px;
+background: #FFF;
+box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);
+  }
+
+
+  .circle_custom_tile{
+position: absolute;
+left: 200px;
+top: 654px;
+
+    width: 99.801px;
+height: 100px;
+flex-shrink: 0;
+background:var(--Neutral-gradient, linear-gradient(35deg, #A4A4A4 25.76%, #F2F0F0 107.95%));
+border-radius: 100%;
+border: solid 5px;
+border-color: #FFF;
+stroke-width: 5px;
+box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);
+
+
+z-index: 100;
+
+  }

@@ -4,6 +4,7 @@ import SetLeft from "../components/SetLeft";
 import QuestionBar from "../components/QuestionBar";
 import QuestionNumber from "../components/QuestionNumber";
 import QuizzAnswers from "../components/QuizzAnswers";
+import QuizzAnswers_v2 from "../components/QuizzAnswers_v2";
 import QuizzDescription from "./quiz_pages/QuizzDescription";
 import { randomNumbers } from "../helpers/randomNumbers";
 import { ReactComponent as NextButtonQuizz } from "../assets/buttonNextQuiz.svg";
@@ -22,10 +23,17 @@ import parse from "html-react-parser";
 import { ReactComponent as BackButton } from "../assets/backButton.svg";
 import { ReactComponent as HomeButton } from "../assets/homeButton.svg";
 import { Link } from "react-router-dom";
+import {useAppContext} from "../context/app-data/useAppContext";
 
 let rN = randomNumbers(4);
 console.log(rN);
 const Quiz = () => {
+
+  const appData = useAppContext();
+  const { quiz } = appData.screens;
+  console.log(quiz);
+
+
   const [click, setClick] = useState(0);
   const delay = 2000;
   const x = rN[0];
@@ -59,6 +67,10 @@ const Quiz = () => {
   };
 
   function StartQuiz(props) {
+
+    const appData = useAppContext();
+    const { quiz } = appData.screens;
+    console.log(quiz);
     return (
       <div className="quiz_start">
         <SetLeft backNotVisible={0} back="slider" />
@@ -68,8 +80,8 @@ const Quiz = () => {
           <img src={stork} alt="stork" />
         </div>
         <div className="quiz_title">
-          {parse(data.quizTitle)}
-          <p className="quiz_under_title">{parse(data.quizTextUnderTitle)}</p>
+          <p className="quiz_titlee">{parse(quiz.startTitlee)}</p>
+          <p className="quiz_under_title">{parse(quiz.startTitle)}</p>
         </div>
 
         <div
@@ -82,7 +94,7 @@ const Quiz = () => {
           }}
         >
           <StartButtonQuizz className="start_button_quizz" />
-          <p className="strt">{data.quizStartButton}</p>
+          <p className="strt">{quiz.startTextButton}</p>
         </div>
       </div>
     );
@@ -108,7 +120,7 @@ const Quiz = () => {
 
       <div className="quiz_answer">
         <div onClick={() => handleLiClickDelay("component2")}>
-          <QuizzAnswers id={id} delayy={delay} />
+          <QuizzAnswers_v2 id={id} delayy={delay} />
         </div>
       </div>
     </div>
