@@ -18,9 +18,17 @@ import KnowledgeSliderText from "../components/KnowledgeSliderText";
 import { Controller } from "swiper/modules";
 import KnowledgeSliderBackgroundPhotos from "../components/KnowledgeSliderBackgroundPhotos";
 import { useState } from "react";
+import {useAppContext} from "../context/app-data/useAppContext";
 
 const Slider = () => {
-  const numberOfSlides = data.knowledgeSlider.length.toString(); 
+  
+
+
+  const appData = useAppContext();
+  const { knowledge } = appData.screens;
+  console.log(knowledge);
+  
+  const numberOfSlides = knowledge.knowledgeSlides.length.toString(); 
   const [counter, setCounter] = useState(1);
   const [isActive, setIsActive] = useState(false);
 
@@ -28,11 +36,11 @@ const Slider = () => {
   const [secondSwiper, setSecondSwiper] = useState(null);
   const slides = [];
   const slides2 = [];
-  for (let i = 1; i <= numberOfSlides; i++) {
+  for (let i = 0; i < numberOfSlides; i++) {
     slides.push(
       <SwiperSlide key={i}>
         <div className="knowledge_slider">
-          <KnowledgeSliderText id={i.toString()} />
+          <KnowledgeSliderText num={i} id={i.toString()} />
         </div>
       </SwiperSlide>
     );
@@ -41,6 +49,7 @@ const Slider = () => {
         <div className="knowledge_slider">
           <KnowledgeSliderBackgroundPhotos
             id={i.toString()}
+            num={i}
             isActive={isActive}
           />
         </div>

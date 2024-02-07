@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import data from "../assets/datta.json";
 import mapLetterToNumber from "../helpers/WhichCorrect";
-import QuizzTile from "./QuizzTile";
 import { ReactComponent as RightAnswers } from "../assets/rightAnswers.svg";
 import { ReactComponent as WrongAnswers } from "../assets/wrongAnswers.svg";
+import QuizTile_v2 from "./QuizTile_v2";
 
+import { useAppContext } from "../context/app-data/useAppContext";
+import { isDisabled } from "@testing-library/user-event/dist/utils";
 let q = 0;
-let score = 0;
+ let scr = 0;
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -15,22 +17,27 @@ function shuffleArray(array) {
   }
   return array;
 }
-
-function numbersToLetters(array) {
-  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  return array.map(number => alphabet[number]);
-}
-
+const shuffledOrders = shuffleArray([0, 1, 2]);
+    
 
 
 const QuizzAnswer = (props) => {
+ 
+  let [score1, setScore1] = useState(scr);
+
+  const appData = useAppContext();
+  const { quiz } = appData.screens;
+  console.log(quiz);
+
+  console.log(quiz.questions[props.id].answers[1]);
+
   let showResult = props.score;
   const que = data.questionPack.filter(
     (questionx) => questionx.id === props.id
   );
 
   const correct = mapLetterToNumber(que[0].correct);
-  let ABC =["A","B", "C"]
+  let ABC = ["A", "B", "C"];
   let wrongOrBad = ["wrong", "wrong", "wrong"];
 
   let [isCorrect, setIsCorrect] = useState("default");
@@ -38,45 +45,44 @@ const QuizzAnswer = (props) => {
   let [isCorrect2, setIsCorrect2] = useState("default");
   let arrayIsCorrect = [isCorrect, isCorrect1, isCorrect2];
   let arraySetIsCorrect = [setIsCorrect, setIsCorrect1, setIsCorrect2];
+  const [isActive, setIsActive] = useState(false);
+  const [disabled, setDisabled] = useState(false)
+
+  const [isClicked, setIsClicked] = useState(true);
 
   const [orderStyles, setOrderStyles] = useState({ jp: 0, op: 0, wo: 0 });
-  const [orders, setOrders] = useState([]);
+  const [orders, setOrders] = useState([0, 1, 2]);
   useEffect(() => {
     // Generowanie losowej permutacji od 0 do 2
-    const shuffledOrders = shuffleArray([0, 1, 2]);
-    setOrders(shuffledOrders);
-
-    setOrderStyles({
-      jp: shuffledOrders[0],
-      op: shuffledOrders[1],
-      wo: shuffledOrders[2]
-    });
+    setOrders(shuffledOrders)
+ 
   }, []);
 
-  // Przekształcanie liczb na litery po aktualizacji orders
-  const letterArray = numbersToLetters(orders);
-  function ifCorrect(i) {
-    if (q === 0) {
-      console.log("klik");
-      arraySetIsCorrect[i]((arrayIsCorrect[i] = wrongOrBad[i]));
-      arraySetIsCorrect[correct](
-        (arrayIsCorrect[correct] = wrongOrBad[correct])
-      );
-      q++;
-      if (i === correct) {
-        score++;
-      }
+  const active = () => {
+    setIsActive(true);
+    setDisabled(true)
+    
+    setTimeout(() => {
+      setDisabled(false);
+    }, props.delayy);
+  };
 
-      setTimeout(function () {
-        q = 0;
-      }, props.delayy);
-    }
-  }
+
+
+
+ 
+ 
+
+
+  useEffect(() => {
+   scr=score1
+  }, [score1]);
 
   wrongOrBad[correct] = "correct";
   if (showResult === 1) {
-    console.log("score w tym ifie: " + score);
-    let result = Number(score);
+    
+    console.log("score w tym ifie: " + scr);
+    let result = Number(score1);
 
     showResult++;
     return (
@@ -95,33 +101,55 @@ const QuizzAnswer = (props) => {
     );
   }
   if (showResult === -1) {
-    score = 0;
+     scr = 0;
     return <div></div>;
   } else {
     return (
       <div className="quiz_answer">
-        <div className="jp" style={{ order: orderStyles.jp }}  onClick={() => ifCorrect(0)}>
-         <div className="custom_tile"><div className="circle_custom_tile"></div></div>
+        <div className="jp" onClick={() => active  } >
+          <QuizTile_v2
+          disabled={disabled}
+            abc="A"
+            text={quiz.questions[props.id].answers[orders[0]].text}
+            image={quiz.questions[props.id].answers[orders[0]].image}
+            correct={quiz.questions[props.id].answers[orders[0]].correct}
+            isActive={isActive}
+            setIsActive={setIsActive}
+            score1={score1}
+            setScore1={setScore1}
+            delay = {props.delayy}
+          />
         </div>
-        <div className="op" style={{ order: orderStyles.op }}  onClick={() => ifCorrect(1)}>
-          <QuizzTile
-            className="ee"
-            answer={arrayIsCorrect[1]}
-            id={props.id}
+        <div className="op"   onClick={() => active  } >
+          <QuizTile_v2
+         disabled={disabled}
             abc="B"
-            tileLetter={letterArray[1]}
+            text={quiz.questions[props.id].answers[orders[1]].text}
+            image={quiz.questions[props.id].answers[orders[1]].image}
+            correct={quiz.questions[props.id].answers[orders[1]].correct}
+            isActive={isActive}
+            setIsActive={setIsActive}
+            score1={score1}
+            setScore1={setScore1}
+            delay = {props.delayy}
           />
         </div>
-        <div className="wo" style={{ order: orderStyles.wo }}  onClick={() => ifCorrect(2)}>
-          <QuizzTile
-            className="aa"
-            answer={arrayIsCorrect[2]}
-            id={props.id}
+        <div className="wo"  onClick={() => active  } >
+          <QuizTile_v2
+           disabled={disabled}
+            
             abc="C"
-            tileLetter={letterArray[2]}
+            text={quiz.questions[props.id].answers[orders[2]].text}
+            image={quiz.questions[props.id].answers[orders[2]].image}
+            correct={quiz.questions[props.id].answers[orders[2]].correct}
+            isActive={isActive}
+            setIsActive={setIsActive}
+            score1={score1}
+            setScore1={setScore1}
+            delay = {props.delayy}
           />
         </div>
-        {console.log(score)}
+        {console.log(score1)}
       </div>
     );
   }

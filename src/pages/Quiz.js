@@ -74,7 +74,7 @@ const Quiz = () => {
     return (
       <div className="quiz_start">
         <SetLeft backNotVisible={0} back="slider" />
-        <QuizzAnswer score={-1} id={"1"} />
+        <QuizzAnswers_v2 score={-1} id={"1"} />
 
         <div className="stork">
           <img src={stork} alt="stork" />
@@ -101,11 +101,14 @@ const Quiz = () => {
   }
 
   const Component0 = () => (
+    <div>
     <StartQuiz
       setId={setId}
       setCounter={setCounter}
       handleLiClick={handleLiClick}
     ></StartQuiz>
+    
+    </div>
   );
 
   const Component1 = () => (
@@ -154,7 +157,7 @@ const Quiz = () => {
     <div>
       <SetLeft backNotVisible={1} />
       <QuizzSummary id={id} />
-      <QuizzAnswer score={1} id={"1"} />
+      <QuizzAnswers_v2 score={1} id={"1"} />
       {console.log("summary")}
 
       <div
@@ -224,7 +227,7 @@ const Quiz = () => {
   );
 
   return (
-    <div className="test">
+    <div className="test2">
       <SetRight />
 
       <UnionBlueQuiz className="union_quiz" />

@@ -169,7 +169,7 @@
           "isTranslated": true,
           "text": {
             "pl": "<p>Rozwiąż quiz</p>\n",
-            "en": null
+            "en": "<p>[en]Rozwiąż quiz</p>\n"
           }
         },
         {
@@ -179,7 +179,7 @@
           "isTranslated": true,
           "text": {
             "pl": "WYBIERZ",
-            "en": null
+            "en": "SELECT"
           }
         },
         {
@@ -204,7 +204,7 @@
           "isTranslated": true,
           "text": {
             "pl": "<p><strong>Sprawdź</strong> swoją wiedzę o ptakach i fizyce ich lotu!</p>\n",
-            "en": null
+            "en": "<p>[en]<strong>Sprawdź</strong> swoją wiedzę o ptakach i fizyce ich lotu!</p>\n"
           }
         },
         {
@@ -214,7 +214,7 @@
           "isTranslated": true,
           "text": {
             "pl": "<p>Odpowiedz na pytania dotyczące ptak&oacute;w i poznaj ciekawostki na ich temat. Dotknij odpowiedzi, kt&oacute;rą uznasz za poprawną, i przekonaj się, czy intuicja cię nie zawiodła. Na każde pytanie jest tylko jedna poprawna odpowiedź.<br />\nPowodzenia!</p>\n",
-            "en": null
+            "en": "<p>[en]Odpowiedz na pytania dotyczące ptak&oacute;w i poznaj ciekawostki na ich temat. Dotknij odpowiedzi, kt&oacute;rą uznasz za poprawną, i przekonaj się, czy intuicja cię nie zawiodła. Na każde pytanie jest tylko jedna poprawna odpowiedź.<br />\nPowodzenia!</p>\n"
           }
         },
         {
@@ -224,7 +224,7 @@
           "isTranslated": true,
           "text": {
             "pl": "ZACZYNAMY",
-            "en": null
+            "en": "[en]ZACZYNAMY"
           }
         },
         {
@@ -292,7 +292,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": "/content/"
+                          "files": "/content/3d5f63cc-4adb-4da8-c699-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -334,7 +334,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": "/content/"
+                          "files": "/content/e08801b6-4561-444e-c692-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -376,7 +376,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": "/content/"
+                          "files": "/content/e44b9929-7ff8-457c-c697-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -426,48 +426,6 @@
                       "key": "rad-st4-fizyka-lotu-answer",
                       "name": "rad.st4.fizyka-lotu.answer",
                       "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
-                      "referenceId": "7d941ef1-2a13-4041-8c0a-ee45ec7eedc7",
-                      "subModules": [
-                        {
-                          "key": "correct",
-                          "name": "correct",
-                          "moduleType": 11,
-                          "checked": true
-                        },
-                        {
-                          "moduleType": 2,
-                          "key": "text",
-                          "name": "text",
-                          "isTranslated": true,
-                          "text": {
-                            "pl": "<p>sikorka bogatka</p>\n",
-                            "en": "<p>[en]sikorka bogatka</p>\n"
-                          }
-                        },
-                        {
-                          "moduleType": 4,
-                          "key": "image",
-                          "name": "image",
-                          "isTranslated": false,
-                          "files": null
-                        },
-                        {
-                          "moduleType": 2,
-                          "key": "details",
-                          "name": "details",
-                          "isTranslated": true,
-                          "text": {
-                            "pl": "<p>Sikorka bogatka jest bardzo wrażliwa na dźwięki wydawane przez budzące się nietoperze.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>Warunki środowiskowe prowadzą do wytworzenia niezwykłych rozwiązań anatomicznych służących zdobywaniu pożywienia. Weźmy takiego dzięcioła &ndash; spośr&oacute;d ptak&oacute;w ma najdłuższy język. Jest on tak długi, że musi owijać się wok&oacute;ł jego czaszki!&nbsp;</p>\n",
-                            "en": "<p>[en]</p>\n"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "moduleType": 0,
-                      "key": "rad-st4-fizyka-lotu-answer",
-                      "name": "rad.st4.fizyka-lotu.answer",
-                      "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
                       "referenceId": "c4e2b38d-3cc3-4aaf-9060-bf0690d627f1",
                       "subModules": [
                         {
@@ -491,7 +449,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/53631604-2ad5-41cb-c693-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -501,6 +459,48 @@
                           "text": {
                             "pl": null,
                             "en": null
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "moduleType": 0,
+                      "key": "rad-st4-fizyka-lotu-answer",
+                      "name": "rad.st4.fizyka-lotu.answer",
+                      "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
+                      "referenceId": "7d941ef1-2a13-4041-8c0a-ee45ec7eedc7",
+                      "subModules": [
+                        {
+                          "key": "correct",
+                          "name": "correct",
+                          "moduleType": 11,
+                          "checked": true
+                        },
+                        {
+                          "moduleType": 2,
+                          "key": "text",
+                          "name": "text",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": "<p>sikorka bogatka</p>\n",
+                            "en": "<p>[en]sikorka bogatka</p>\n"
+                          }
+                        },
+                        {
+                          "moduleType": 4,
+                          "key": "image",
+                          "name": "image",
+                          "isTranslated": false,
+                          "files": "/content/12b639d4-0c73-4ec4-c698-08dc27eb02f6.jpg"
+                        },
+                        {
+                          "moduleType": 2,
+                          "key": "details",
+                          "name": "details",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": "<p>Sikorka bogatka jest bardzo wrażliwa na dźwięki wydawane przez budzące się nietoperze.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>Warunki środowiskowe prowadzą do wytworzenia niezwykłych rozwiązań anatomicznych służących zdobywaniu pożywienia. Weźmy takiego dzięcioła &ndash; spośr&oacute;d ptak&oacute;w ma najdłuższy język. Jest on tak długi, że musi owijać się wok&oacute;ł jego czaszki!&nbsp;</p>\n",
+                            "en": "<p>[en]</p>\n"
                           }
                         }
                       ]
@@ -533,7 +533,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/bdc7c267-7d67-4a19-c6a0-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -583,48 +583,6 @@
                       "key": "rad-st4-fizyka-lotu-answer",
                       "name": "rad.st4.fizyka-lotu.answer",
                       "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
-                      "referenceId": "deea7181-2e36-439e-897a-9754d2f9446f",
-                      "subModules": [
-                        {
-                          "key": "correct",
-                          "name": "correct",
-                          "moduleType": 11,
-                          "checked": true
-                        },
-                        {
-                          "moduleType": 2,
-                          "key": "text",
-                          "name": "text",
-                          "isTranslated": true,
-                          "text": {
-                            "pl": "<p>kruki</p>\n",
-                            "en": "<p>[en]kruki</p>\n"
-                          }
-                        },
-                        {
-                          "moduleType": 4,
-                          "key": "image",
-                          "name": "image",
-                          "isTranslated": false,
-                          "files": null
-                        },
-                        {
-                          "moduleType": 2,
-                          "key": "details",
-                          "name": "details",
-                          "isTranslated": true,
-                          "text": {
-                            "pl": "<p>Kruki boga Odyna z mitologii skandynawskiej to Huginn (Myśl) i Muninn (Pamięć).&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>Kruki od dawna fascynowały ludzi &ndash; i nie bez powodu. Są to niesamowicie inteligentne ptaki. Potrafią korzystać z &bdquo;narzędzi&rdquo; &ndash; np. używają gałązek, by &bdquo;zbadać&rdquo; nowo poznane obiekty.</p>\n",
-                            "en": "<p>[en]</p>\n"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "moduleType": 0,
-                      "key": "rad-st4-fizyka-lotu-answer",
-                      "name": "rad.st4.fizyka-lotu.answer",
-                      "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
                       "referenceId": "449274d0-b49f-40b2-bf83-21e1d7a3dd3b",
                       "subModules": [
                         {
@@ -648,7 +606,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/54723385-dec7-440e-c694-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -690,7 +648,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/976f1eaf-470f-469e-c69b-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -700,6 +658,48 @@
                           "text": {
                             "pl": null,
                             "en": null
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "moduleType": 0,
+                      "key": "rad-st4-fizyka-lotu-answer",
+                      "name": "rad.st4.fizyka-lotu.answer",
+                      "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
+                      "referenceId": "deea7181-2e36-439e-897a-9754d2f9446f",
+                      "subModules": [
+                        {
+                          "key": "correct",
+                          "name": "correct",
+                          "moduleType": 11,
+                          "checked": true
+                        },
+                        {
+                          "moduleType": 2,
+                          "key": "text",
+                          "name": "text",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": "<p>kruki</p>\n",
+                            "en": "<p>[en]kruki</p>\n"
+                          }
+                        },
+                        {
+                          "moduleType": 4,
+                          "key": "image",
+                          "name": "image",
+                          "isTranslated": false,
+                          "files": "/content/b158d05e-e7a2-4626-c6a1-08dc27eb02f6.jpg"
+                        },
+                        {
+                          "moduleType": 2,
+                          "key": "details",
+                          "name": "details",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": "<p>Kruki boga Odyna z mitologii skandynawskiej to Huginn (Myśl) i Muninn (Pamięć).&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>Kruki od dawna fascynowały ludzi &ndash; i nie bez powodu. Są to niesamowicie inteligentne ptaki. Potrafią korzystać z &bdquo;narzędzi&rdquo; &ndash; np. używają gałązek, by &bdquo;zbadać&rdquo; nowo poznane obiekty.</p>\n",
+                            "en": "<p>[en]</p>\n"
                           }
                         }
                       ]
@@ -763,7 +763,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/39a16319-db25-4f6a-c690-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -805,7 +805,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/bc81c1fd-563b-4bd7-c69c-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -847,7 +847,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/619bc1c6-baf0-4225-c691-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -897,48 +897,6 @@
                       "key": "rad-st4-fizyka-lotu-answer",
                       "name": "rad.st4.fizyka-lotu.answer",
                       "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
-                      "referenceId": "114156a8-2f06-45df-938b-5e16fbedd55b",
-                      "subModules": [
-                        {
-                          "key": "correct",
-                          "name": "correct",
-                          "moduleType": 11,
-                          "checked": true
-                        },
-                        {
-                          "moduleType": 2,
-                          "key": "text",
-                          "name": "text",
-                          "isTranslated": true,
-                          "text": {
-                            "pl": "<p>kanarek</p>\n",
-                            "en": "<p>[en]kanarek</p>\n"
-                          }
-                        },
-                        {
-                          "moduleType": 4,
-                          "key": "image",
-                          "name": "image",
-                          "isTranslated": false,
-                          "files": null
-                        },
-                        {
-                          "moduleType": 2,
-                          "key": "details",
-                          "name": "details",
-                          "isTranslated": true,
-                          "text": {
-                            "pl": "<p>W kopalniach korzystano z pomocy kanark&oacute;w.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>Kanarek trzymany jest w klatce, ale pewne stworzenia same wybierają towarzystwo człowieka. Niekt&oacute;re gatunki, tak zwane komensale, rozkwitają w naszym towarzystwie. Spośr&oacute;d ptak&oacute;w takim zwierzęciem jest wr&oacute;bel, kt&oacute;ry wraz z nami rozprzestrzenił się na niemal wszystkie kontynenty.&nbsp;</p>\n",
-                            "en": "<p>[en]</p>\n"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "moduleType": 0,
-                      "key": "rad-st4-fizyka-lotu-answer",
-                      "name": "rad.st4.fizyka-lotu.answer",
-                      "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
                       "referenceId": "4b47b20c-bfbd-40fa-8186-7ec72a5ef36c",
                       "subModules": [
                         {
@@ -962,7 +920,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/150d2b62-ec51-47b4-c69d-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -1004,7 +962,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/365cea9c-ef4d-4c20-c69e-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -1014,6 +972,48 @@
                           "text": {
                             "pl": null,
                             "en": null
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "moduleType": 0,
+                      "key": "rad-st4-fizyka-lotu-answer",
+                      "name": "rad.st4.fizyka-lotu.answer",
+                      "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
+                      "referenceId": "114156a8-2f06-45df-938b-5e16fbedd55b",
+                      "subModules": [
+                        {
+                          "key": "correct",
+                          "name": "correct",
+                          "moduleType": 11,
+                          "checked": true
+                        },
+                        {
+                          "moduleType": 2,
+                          "key": "text",
+                          "name": "text",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": "<p>kanarek</p>\n",
+                            "en": "<p>[en]kanarek</p>\n"
+                          }
+                        },
+                        {
+                          "moduleType": 4,
+                          "key": "image",
+                          "name": "image",
+                          "isTranslated": false,
+                          "files": "/content/95c8e375-8c56-467b-c695-08dc27eb02f6.jpg"
+                        },
+                        {
+                          "moduleType": 2,
+                          "key": "details",
+                          "name": "details",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": "<p>W kopalniach korzystano z pomocy kanark&oacute;w.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>Kanarek trzymany jest w klatce, ale pewne stworzenia same wybierają towarzystwo człowieka. Niekt&oacute;re gatunki, tak zwane komensale, rozkwitają w naszym towarzystwie. Spośr&oacute;d ptak&oacute;w takim zwierzęciem jest wr&oacute;bel, kt&oacute;ry wraz z nami rozprzestrzenił się na niemal wszystkie kontynenty.&nbsp;</p>\n",
+                            "en": "<p>[en]</p>\n"
                           }
                         }
                       ]
@@ -1077,7 +1077,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/16660c65-42c6-4165-c696-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -1119,7 +1119,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/7511e8db-f731-4a06-c69a-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -1161,7 +1161,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/2a2e9db6-cf25-46ff-c69f-08dc27eb02f6.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -1248,7 +1248,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/9960f9b9-2cc5-4934-7da4-08dc27dbe64d.jpg"
                         },
                         {
                           "moduleType": 2,
@@ -1256,7 +1256,7 @@
                           "name": "image-text",
                           "isTranslated": true,
                           "text": {
-                            "pl": null,
+                            "pl": "<p><em>Archaeopteryx</em></p>\n",
                             "en": null
                           }
                         }
@@ -1308,21 +1308,24 @@
                       "key": "rad-st4-fizyka-lotu-knowledge-slide-image",
                       "name": "rad.st4.fizyka-lotu.knowledge-slide-image",
                       "moduleId": "9c572a1a-5b9c-4de4-bf2a-75a028cdac83",
-                      "referenceId": null,
+                      "referenceId": "1a448402-7788-490a-8a17-f374e2ea880a",
                       "subModules": [
                         {
                           "moduleType": 4,
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/eab69e14-076e-4f21-7da3-08dc27dbe64d.jpg"
                         },
                         {
                           "moduleType": 2,
                           "key": "image-text",
                           "name": "image-text",
                           "isTranslated": true,
-                          "text": null
+                          "text": {
+                            "pl": "<p>Przekroje ptak&oacute;w, mięśnie</p>\n",
+                            "en": null
+                          }
                         }
                       ]
                     }
@@ -1372,7 +1375,7 @@
                       "key": "rad-st4-fizyka-lotu-knowledge-slide-image",
                       "name": "rad.st4.fizyka-lotu.knowledge-slide-image",
                       "moduleId": "9c572a1a-5b9c-4de4-bf2a-75a028cdac83",
-                      "referenceId": null,
+                      "referenceId": "9087154f-04f1-4338-9760-6ffa16e57c1d",
                       "subModules": [
                         {
                           "moduleType": 4,
@@ -1436,21 +1439,24 @@
                       "key": "rad-st4-fizyka-lotu-knowledge-slide-image",
                       "name": "rad.st4.fizyka-lotu.knowledge-slide-image",
                       "moduleId": "9c572a1a-5b9c-4de4-bf2a-75a028cdac83",
-                      "referenceId": null,
+                      "referenceId": "557b961f-667e-48b9-b5e5-cef0657041c5",
                       "subModules": [
                         {
                           "moduleType": 4,
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/4c40a27f-6a60-4b89-7da1-08dc27dbe64d.jpg"
                         },
                         {
                           "moduleType": 2,
                           "key": "image-text",
                           "name": "image-text",
                           "isTranslated": true,
-                          "text": null
+                          "text": {
+                            "pl": "<p>Albatrosy</p>\n",
+                            "en": null
+                          }
                         }
                       ]
                     }
@@ -1500,21 +1506,24 @@
                       "key": "rad-st4-fizyka-lotu-knowledge-slide-image",
                       "name": "rad.st4.fizyka-lotu.knowledge-slide-image",
                       "moduleId": "9c572a1a-5b9c-4de4-bf2a-75a028cdac83",
-                      "referenceId": null,
+                      "referenceId": "27577f90-0e99-4442-81e1-3d9b5ac46ee1",
                       "subModules": [
                         {
                           "moduleType": 4,
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/5988024f-7ec2-4e6a-7da5-08dc27dbe64d.jpg"
                         },
                         {
                           "moduleType": 2,
                           "key": "image-text",
                           "name": "image-text",
                           "isTranslated": true,
-                          "text": null
+                          "text": {
+                            "pl": null,
+                            "en": null
+                          }
                         }
                       ]
                     }
@@ -1564,21 +1573,24 @@
                       "key": "rad-st4-fizyka-lotu-knowledge-slide-image",
                       "name": "rad.st4.fizyka-lotu.knowledge-slide-image",
                       "moduleId": "9c572a1a-5b9c-4de4-bf2a-75a028cdac83",
-                      "referenceId": null,
+                      "referenceId": "c5890ca4-f528-4890-bc04-b01d531c76b1",
                       "subModules": [
                         {
                           "moduleType": 4,
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/8008370d-2014-43ed-7da2-08dc27dbe64d.jpg"
                         },
                         {
                           "moduleType": 2,
                           "key": "image-text",
                           "name": "image-text",
                           "isTranslated": true,
-                          "text": null
+                          "text": {
+                            "pl": "<p>Strusie <em>Aepyornis</em></p>\n",
+                            "en": null
+                          }
                         }
                       ]
                     }
@@ -1628,21 +1640,24 @@
                       "key": "rad-st4-fizyka-lotu-knowledge-slide-image",
                       "name": "rad.st4.fizyka-lotu.knowledge-slide-image",
                       "moduleId": "9c572a1a-5b9c-4de4-bf2a-75a028cdac83",
-                      "referenceId": null,
+                      "referenceId": "00ac236c-24da-4972-b9a2-a2ec5bc203e6",
                       "subModules": [
                         {
                           "moduleType": 4,
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "/content/9c71d94b-ca41-4faf-7da6-08dc27dbe64d.jpg"
                         },
                         {
                           "moduleType": 2,
                           "key": "image-text",
                           "name": "image-text",
                           "isTranslated": true,
-                          "text": null
+                          "text": {
+                            "pl": "<p>Kiwi</p>\n",
+                            "en": null
+                          }
                         }
                       ]
                     }
