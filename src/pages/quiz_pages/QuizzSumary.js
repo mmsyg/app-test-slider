@@ -4,7 +4,6 @@ import { ReactComponent as StartButtonQuizz } from "../../assets/buttonStart_qui
 import stork from "../../assets/Bocian.png";
 import { ReactComponent as Intersect } from "../../assets/Intersect.svg";
 import { ReactComponent as GrayShape } from "../../assets/grayShape.svg";
-import QuizzAnswer from "../../components/QuizzAnswers";
 import { useState } from "react";
 const QuizzSummary = (props) => {
   return (

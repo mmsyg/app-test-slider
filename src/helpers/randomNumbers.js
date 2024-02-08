@@ -2,12 +2,12 @@ export function randomNumbers(n) {
   let numbers = [];
 
   // Fill the array with single-character strings of numbers from 1 to n
-  for (let i = 1; i <= n; i++) {
+  for (let i = 0; i <= n; i++) {
     numbers.push(String(i)[0]);
   }
 
   // Shuffle the array
-  for (let i = numbers.length - 1; i > 0; i--) {
+  for (let i = numbers.length - 1; i >= 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [numbers[i], numbers[j]] = [numbers[j], numbers[i]];
   }

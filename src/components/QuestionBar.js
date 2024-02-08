@@ -9,7 +9,7 @@ const QuestionBar = (props) => {
 
   const appData = useAppContext();
   const { quiz } = appData.screens;
-  console.log(quiz);
+
 
 
 

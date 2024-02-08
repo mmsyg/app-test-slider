@@ -7,14 +7,17 @@ const QuizTile_v2 = (props) => {
   const [isWrong, setIsWrong] = useState(false);
 
   const clicked = () => {
-    setIsClicked(true);
-    props.setIsActive(true)
+    if (props.disabled) return; // Zignoruj kliknięcie, jeśli komponent jest zablokowany
+  
+  setIsClicked(true);
+  props.setIsActive(true);
+  
     
   };
   useEffect(() => {
     if(!props.disabled){
-    if(props.isActive===true){
-  if (props.correct === true) 
+    if(props.isActive){
+  if (props.correct) 
   {setIsCorrect(true);
   if(isClicked){
     props.setScore1(props.score1+1)
@@ -23,7 +26,10 @@ const QuizTile_v2 = (props) => {
   props.setIsActive(false)
   if (isCorrect && isClicked) {console.log("scóóór"+props.score1)
     props.setScore1(props.score1+1)
-   }
+   }props.setIsActive(false)
+   setTimeout(() => {
+    props.setIsActive(false)
+  }, props.delay);
   }}}, [isClicked, props.isActive]);
 
 

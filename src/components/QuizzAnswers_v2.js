@@ -27,16 +27,12 @@ const QuizzAnswer = (props) => {
 
   const appData = useAppContext();
   const { quiz } = appData.screens;
-  console.log(quiz);
 
-  console.log(quiz.questions[props.id].answers[1]);
 
   let showResult = props.score;
-  const que = data.questionPack.filter(
-    (questionx) => questionx.id === props.id
-  );
+ 
 
-  const correct = mapLetterToNumber(que[0].correct);
+
   let ABC = ["A", "B", "C"];
   let wrongOrBad = ["wrong", "wrong", "wrong"];
 
@@ -47,7 +43,8 @@ const QuizzAnswer = (props) => {
   let arraySetIsCorrect = [setIsCorrect, setIsCorrect1, setIsCorrect2];
   const [isActive, setIsActive] = useState(false);
   const [disabled, setDisabled] = useState(false)
-
+  const [isDisabled, setIsDisabled] = useState(false)
+  const [pointerEvents, setPointerEvents] = useState('auto')
   const [isClicked, setIsClicked] = useState(true);
 
   const [orderStyles, setOrderStyles] = useState({ jp: 0, op: 0, wo: 0 });
@@ -57,17 +54,30 @@ const QuizzAnswer = (props) => {
     setOrders(shuffledOrders)
  
   }, []);
+  const handleAnswerClick = () => {// Nie rób nic, jeśli odpowiedzi są już zablokowane.
+   
 
-  const active = () => {
-    setIsActive(true);
-    setDisabled(true)
+  
     
-    setTimeout(() => {
-      setDisabled(false);
-    }, props.delayy);
   };
 
+  const handleClick = () => {
+    if (isDisabled) {
+      // Jeśli przycisk jest zablokowany, nie rób nic
+      return;
+    }
+    
+    // Tutaj umieść logikę, która ma zostać wykonana po kliknięciu
+    console.log('Przycisk kliknięty');
+    
+    // Zablokuj przycisk
+    setIsDisabled(true);
 
+    // Odblokuj przycisk po 2 sekundach
+    setTimeout(() => {
+      setIsDisabled(false);
+    }, 2000);
+  };
 
 
  
@@ -78,7 +88,7 @@ const QuizzAnswer = (props) => {
    scr=score1
   }, [score1]);
 
-  wrongOrBad[correct] = "correct";
+
   if (showResult === 1) {
     
     console.log("score w tym ifie: " + scr);
@@ -90,12 +100,12 @@ const QuizzAnswer = (props) => {
         <div className="correct">
           <RightAnswers className="right_answer_tile" />
           <p className="score_number">{"0" + result}</p>
-          <p className="score_text">{data.quizSummaryCorrect}</p>
+          <p className="score_text">lolo</p>
         </div>
         <div className="wrong">
           <WrongAnswers className="wrong_answer_tile" />
           <p className="score_number">{"0" + (4 - result)}</p>
-          <p className="score_text">{data.quizSummaryWrong}</p>
+          <p className="score_text">kokio</p>
         </div>
       </div>
     );
@@ -104,15 +114,16 @@ const QuizzAnswer = (props) => {
      scr = 0;
     return <div></div>;
   } else {
+    
     return (
       <div className="quiz_answer">
-        <div className="jp" onClick={() => active  } >
+        <div className="jp" onClick={() => handleAnswerClick  } >
           <QuizTile_v2
           disabled={disabled}
             abc="A"
-            text={quiz.questions[props.id].answers[orders[0]].text}
-            image={quiz.questions[props.id].answers[orders[0]].image}
-            correct={quiz.questions[props.id].answers[orders[0]].correct}
+            text={quiz.questions[props.id].answers[0].text}
+            image={quiz.questions[props.id].answers[0].image}
+            correct={quiz.questions[props.id].answers[0].correct}
             isActive={isActive}
             setIsActive={setIsActive}
             score1={score1}
@@ -120,13 +131,13 @@ const QuizzAnswer = (props) => {
             delay = {props.delayy}
           />
         </div>
-        <div className="op"   onClick={() => active  } >
+        <div className="op"   onClick={() => handleAnswerClick  } >
           <QuizTile_v2
          disabled={disabled}
             abc="B"
-            text={quiz.questions[props.id].answers[orders[1]].text}
-            image={quiz.questions[props.id].answers[orders[1]].image}
-            correct={quiz.questions[props.id].answers[orders[1]].correct}
+            text={quiz.questions[props.id].answers[1].text}
+            image={quiz.questions[props.id].answers[1].image}
+            correct={quiz.questions[props.id].answers[1].correct}
             isActive={isActive}
             setIsActive={setIsActive}
             score1={score1}
@@ -134,14 +145,14 @@ const QuizzAnswer = (props) => {
             delay = {props.delayy}
           />
         </div>
-        <div className="wo"  onClick={() => active  } >
+        <div className="wo"  onClick={() => handleAnswerClick } >
           <QuizTile_v2
            disabled={disabled}
             
             abc="C"
-            text={quiz.questions[props.id].answers[orders[2]].text}
-            image={quiz.questions[props.id].answers[orders[2]].image}
-            correct={quiz.questions[props.id].answers[orders[2]].correct}
+            text={quiz.questions[props.id].answers[2].text}
+            image={quiz.questions[props.id].answers[2].image}
+            correct={quiz.questions[props.id].answers[2].correct}
             isActive={isActive}
             setIsActive={setIsActive}
             score1={score1}
@@ -149,7 +160,7 @@ const QuizzAnswer = (props) => {
             delay = {props.delayy}
           />
         </div>
-        {console.log(score1)}
+
       </div>
     );
   }

@@ -675,7 +675,20 @@ justify-content: center;
   position: fixed;
 }
 
-.quiz_description_long {
+
+.quiz_description_long_pos{
+  position: absolute;
+  left: 91px;
+  top: 489px;
+}
+
+.contrast-mode .quiz_description_long_pos{
+  position: absolute;
+  left: 91px;
+  top: 489px;
+}
+
+.quiz_description_long >p{
   color: #000;
   font-family: Rubik;
   font-size: calc(var(--global-font-size) * 20);
@@ -684,12 +697,14 @@ justify-content: center;
   line-height: 138%;
   width: 606px;
 
-  position: absolute;
-  left: 91px;
-  top: 489px;
+
+
 }
 
-.contrast-mode .quiz_description_long {
+
+
+
+.contrast-mode .quiz_description_long >p{
   color: white;
   font-family: Rubik;
   font-size: calc(var(--global-font-size) * 20);
@@ -698,11 +713,9 @@ justify-content: center;
   line-height: 138%;
   width: 606px;
 
-  position: absolute;
-  left: 91px;
-  top: 489px;
+
 }
-.quiz_description_title {
+.quiz_description_title >p{
   width: 557px;
   color: var(--blueberry-900, #06252d);
   font-family: Rubik;
@@ -716,7 +729,7 @@ justify-content: center;
   top: 365px;
 }
 
-.contrast-mode .quiz_description_title {
+.contrast-mode .quiz_description_title >p{
   width: 557px;
   color: white;
   font-family: Rubik;
@@ -740,13 +753,14 @@ justify-content: center;
   box-sizing: border-box;
 
   width: 556px;
-  height: 648px;
+ 
   border-radius: 12px;
   position: absolute;
   object-fit: contain;
+  border-radius: 24px;
 }
 
-.quiz_description_question {
+.quiz_description_question >p{
   color: var(--blueberry-900, #06252d);
   font-family: Rubik;
   font-size: calc(var(--global-font-size) * 24);
@@ -758,7 +772,7 @@ justify-content: center;
   top: 316px;
   width: 700px;
 }
-.contrast-mode .quiz_description_question {
+.contrast-mode .quiz_description_question >p{
   color: white;
   font-family: Rubik;
   font-size: calc(var(--global-font-size) * 24);
@@ -1188,6 +1202,14 @@ button {
   z-index: 99;
 }
 
+
+.question_number_knowledge {
+  left: 40px;
+  top: 220px;
+  position: absolute;
+  z-index: 199;
+}
+
 .right_answer_tile {
   border-radius: 24px;
 
@@ -1614,23 +1636,28 @@ button {
   letter-spacing: 5px;
 }
 
-.test {
+.test2 {
   position: fixed;
   left: 0px;
   top: 0px;
-  background-color: #000;
+ 
 }
-.contrast-mode .test {
-  background-color: #000;
+.contrast-mode .test2 {
+  
 }
 
 .knowledge_text >p{
   font-family: Rubik;
   font-size: calc(var(--global-font-size) * 16);
+
+ 
+  font-weight: 700;
+  line-height: 26.4px;
+
 }
 
 .contrast-mode .knowledge_text {
-  font-family: Rubik;  
+
   color: white;
   font-size: calc(var(--global-font-size) * 16);
 }
@@ -1791,7 +1818,7 @@ box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);}
   .custom_tile_correct{
     position: fixed;
     width: 502px;
-height: 704px;
+    height: 701px;
 flex-shrink: 0;
 border-radius: 24px; /*1*/
 background: #FFF;
@@ -1802,7 +1829,7 @@ box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);}
     content: "";
     position: fixed;
     width: 498px;
-height: 700px;
+height: 699px;
 flex-shrink: 0;
 
 box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10); 
@@ -1822,7 +1849,7 @@ box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);
 .contrast-mode  .custom_tile_correct{
     position: fixed;
     width: 502px;
-height: 704px;
+    height: 701px;
 flex-shrink: 0;
 border-radius: 24px; /*1*/
 background: #FFF;
@@ -1836,7 +1863,7 @@ border: 2px solid transparent; /*2*/}
     content: "";
     position: fixed;
     width: 498px;
-height: 700px;
+height: 699px;
 flex-shrink: 0;
 
 box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10); 
@@ -1844,19 +1871,6 @@ box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);
   border: 2px solid transparent; /*2*/
   border-color: rgba(90, 226, 212, 1);
   }
-
-
-  .contrast-mode   .custom_tile_correct{
-    position: fixed;
-    width: 502px;
-height: 704px;
-flex-shrink: 0;
-border-radius: 24px; /*1*/
-background: #FFF;
-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);
-border: 2px solid;
-border-color: rgba(90, 226, 212, 1);}
-
 
 
 
@@ -1877,11 +1891,7 @@ box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);}
     width: 498px;
 height: 699px;
 flex-shrink: 0;
-
 box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10); 
-
-
-
   border-radius: 24px; /*1*/
   border: 2px solid transparent; /*2*/
   background: linear-gradient(90deg,rgba(253,98,94,1) 0%,rgba(224,50,50,1) 100%) border-box; /*3*/
@@ -2057,4 +2067,11 @@ z-index: 100;
             
             z-index: 100;
             
+              }
+
+
+              .wall {
+                height: 1080px;
+                width: 1080px;
+                z-index: 100;
               }

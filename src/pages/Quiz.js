@@ -3,7 +3,6 @@ import SetRight from "../components/SetRight";
 import SetLeft from "../components/SetLeft";
 import QuestionBar from "../components/QuestionBar";
 import QuestionNumber from "../components/QuestionNumber";
-import QuizzAnswers from "../components/QuizzAnswers";
 import QuizzAnswers_v2 from "../components/QuizzAnswers_v2";
 import QuizzDescription from "./quiz_pages/QuizzDescription";
 import { randomNumbers } from "../helpers/randomNumbers";
@@ -18,35 +17,36 @@ import { ReactComponent as ArrowLeft } from "../assets/arrowLeft.svg";
 import { ReactComponent as ArrowRight } from "../assets/arrowRight.svg";
 import stork from "../assets/Bocian.png";
 import data from "../assets/datta.json";
-import QuizzAnswer from "../components/QuizzAnswers";
 import parse from "html-react-parser";
 import { ReactComponent as BackButton } from "../assets/backButton.svg";
 import { ReactComponent as HomeButton } from "../assets/homeButton.svg";
 import { Link } from "react-router-dom";
 import {useAppContext} from "../context/app-data/useAppContext";
 
-let rN = randomNumbers(4);
+let rN = randomNumbers(5);
+let rNum = parseInt(randomNumbers(5))
 console.log(rN);
 const Quiz = () => {
 
-  const appData = useAppContext();
-  const { quiz } = appData.screens;
-  console.log(quiz);
+
+
 
 
   const [click, setClick] = useState(0);
-  const delay = 2000;
-  const x = rN[0];
+  const delay = 20000;
+  const x = rNum[0];
   const [id, setId] = useState(x);
   const [nr, setNr] = useState(1);
-  const [counter, setCounter] = useState(1);
+  const [counter, setCounter] = useState(0);
 
   const handleButtonClick = () => {
-    setNr((prevNr) => (prevNr + 1) % rN.length);
-    setId(rN[nr]);
+    setNr((prevNr) => (prevNr + 1) % rNum.length);
+    setId(rNum[counter]);
     setCounter(counter + 1);
     console.log(counter);
   };
+
+
 
   const [activeComponent, setActiveComponent] = useState("component0");
 
@@ -56,14 +56,16 @@ const Quiz = () => {
 
   const handleLiClickDelay = (component) => {
     if (click === 0) {
+      setClick(0);
       setTimeout(() => {
-        setClick(1);
+         setClick(0);
         setActiveComponent(component);
       }, delay);
       setTimeout(() => {
-        setClick(0);
-      }, delay + 100);
+       
+      }, delay + 10000);
     }
+    setClick(0)
   };
 
   function StartQuiz(props) {
@@ -88,9 +90,9 @@ const Quiz = () => {
           className="start_quiz_btn"
           onClick={() => {
             props.handleLiClick("component1");
-            rN = randomNumbers(4);
-            props.setCounter(1);
-            props.setId(rN[0]);
+            rNum = randomNumbers(5);
+            props.setCounter(0);
+            props.setId(rNum[0]);
           }}
         >
           <StartButtonQuizz className="start_button_quizz" />
@@ -122,7 +124,8 @@ const Quiz = () => {
       </div>
 
       <div className="quiz_answer">
-        <div onClick={() => handleLiClickDelay("component2")}>
+        <div className="wall" onClick={() => handleLiClickDelay("component2")}>
+          {console.log("pacz na to id:"+id)}
           <QuizzAnswers_v2 id={id} delayy={delay} />
         </div>
       </div>
@@ -142,8 +145,9 @@ const Quiz = () => {
           if (counter === 4) {
             handleLiClick("component3");
           } else {
-            handleLiClick("component1");
             handleButtonClick();
+            handleLiClick("component1");
+            
           }
         }}
       >
@@ -182,14 +186,14 @@ const Quiz = () => {
   );
 
   const Component4 = () => (
-    <div >
-      <div className="com4">
-      <div className="set_left">
+    <div ><div className="set_left">
         <Link to="/">
           <HomeButton className="home_button"/>
         </Link>
         <BackButton className="back_button"onClick={() => handleLiClick("component3")} />
       </div>
+      <div className="com4">
+      
       <QuizzDescription id={id} />
       <div className="quiz_desc_number">
         <QuestionNumber id={counter} max="4" height={1} />

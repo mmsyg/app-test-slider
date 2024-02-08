@@ -39,7 +39,10 @@ const Slider = () => {
   for (let i = 0; i < numberOfSlides; i++) {
     slides.push(
       <SwiperSlide key={i}>
+       
+        
         <div className="knowledge_slider">
+   
           <KnowledgeSliderText num={i} id={i.toString()} />
         </div>
       </SwiperSlide>
@@ -62,7 +65,9 @@ const Slider = () => {
       <SetLeft backNotVisible={0} back="slider" />
       <SetRight />
       <Zoom isActive={isActive} setIsActive={setIsActive} />
-
+      <div className="question_number_knowledge">
+      <QuestionNumber id={counter} top={1} height={1} max={numberOfSlides} />
+      </div>
       <div
         className={isActive ? "shadow_white_left_zoom" : "shadow_white_left"}
       />
@@ -89,6 +94,7 @@ const Slider = () => {
       <UnionGreenKn className="union_green_knowledge" /> */}
       <div className={isActive ? "st_slider_zoom" : "st_slider"}>
         <Swiper
+        
           pagination={{
             type: "fraction",
           }}
@@ -96,6 +102,8 @@ const Slider = () => {
           modules={[Controller]}
           controller={{ control: secondSwiper }}
           className="mySwiper3"
+          onSlideChange={(swiper) => {
+          setCounter(swiper.activeIndex +1)}}
         >
           {slides}
         </Swiper>
