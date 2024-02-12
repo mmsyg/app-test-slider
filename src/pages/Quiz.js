@@ -77,7 +77,7 @@ const Quiz = () => {
     return (
       <div className="quiz_start">
         <SetLeft backNotVisible={0} back="slider" />
-        <QuizzAnswers_v2 score={-1} id={"1"} />
+        <QuizzAnswers_v2 score={-1} id={id+1} scr={0}/>
 
         <div className="stork">
           <img src={stork} alt="stork" />

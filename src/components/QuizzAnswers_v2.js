@@ -9,7 +9,7 @@ import QuizTile_v2 from "./QuizTile_v2";
 import { useAppContext } from "../context/app-data/useAppContext";
 import { isDisabled } from "@testing-library/user-event/dist/utils";
 let q = 0;
- let scr = 0;
+  let scr = 0;
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -22,6 +22,7 @@ const shuffledOrders = shuffleArray([0, 1, 2]);
 
 
 const QuizzAnswers_v2 = (props) => {
+
   let [score1, setScore1] = useState(scr);
 
   const appData = useAppContext();
@@ -54,7 +55,10 @@ const QuizzAnswers_v2 = (props) => {
   };
 
 
-
+  useEffect(() => {
+    if(scr===0)
+    setScore1(0)
+  }, [q]);
 
  
 
@@ -67,10 +71,13 @@ const QuizzAnswers_v2 = (props) => {
   if (showResult === 1) {
     
     console.log("score w tym ifie: " + scr);
-    let result = Number(score1);
+    const result = Number(score1);
+   
     
-
+    
+    
     showResult++;
+  
     return (
       <div className="score">
         <div className="correct">
@@ -88,6 +95,10 @@ const QuizzAnswers_v2 = (props) => {
   }
   if (showResult === -1) {
      scr = 0;
+     q++;
+      
+   
+    
      
     return <div></div>;
   } else {
