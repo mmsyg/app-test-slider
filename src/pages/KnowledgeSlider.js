@@ -65,7 +65,7 @@ const Slider = () => {
       <SetLeft backNotVisible={0} back="slider" />
       <SetRight />
       <Zoom isActive={isActive} setIsActive={setIsActive} />
-      <div className="question_number_knowledge">
+      <div className={isActive ? "question_number_knowledge_invisible":"question_number_knowledge"}>
       <QuestionNumber id={counter} top={1} height={1} max={numberOfSlides} />
       </div>
       <div

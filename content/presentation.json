@@ -1382,7 +1382,7 @@
                           "key": "image",
                           "name": "image",
                           "isTranslated": false,
-                          "files": null
+                          "files": "./content/bird.mp4"
                         },
                         {
                           "moduleType": 2,

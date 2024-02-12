@@ -21,8 +21,7 @@ const shuffledOrders = shuffleArray([0, 1, 2]);
     
 
 
-const QuizzAnswer = (props) => {
- 
+const QuizzAnswers_v2 = (props) => {
   let [score1, setScore1] = useState(scr);
 
   const appData = useAppContext();
@@ -30,57 +29,33 @@ const QuizzAnswer = (props) => {
 
 
   let showResult = props.score;
- 
-
-
-  let ABC = ["A", "B", "C"];
-  let wrongOrBad = ["wrong", "wrong", "wrong"];
-
   let [isCorrect, setIsCorrect] = useState("default");
   let [isCorrect1, setIsCorrect1] = useState("default");
   let [isCorrect2, setIsCorrect2] = useState("default");
   let arrayIsCorrect = [isCorrect, isCorrect1, isCorrect2];
   let arraySetIsCorrect = [setIsCorrect, setIsCorrect1, setIsCorrect2];
   const [isActive, setIsActive] = useState(false);
-  const [disabled, setDisabled] = useState(false)
+  const [disabled, setDisabled] = useState(0);
   const [isDisabled, setIsDisabled] = useState(false)
   const [pointerEvents, setPointerEvents] = useState('auto')
-  const [isClicked, setIsClicked] = useState(true);
+  const [isClicked, setIsClicked] = useState(false);
 
   const [orderStyles, setOrderStyles] = useState({ jp: 0, op: 0, wo: 0 });
   const [orders, setOrders] = useState([0, 1, 2]);
-  useEffect(() => {
-    // Generowanie losowej permutacji od 0 do 2
-    setOrders(shuffledOrders)
- 
-  }, []);
-  const handleAnswerClick = () => {// Nie rób nic, jeśli odpowiedzi są już zablokowane.
-   
 
-  
-    
-  };
 
-  const handleClick = () => {
-    if (isDisabled) {
-      // Jeśli przycisk jest zablokowany, nie rób nic
-      return;
-    }
-    
-    // Tutaj umieść logikę, która ma zostać wykonana po kliknięciu
-    console.log('Przycisk kliknięty');
-    
-    // Zablokuj przycisk
-    setIsDisabled(true);
+  const active = () => {
+    setIsActive(true);
 
-    // Odblokuj przycisk po 2 sekundach
+
     setTimeout(() => {
-      setIsDisabled(false);
-    }, 2000);
+     
+    }, props.delayy);
   };
 
 
- 
+
+
  
 
 
@@ -100,12 +75,12 @@ const QuizzAnswer = (props) => {
         <div className="correct">
           <RightAnswers className="right_answer_tile" />
           <p className="score_number">{"0" + result}</p>
-          <p className="score_text">lolo</p>
+          <p className="score_text">Poprawne odpowiedzi</p>
         </div>
         <div className="wrong">
           <WrongAnswers className="wrong_answer_tile" />
           <p className="score_number">{"0" + (4 - result)}</p>
-          <p className="score_text">kokio</p>
+          <p className="score_text">Błędne odpoweidzi</p>
         </div>
       </div>
     );
@@ -117,47 +92,53 @@ const QuizzAnswer = (props) => {
     
     return (
       <div className="quiz_answer">
-        <div className="jp" onClick={() => handleAnswerClick  } >
+        <div className="jp"  onClick={active}>
           <QuizTile_v2
-          disabled={disabled}
+          
             abc="A"
-            text={quiz.questions[props.id].answers[0].text}
-            image={quiz.questions[props.id].answers[0].image}
-            correct={quiz.questions[props.id].answers[0].correct}
+            text={quiz.questions[props.id].answers[shuffledOrders[0]].text}
+            image={quiz.questions[props.id].answers[shuffledOrders[0]].image}
+            correct={quiz.questions[props.id].answers[shuffledOrders[0]].correct}
             isActive={isActive}
             setIsActive={setIsActive}
             score1={score1}
             setScore1={setScore1}
             delay = {props.delayy}
+            disabled = {disabled}
+            setDisabled ={setDisabled}
           />
         </div>
-        <div className="op"   onClick={() => handleAnswerClick  } >
+        <div className="op"   onClick={active}  >
           <QuizTile_v2
-         disabled={disabled}
+         
             abc="B"
-            text={quiz.questions[props.id].answers[1].text}
-            image={quiz.questions[props.id].answers[1].image}
-            correct={quiz.questions[props.id].answers[1].correct}
+            text={quiz.questions[props.id].answers[shuffledOrders[1]].text}
+            image={quiz.questions[props.id].answers[shuffledOrders[1]].image}
+            correct={quiz.questions[props.id].answers[shuffledOrders[1]].correct}
             isActive={isActive}
             setIsActive={setIsActive}
             score1={score1}
             setScore1={setScore1}
             delay = {props.delayy}
+            disabled = {disabled}
+            setDisabled ={setDisabled}
           />
         </div>
-        <div className="wo"  onClick={() => handleAnswerClick } >
+        <div className="wo"onClick={active} >
           <QuizTile_v2
-           disabled={disabled}
+         
             
             abc="C"
-            text={quiz.questions[props.id].answers[2].text}
-            image={quiz.questions[props.id].answers[2].image}
-            correct={quiz.questions[props.id].answers[2].correct}
+            text={quiz.questions[props.id].answers[shuffledOrders[2]].text}
+            image={quiz.questions[props.id].answers[shuffledOrders[2]].image}
+            correct={quiz.questions[props.id].answers[shuffledOrders[2 ]].correct}
             isActive={isActive}
             setIsActive={setIsActive}
             score1={score1}
             setScore1={setScore1}
             delay = {props.delayy}
+            disabled = {disabled}
+            setDisabled ={setDisabled}
           />
         </div>
 
@@ -166,4 +147,4 @@ const QuizzAnswer = (props) => {
   }
 };
 
-export default QuizzAnswer;
+export default QuizzAnswers_v2;
