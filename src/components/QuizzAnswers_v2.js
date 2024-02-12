@@ -68,6 +68,7 @@ const QuizzAnswers_v2 = (props) => {
     
     console.log("score w tym ifie: " + scr);
     let result = Number(score1);
+    
 
     showResult++;
     return (
@@ -87,6 +88,7 @@ const QuizzAnswers_v2 = (props) => {
   }
   if (showResult === -1) {
      scr = 0;
+     
     return <div></div>;
   } else {
     

@@ -4,7 +4,7 @@ import {useAppContext} from "../context/app-data/useAppContext";
 import { Player } from 'video-react';
 import "../../node_modules/video-react/dist/video-react.css"; // import css
 import VideoPlayer from "./VideoPlayer";
-
+import { ReactComponent as PlayButton } from "../assets/playButton.svg";
 const KnowledgeSliderBackgroundPhotos = (props) => {
 
   
@@ -23,7 +23,7 @@ const KnowledgeSliderBackgroundPhotos = (props) => {
   else{
     return (
 
-      <div><div className={props.isActive ? "bg1" : "bg"}>
+      <div><PlayButton className={props.isActive ? "play1" : "play"}/><div className={props.isActive ? "bg1" : "bg"}>
   
   <VideoPlayer
         className={props.isActive ? "gallery_bg1" : "gallery_bg"}
@@ -34,9 +34,10 @@ const KnowledgeSliderBackgroundPhotos = (props) => {
       ></VideoPlayer>
       </div>
         <div className={props.isActive ? "bg123" : "bg23"}>
+          
         <img
         className={props.isActive ? "gallery_bg1" : "gallery_bg"}
-        src={knowledge.knowledgeSlides[props.num-1].slideImages[0].image}
+        src="./img/ptok.png"
         alt="gal1"
       /> 
       </div> 

@@ -94,6 +94,7 @@ const Quiz = () => {
             rNum = randomNumbers(5);
             props.setCounter(1);
             props.setId(rNum[0]);
+            setEndQuiz(false)
           }}
         >
           <StartButtonQuizz className="start_button_quizz" />

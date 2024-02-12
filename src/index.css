@@ -109,10 +109,20 @@ p {
 }
 
 .unionGreen {
-  position: absolute;
+  position: fixed;
   top: -155px; /* Position the button vertically at 50% from the top */
   left: 682px;
 }
+
+
+.unionGreen_2{
+  position: fixed;
+  top: -155px; /* Position the button vertically at 50% from the top */
+   left: 682px;
+   transform: translate(-959px, 753px) rotate(240deg);
+
+   z-index: 99;
+ }
 .polygonBlueSmalll {
   position: absolute;
   top: -48px;
@@ -237,9 +247,10 @@ p {
 
 .nxt {
   position: absolute;
-  left: 48px;
+  left: 35px;
   top: 15px;
   width: 500px;
+  height: 25px;
   color: var(--White, #fff);
   font-family: Rubik;
   font-size: calc(var(--global-font-size) * 24);
@@ -247,13 +258,18 @@ p {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 6px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
 }
 
 .contrast-mode .nxt {
   position: absolute;
-  left: 48px;
+  left: 35px;
   top: 15px;
   width: 500px;
+   height: 25px;
   color: black;
   font-family: Rubik;
   font-size: calc(var(--global-font-size) * 24);
@@ -261,6 +277,10 @@ p {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 6px;
+   display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
 }
 
 
@@ -656,10 +676,14 @@ justify-content: center;
   object-fit: none;
 }
 .question_letter {
+  position: relative;
+  left: 0px;
+  top: 0px;
+
   width: 100px;
-  height: 100px;
+  height: 40px;
   color: var(--White, #fff);
-  text-align: center;
+  align-items: center;
   font-family: Rubik;
   font-size: calc(var(--global-font-size) * 30);
   font-style: normal;
@@ -711,13 +735,13 @@ justify-content: center;
 .quiz_description_long_pos{
   position: absolute;
   left: 91px;
-  top: 489px;
+  top: 499px;
 }
 
 .contrast-mode .quiz_description_long_pos{
   position: absolute;
   left: 91px;
-  top: 489px;
+  top: 499px;
 }
 
 .quiz_description_long >p{
@@ -748,7 +772,7 @@ justify-content: center;
 
 }
 .quiz_description_title >p{
-  width: 557px;
+  width: 657px;
   color: var(--blueberry-900, #06252d);
   font-family: Rubik;
   font-size: calc(var(--global-font-size) * 55);
@@ -762,7 +786,7 @@ justify-content: center;
 }
 
 .contrast-mode .quiz_description_title >p{
-  width: 557px;
+  width: 657px;
   color: white;
   font-family: Rubik;
   font-size: calc(var(--global-font-size) * 55);
@@ -801,7 +825,7 @@ justify-content: center;
   line-height: 138%;
   position: absolute;
   left: 91px;
-  top: 316px;
+  top: 256px;
   width: 700px;
 }
 .contrast-mode .quiz_description_question >p{
@@ -813,7 +837,7 @@ justify-content: center;
   line-height: 138%;
   position: absolute;
   left: 91px;
-  top: 316px;
+  top: 256px;
 }
 
 .number_id {
@@ -986,8 +1010,7 @@ justify-content: center;
   top: 202px;
   z-index: 102;
   transition: transform 0.5s;
-  fill: url(#paint0_linear_134_500);
-  fill:#1796b5;
+
 
 }
 
@@ -1021,6 +1044,49 @@ justify-content: center;
   fill: #4ad9ea;
 }
 
+
+
+
+
+.swipe_left2 {
+  position: absolute;
+  left: 1435px;
+  top: 850px;
+  z-index: 102;
+  transition: transform 1s;
+
+
+}
+
+.contrast-mode .swipe_left2 {
+  position: absolute;
+  left: 1635px;
+  top: 850px;
+  z-index: 102;
+  
+  transition: transform 1s;
+  /* transform: translateX(-300px); */
+}
+
+.swipe_left_zoom2 {
+  position: absolute;
+  left: 1635px;
+  top: 850px;
+  z-index: 102;
+  transform: translateX(300px);
+  transition: transform 1s;
+    fill: #4ad9ea;
+}
+
+.contrast-mode .swipe_left_zoom2 {
+  position: absolute;
+  left: 1635px;
+  top: 850px;
+  z-index: 102;
+  transform: translateX(300px);
+  transition: transform 1s;
+  fill: #4ad9ea;
+}
 .blur_knowledge {
   position: absolute;
   left: 0px;
@@ -1030,7 +1096,7 @@ justify-content: center;
   pointer-events: none;
   z-index: 101;
   opacity: 1;
-  transition: opacity 0.5s;
+  transition: opacity 0.4s ;
   background-image: url("./assets/blur.png");
 
 }
@@ -1052,11 +1118,14 @@ justify-content: center;
 .blur_knowledge_zoom {
   position: absolute;
   left: 0px;
-  top: -10px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
-  z-index: 101;
+  z-index: 200;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.8s 0.2s;
+  background-image: url("./assets/blur.png");
 }
 
 .blur_knowledge_blue {
@@ -1313,6 +1382,9 @@ button {
   position: relative;
   left: 34px;
   top: -210px;
+  display: flex;
+  justify-content: left;
+  
 }
 
 .text_sumary {
@@ -1522,6 +1594,21 @@ button {
   line-height: normal;
 }
 
+.photo_desc_txt >p{
+  position: absolute;
+  left: 101px;
+  top: 5px;
+  width: 175px;
+  color: #000000;
+  font-family: Rubik;
+  font-size: calc(var(--global-font-size) * 21);
+  font-style: normal;
+
+  line-height: normal;
+}
+
+
+
 .st_slider {
   position: absolute;
   top: 0px;
@@ -1537,9 +1624,9 @@ button {
   top: 0px;
   left: 0px;
   width: 560px;
-  z-index: 101;
+  z-index: 90;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s, z-index 0s 2s;
 }
 .nd_slider {
   position: absolute;
@@ -1547,8 +1634,8 @@ button {
   left: 0px;
   height: 1080px;
   width: 1920px;
-  z-index: 99;
-  transition: transform 4s;
+  z-index: 100;
+  transition: transform 4s, z-index;
 }
 
 .nd_slider_zoom {
@@ -1556,10 +1643,10 @@ button {
   top: 0px;
   left: 0px;
   width: 1920px;
-  z-index: 99;
-
-
   z-index: 100;
+
+  
+
 }
 
 @keyframes zoomInOut {
@@ -1780,11 +1867,12 @@ button {
   width: 800px;
   transform: translateX(300px);
   opacity: 1;
-  transition: transform 1s, position 1s, left 1s, width 1s, opacity 0.2s ;
+  z-index: 22;
+  transition: transform 1s, position 1s, left 1s, width 1s, opacity 0.2s z-index  0s 1s;
 }
 
 .bg123 {
-  transition: transform 1s, position 1s, left 1s, width 1s, opacity 0.2s 1s;
+  transition: transform 1s, position 1s, left 1s, width 1s, opacity 0.2s 0.7s, z-index  0s 1s;
   position: fixed;
   left:150px;
   display: flex;
@@ -1792,6 +1880,20 @@ button {
   justify-content: center;
   height: 1080px;
   width: 1620px;
+  opacity: 0;
+  z-index: -22;
+}
+
+.play{
+  position: fixed;
+  left: 1450px;
+  top:400px;
+  z-index: 24;
+}
+
+.play1{
+  position: fixed;
+  z-index: -24;
   opacity: 0;
 }
 
@@ -2168,7 +2270,7 @@ z-index: 100;
 
   max-width: 1428px;
   max-height: 951px;
-  border-radius: 5px;
+  border-radius: 21px;
   background: #000;
   aspect-ratio: 16 / 9;
   position: relative;
@@ -2384,4 +2486,26 @@ z-index: 100;
   .right .pic-in-pic{
     display: none;
   }
+}
+
+.photo_text{
+position: relative;
+height: 119px;
+width: 519px;
+background-color: #ffffff;
+border-radius: 21px;
+opacity: 80%;
+
+}
+
+
+.photo_text_zoom {
+  position: relative;
+  height: 119px;
+  width: 519px;
+  background-color: #ffffff;
+  border-radius: 21px;
+  transition: transform 0.5s;
+
+    opacity: 80%;
 }

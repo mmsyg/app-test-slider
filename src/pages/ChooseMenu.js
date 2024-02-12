@@ -5,7 +5,7 @@ import data from "../assets/datta.json";
 import arrow from "../assets/yellow_arrow.png";
 import TileChooseMenu from "../components/TileChooseMenu";
 // import image1 from './assets/tile_img1.png';
-
+import { ReactComponent as UnionGreen } from "../assets/unionGreen.svg";
 import React from "react";
 import {useAppContext} from "../context/app-data/useAppContext";
 const Slider = () => {
@@ -18,6 +18,9 @@ const Slider = () => {
     <div className="slider">
       <SetRight />
       <SetLeft backNotVisible={1} />
+      <UnionGreen
+              className="unionGreen_2"
+          />
 
       <Link to="/carousel">
         <div className="tile_left">

@@ -21,7 +21,6 @@ import { useState } from "react";
 import {useAppContext} from "../context/app-data/useAppContext";
 
 const Slider = () => {
-  
 
 
   const appData = useAppContext();
@@ -34,6 +33,16 @@ const Slider = () => {
 
   const [firstSwiper, setFirstSwiper] = useState(null);
   const [secondSwiper, setSecondSwiper] = useState(null);
+  const [renderKey, setRenderKey] = useState('swiping');
+
+  useEffect(() => {
+    // Opóźnienie aktualizacji klucza, aby pozwolić na zakończenie animacji
+    const timer = setTimeout(() => {
+      setRenderKey(isActive ? 'no-swiping' : 'swiping');
+    }, 1000); // 500 ms opóźnienia
+
+    return () => clearTimeout(timer); // Oczyszczenie timera przy odmontowywaniu komponentu
+  }, [isActive]);
   const slides = [];
   const slides2 = [];
   for (let i = 0; i < numberOfSlides; i++) {
@@ -71,6 +80,14 @@ const Slider = () => {
       <div
         className={isActive ? "shadow_white_left_zoom" : "shadow_white_left"}
       />
+
+      <div className={isActive ? "swipe_left2" : "swipe_left_zoom2"}>
+      <div
+        className={isActive ? "photo_text_zoom" : "photo_text"}
+      />
+      <p className="photo_desc_txt"dir="ltr"
+         dangerouslySetInnerHTML={{ __html: knowledge.knowledgeSlides[counter-1].slideImages[0].imageText}}></p>
+    </div>
       <div
         className={isActive ? "shadow_white_right_zoom" : "shadow_white_right"}
       />
@@ -94,7 +111,9 @@ const Slider = () => {
       <UnionGreenKn className="union_green_knowledge" /> */}
       <div className={isActive ? "st_slider_zoom" : "st_slider"}>
         <Swiper
-        
+          key={renderKey} 
+          allowTouchMove={!isActive}
+          initialSlide={counter - 1} 
           pagination={{
             type: "fraction",
           }}
@@ -110,6 +129,9 @@ const Slider = () => {
       </div>
       <div className={isActive ? "nd_slider_zoom" : "nd_slider"}>
         <Swiper
+          key={renderKey} 
+          initialSlide={counter - 1} 
+            allowTouchMove={!isActive}
           pagination={{
             type: "fraction",
           }}
