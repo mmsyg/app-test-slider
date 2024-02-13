@@ -121,7 +121,7 @@
           "isTranslated": true,
           "text": {
             "pl": "<p><strong>Fizyka</strong><br />\nlotu</p>\n",
-            "en": "<p><strong>Flight</strong></p>\n\n<p>Physics</p>\n",
+            "en": "<p><strong>Flight</strong><br />\nPhysics</p>\n",
             "ua": "<p><strong>Фізика</strong><br />\nРейс</p>\n"
           }
         },

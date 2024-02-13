@@ -7,7 +7,7 @@ import QuizzDescription from "./pages/quiz_pages/QuizzDescription";
 import Quiz from "./pages/Quiz";
 import Example from "./pages/KnowledgeSlider";
 import {AppDataContextProvider} from "./context/app-data/AppDataContextProvider";
-
+import SetRight from "./components/SetRight";
 
 function App() {
 
@@ -16,6 +16,7 @@ function App() {
     <HashRouter>
       <AppDataContextProvider>
       <div className="App">
+      <SetRight />
           <div className="content">
             <Routes>
             <Route path="/" element={<StartScreen />}/>

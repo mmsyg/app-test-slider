@@ -28,7 +28,7 @@ const StartScreen = () => {
   return (
       <div className="start-screen">
           <LeftShape className={`left_shape ${isAnimating ? "animate" : ""}`}/>
-          <SetRight id='1'/>
+         
           <div className="right_shape">
               <img src={rightShape} alt="right_shape"/>
           </div>

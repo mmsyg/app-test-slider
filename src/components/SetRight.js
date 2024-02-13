@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactComponent as LanguageButton } from "../assets/language_button.svg";
 import { ReactComponent as SizeButton } from "../assets/size_button.svg";
 import { ReactComponent as ContrastButton } from "../assets/contrast_button.svg";
 import { ReactComponent as IconBackground } from "../assets/rightSetBackground.svg";
@@ -8,6 +7,8 @@ import { FontSizeContext } from "./FontSizeContext";
 import { ContrastContext } from "./ContrastContext";
 import { useAppContext } from "../context/app-data/useAppContext";
 import "../index.css";
+import LanguageButton from "./LanguageButton";
+
 let start = true;
 
 const SetRight = (props) => {
@@ -17,15 +18,21 @@ const SetRight = (props) => {
   const { fontSize, setFontSize } = useContext(FontSizeContext);
   const [increase, setIncrease] = useState(start); // Początkowo ustawione na powiększanie
   const [language, setLanguage] = useState("pl");
-
+const [languageLetter, setlanguageLetter] = useState()
   const changeLanguage = () => {
     if (language === "pl") {
       
        appData.changeLanguage("en")
        setLanguage("en")
-    } else {
-    appData.changeLanguage("pl");
-    setLanguage("pl");}
+       setlanguageLetter("UA")
+    } else if(language === "en"){
+    appData.changeLanguage("ua");
+    setLanguage("ua");
+    setlanguageLetter("PL")}
+    else if(language === "ua"){
+      appData.changeLanguage("pl");
+      setLanguage("pl");
+      setlanguageLetter("EN")}
   };
 
   const toggleFontSize = () => {
@@ -43,11 +50,13 @@ const SetRight = (props) => {
       <div className="set_right">
         <IconBackground className="set_right_bg" />
         <div className="set_right_buttons">
+         <div>
           <LanguageButton
             className="language_button"
             onClick={changeLanguage}
+            language={languageLetter}
           />
-
+</div>
           <SizeButton className="size_button" onClick={toggleFontSize} />
           <ContrastButton
             onClick={toggleContrast}
@@ -63,6 +72,7 @@ const SetRight = (props) => {
           <LanguageButton
             className="language_button"
             onClick={changeLanguage}
+            language={languageLetter}
           />
           <SizeButton className="size_button" onClick={toggleFontSize} />
           <ContrastButton
