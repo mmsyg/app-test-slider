@@ -19,7 +19,7 @@ export function useScrollWithShadow() {
 
     let boxShadow = "none";
     const top = "inset 0 8px 5px -5px rgb(200 200 200 / 1)";
-    const bottom = "-webkit-box-shadow: inset -3px -87px 24px -26px rgba(66, 68, 90, 1) -moz-box-shadow: inset -3px -87px 24px -26px rgba(66, 68, 90, 1) box-shadow: inset -3px -87px 24px -26px rgba(66, 68, 90, 1)";
+    const bottom = "inset 8px 8px 24px 100px rgb(255 255 255 / 1)";
 
     if (isTop) {
       boxShadow = bottom;
