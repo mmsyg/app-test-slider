@@ -58,15 +58,15 @@ const Quiz = () => {
   };
 
   const handleLiClickDelay = (component) => {
-   
+
       setTimeout(() => {
-         
+
         setActiveComponent(component);
-      
+
       }, delay);
-    
-   
-    
+
+
+
   };
 
   function StartQuiz(props) {
@@ -88,7 +88,7 @@ const Quiz = () => {
         </div>
 
         <div
-          className="start_quiz_btn"
+          className="start_quiz_btn_strt"
           onClick={() => {
             props.handleLiClick("component1");
             rNum = randomNumbers(5);
@@ -111,7 +111,7 @@ const Quiz = () => {
       setCounter={setCounter}
       handleLiClick={handleLiClick}
     ></StartQuiz>
-    
+
     </div>
   );
 
@@ -135,7 +135,7 @@ const Quiz = () => {
   );
 
   const Component2 = () => (
-    
+
     <div>
       <SetLeft backNotVisible={1} back="slider" />
       <div className="quiz_desc_number">
@@ -143,19 +143,19 @@ const Quiz = () => {
       </div>
       <QuizzDescription id={id} />
       <div
-        className="next_quiz_btn"
+        className="start_quiz_btn"
         onClick={() => {
           if (counter === 4) {
             handleLiClick("component3");
           } else {
             handleButtonClick();
             handleLiClick("component1");
-            
+
           }
         }}
       >
         <NextButtonQuizz className="start_button_quizz" />
-        
+
         <p  className={endQuiz ? "nxt1" : "nxt"}>{parse(data.quizNextButton)}</p>
         <p  className={endQuiz ? "nxt" : "nxt1"}>{"ZAKOŃCZ QUIZ"}</p>
       </div>
@@ -170,18 +170,18 @@ const Quiz = () => {
       {console.log("summary")}
 
       <div
-        className="try_again_btn"
+        className="start_quiz_btn_up"
         onClick={() => {
           handleLiClick("component4");
           setId(rNum[0]);
           setCounter(1);
         }}
       >
-        <NextButtonQuizz />
+        <NextButtonQuizz className="start_button_quizz"/>
         <p className="nxt">{parse(data.quizTriviaButton)}</p>
       </div>
       <div
-        className="next_quiz_btn"
+        className="start_quiz_btn"
         onClick={() => handleLiClick("component0")}
       >
         <SummaryTryAgain className="start_button_quizz" />
@@ -198,7 +198,7 @@ const Quiz = () => {
         <BackButton className="back_button"onClick={() => handleLiClick("component3")} />
       </div>
       <div className="com4">
-      
+
       <QuizzDescription id={id} />
       <div className="quiz_desc_number">
         <QuestionNumber id={counter} max="4" height={1} />
@@ -220,8 +220,8 @@ const Quiz = () => {
           if (counter < 4) {
             setId(rNum[counter]);
             setCounter(counter + 1);
-            
-            
+
+
           } else {setCounter(1);
           setId(rNum[0]);}
         }}
@@ -232,7 +232,7 @@ const Quiz = () => {
         className="next_quiz_btn"
         onClick={() => handleLiClick("component0")}
       >
-        
+
       </div>
     </div>
   );

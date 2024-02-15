@@ -18,10 +18,10 @@ const SetRight = (props) => {
   const { fontSize, setFontSize } = useContext(FontSizeContext);
   const [increase, setIncrease] = useState(start); // Początkowo ustawione na powiększanie
   const [language, setLanguage] = useState("pl");
-const [languageLetter, setlanguageLetter] = useState()
+const [languageLetter, setlanguageLetter] = useState("EN")
   const changeLanguage = () => {
     if (language === "pl") {
-      
+
        appData.changeLanguage("en")
        setLanguage("en")
        setlanguageLetter("UA")

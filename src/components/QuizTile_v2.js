@@ -1,20 +1,20 @@
 import { useEffect, useState } from "react";
 
 const QuizTile_v2 = (props) => {
-  
+
   const [isCorrect, setIsCorrect] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
   const [isWrong, setIsWrong] = useState(false);
   const [isAcitveInside, setIsActiveInside] = useState(false);
-  
-  
+
+
   const clicked = () => { 
     setIsClicked(true);
    props.setIsActive(true);
  props.setDisabled(props.disabled+1)
  setIsActiveInside(true);
-  
-    
+
+
   };
   useEffect(() => {
     if(props.disabled==1){
@@ -53,7 +53,7 @@ const QuizTile_v2 = (props) => {
         />
         <div className="txt_quizz">
           <p className="tile_title_quiz" dangerouslySetInnerHTML={{ __html: props.text }}>
-            
+
           </p>
         </div>
         <div
@@ -64,7 +64,7 @@ const QuizTile_v2 = (props) => {
               ? "circle_custom_tile_wrong"
               : "circle_custom_tile"
           }`}
-        >
+        > 
           <p className="question_letter">{props.abc}</p>
         </div>
       </div>
