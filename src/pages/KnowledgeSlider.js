@@ -144,8 +144,8 @@ const Slider = () => {
         </Swiper>
       </div>
       <div className={isActive ? "swipe_left_zoom" : "swipe_left"}>
-        <SwipeLeft />
-        <p className="swipe_txt">{data.swipe}</p>
+        <SwipeLeft className={isActive ? "swipe_zoom" : "swipe"} />
+        <p className="swipe_txt">{knowledge.swipeText}</p>
       </div>
     </div>
   );

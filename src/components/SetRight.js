@@ -26,10 +26,10 @@ const [languageLetter, setlanguageLetter] = useState("EN")
        setLanguage("en")
        setlanguageLetter("UA")
     } else if(language === "en"){
-    appData.changeLanguage("ua");
-    setLanguage("ua");
+    appData.changeLanguage("uk");
+    setLanguage("uk");
     setlanguageLetter("PL")}
-    else if(language === "ua"){
+    else if(language ==="uk"){
       appData.changeLanguage("pl");
       setLanguage("pl");
       setlanguageLetter("EN")}

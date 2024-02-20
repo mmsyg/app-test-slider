@@ -40,7 +40,7 @@ const StartScreen = () => {
           <div className="button">
               <DelayLink to="/slider" delay={1200}>
                   <YellowButton onClick={startAnimation} className="start_button"/>
-                  <div className="button_txt">{parse(screensaver.buttonText)}</div>
+                  <div className="button_txt"><p>{parse(screensaver.buttonText)}</p></div>
               </DelayLink>{" "}
           </div>
           <div className="title" >{parse(screensaver.title)}</div>

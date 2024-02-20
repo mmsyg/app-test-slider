@@ -25,15 +25,15 @@ const QuizzDescription = (props) => {
         <p className="quiz_description_question"
         dangerouslySetInnerHTML={{ __html: quiz.questions[id].text }}>
           
+        </p> <p className="quiz_description_title"
+        dangerouslySetInnerHTML={{ __html: answers[0].text }}>
         </p>
         <div className="quiz_description_long_pos">
         <p className="quiz_description_long"
          dangerouslySetInnerHTML={{ __html: answers[0].details }}
         >          
         </p></div>
-        <p className="quiz_description_title"
-        dangerouslySetInnerHTML={{ __html: answers[0].text }}>
-        </p>
+       
       </div>
       <img
         src={`${answers[0].image}`}

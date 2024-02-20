@@ -44,6 +44,7 @@
           "start-title",
           "text",
           "details",
+          "summary-text",
           "image-text"
         ]
       },
@@ -55,9 +56,14 @@
           "select-knowledge-button-text",
           "quiz-button-text",
           "start-text-button",
+          "next-question-button",
+          "end-quiz-button",
+          "try-again-button",
+          "trivia-button",
           "correct-answer-txt",
           "wrong-answer-txt",
-          "title"
+          "title",
+          "swipe-text"
         ]
       },
       {
@@ -100,7 +106,7 @@
       },
       {
         "id": 6,
-        "tag": "ua",
+        "tag": "uk",
         "name": "Ukrainian"
       }
     ],
@@ -122,7 +128,7 @@
           "text": {
             "pl": "<p><strong>Fizyka</strong><br />\nlotu</p>\n",
             "en": "<p><strong>Flight</strong><br />\nPhysics</p>\n",
-            "ua": "<p><strong>Фізика</strong><br />\nРейс</p>\n"
+            "uk": "<p><strong>Фізика</strong><br />\nРейс</p>\n"
           }
         },
         {
@@ -133,7 +139,7 @@
           "text": {
             "pl": "START",
             "en": "START",
-            "ua": "ПОЧАТИ"
+            "uk": "ПОЧАТИ"
           }
         }
       ]
@@ -152,7 +158,7 @@
           "text": {
             "pl": "<p>Dowiedz się więcej o ptakach i fizyce ich lotu</p>\n",
             "en": "<p>Learn more about birds and the physics of their flight</p>\n",
-            "ua": "<p>Дізнайтеся більше про птахів та фізику їхнього польоту</p>\n"
+            "uk": "<p>Дізнайтеся більше про птахів та фізику їхнього польоту</p>\n"
           }
         },
         {
@@ -163,7 +169,7 @@
           "text": {
             "pl": "WYBIERZ",
             "en": "SELECT",
-            "ua": "Виберіть"
+            "uk": "Виберіть"
           }
         },
         {
@@ -181,7 +187,7 @@
           "text": {
             "pl": "<p>Rozwiąż quiz</p>\n",
             "en": "<p>[en]Rozwiąż quiz</p>\n",
-            "ua": null
+            "uk": null
           }
         },
         {
@@ -192,7 +198,7 @@
           "text": {
             "pl": "WYBIERZ",
             "en": "SELECT",
-            "ua": "Виберіть"
+            "uk": "Виберіть"
           }
         },
         {
@@ -218,7 +224,7 @@
           "text": {
             "pl": "<p><strong>Sprawdź</strong> swoją wiedzę o ptakach i fizyce ich lotu!</p>\n",
             "en": "<p>Test your knowledge of birds and the physics of their flight!</p>\n",
-            "ua": "<p>Перевірте свої знання про птахів і фізику їх польоту!</p>\n"
+            "uk": "<p>Перевірте свої знання про птахів і фізику їх польоту!</p>\n"
           }
         },
         {
@@ -229,7 +235,7 @@
           "text": {
             "pl": "<p>Odpowiedz na pytania dotyczące ptak&oacute;w i poznaj ciekawostki na ich temat. Dotknij odpowiedzi, kt&oacute;rą uznasz za poprawną, i przekonaj się, czy intuicja cię nie zawiodła. Na każde pytanie jest tylko jedna poprawna odpowiedź.<br />\nPowodzenia!</p>\n",
             "en": "<p>Answer questions about birds and learn interesting facts about them. Tap on the answer you think is correct and see if your intuition has failed you. There is only one correct answer to each question.<br />\nGood luck!</p>\n",
-            "ua": "<p>Відповідайте на запитання про птахів та дізнавайтеся цікаві факти про них. Натисніть на відповідь, яку ви вважаєте правильною, і подивіться, чи не підвела вас інтуїція. На кожне питання є лише одна правильна відповідь.<br />\nУспіхів!</p>\n"
+            "uk": "<p>Відповідайте на запитання про птахів та дізнавайтеся цікаві факти про них. Натисніть на відповідь, яку ви вважаєте правильною, і подивіться, чи не підвела вас інтуїція. На кожне питання є лише одна правильна відповідь.<br />\nУспіхів!</p>\n"
           }
         },
         {
@@ -240,7 +246,51 @@
           "text": {
             "pl": "ZACZYNAMY",
             "en": "[en]ZACZYNAMY",
-            "ua": null
+            "uk": "ВИСНОВОК"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "next-question-button",
+          "name": "next-question-button",
+          "isTranslated": true,
+          "text": {
+            "pl": "NASTĘPNE PYTANIE",
+            "en": "NEXT QUESTION",
+            "uk": "НАСТУПНЕ ПИТАННЯ"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "end-quiz-button",
+          "name": "end-quiz-button",
+          "isTranslated": true,
+          "text": {
+            "pl": "ZAKOŃCZ QUIZ",
+            "en": "FINISH QUIZ",
+            "uk": "ПРОЙТИ ТЕСТ"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "try-again-button",
+          "name": "try-again-button",
+          "isTranslated": true,
+          "text": {
+            "pl": "ROZWIĄŻ PONOWNIE",
+            "en": "[EN]ROZWIĄŻ PONOWNIE",
+            "uk": "[UA]ROZWIĄŻ PONOWNIE"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "trivia-button",
+          "name": "trivia-button",
+          "isTranslated": true,
+          "text": {
+            "pl": "CIEKAWOSTKI",
+            "en": "[EN]CIEKAWOSTKI",
+            "uk": "[UA]CIEKAWOSTKI"
           }
         },
         {
@@ -258,7 +308,7 @@
               "key": "rad-st4-fizyka-lotu-question",
               "name": "rad.st4.fizyka-lotu.question",
               "moduleId": "d9b1b613-0e59-4af0-8349-4628bc8abd3b",
-              "referenceId": "434ab548-6768-4bcc-86fc-4785bf608a0f",
+              "referenceId": null,
               "subModules": [
                 {
                   "moduleType": 2,
@@ -268,7 +318,7 @@
                   "text": {
                     "pl": "<p>Najcięższy ptak w Polsce to&hellip;</p>\n",
                     "en": "<p>[EN] -&nbsp;Najcięższy ptak w Polsce to:</p>\n",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -302,7 +352,7 @@
                           "text": {
                             "pl": "<p>bielik</p>\n",
                             "en": "<p>[en]bielik</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -320,7 +370,7 @@
                           "text": {
                             "pl": null,
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -346,7 +396,7 @@
                           "text": {
                             "pl": "<p>bocian</p>\n",
                             "en": "<p>[en]bocian</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -364,7 +414,7 @@
                           "text": {
                             "pl": null,
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -390,7 +440,7 @@
                           "text": {
                             "pl": "<p>łabędź trąbiący</p>\n",
                             "en": "<p>[en]łabędź trąbiący</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -408,7 +458,7 @@
                           "text": {
                             "pl": "<p>Łabędzie mogą ważyć nawet do 14 kg. &nbsp;</p>\n\n<p>Kiedyś w Polsce żyły także dropie &ndash; kt&oacute;re osiągają do 18 kg wagi i nadal są najcięższymi z ptak&oacute;w, kt&oacute;re potrafią latać.</p>\n",
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -422,7 +472,7 @@
               "key": "rad-st4-fizyka-lotu-question",
               "name": "rad.st4.fizyka-lotu.question",
               "moduleId": "d9b1b613-0e59-4af0-8349-4628bc8abd3b",
-              "referenceId": "7c578a71-99b8-4ba7-836d-3fbaf435b83c",
+              "referenceId": null,
               "subModules": [
                 {
                   "moduleType": 2,
@@ -432,7 +482,7 @@
                   "text": {
                     "pl": "<p>Jaki ptak specjalizuje się w atakowaniu nietoperzy, gdy te budzą się ze snu zimowego?</p>\n",
                     "en": "<p>[en]Jaki ptak specjalizuje się w atakowaniu nietoperzy, gdy te budzą się ze snu zimowego?&nbsp;</p>\n",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -466,7 +516,7 @@
                           "text": {
                             "pl": "<p>mazurek</p>\n",
                             "en": "<p>[en]mazurek</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -484,7 +534,7 @@
                           "text": {
                             "pl": null,
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -510,7 +560,7 @@
                           "text": {
                             "pl": "<p>sikorka bogatka</p>\n",
                             "en": "<p>[en]sikorka bogatka</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -528,7 +578,7 @@
                           "text": {
                             "pl": "<p>Sikorka bogatka jest bardzo wrażliwa na dźwięki wydawane przez budzące się nietoperze.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>Warunki środowiskowe prowadzą do wytworzenia niezwykłych rozwiązań anatomicznych służących zdobywaniu pożywienia. Weźmy takiego dzięcioła &ndash; spośr&oacute;d ptak&oacute;w ma najdłuższy język. Jest on tak długi, że musi owijać się wok&oacute;ł jego czaszki!&nbsp;</p>\n",
                             "en": "<p>[en]</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -554,7 +604,7 @@
                           "text": {
                             "pl": "<p>wrona siwa</p>\n",
                             "en": "<p>[en]wrona siwa&nbsp;</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -572,7 +622,7 @@
                           "text": {
                             "pl": null,
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -586,7 +636,7 @@
               "key": "rad-st4-fizyka-lotu-question",
               "name": "rad.st4.fizyka-lotu.question",
               "moduleId": "d9b1b613-0e59-4af0-8349-4628bc8abd3b",
-              "referenceId": "ffa5f189-bda7-42e0-bc1f-0383755d4dfe",
+              "referenceId": null,
               "subModules": [
                 {
                   "moduleType": 2,
@@ -596,7 +646,7 @@
                   "text": {
                     "pl": "<p>Kt&oacute;re z żyjących w naszym kraju ptak&oacute;w były przez wiking&oacute;w uznawane za posłańc&oacute;w boga Odyna?</p>\n",
                     "en": "<p>[en]Kt&oacute;re z żyjących w naszym kraju ptak&oacute;w były przez wiking&oacute;w uznawane za posłańc&oacute;w boga Odyna?</p>\n",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -630,7 +680,7 @@
                           "text": {
                             "pl": "<p>wrony</p>\n",
                             "en": "<p>[en]wrony</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -648,7 +698,7 @@
                           "text": {
                             "pl": null,
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -674,7 +724,7 @@
                           "text": {
                             "pl": "<p>rybitwy</p>\n",
                             "en": "<p>[en]rybitwy</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -692,7 +742,7 @@
                           "text": {
                             "pl": null,
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -718,7 +768,7 @@
                           "text": {
                             "pl": "<p>kruki</p>\n",
                             "en": "<p>[en]kruki</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -736,7 +786,7 @@
                           "text": {
                             "pl": "<p>Kruki boga Odyna z mitologii skandynawskiej to Huginn (Myśl) i Muninn (Pamięć).&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>Kruki od dawna fascynowały ludzi &ndash; i nie bez powodu. Są to niesamowicie inteligentne ptaki. Potrafią korzystać z &bdquo;narzędzi&rdquo; &ndash; np. używają gałązek, by &bdquo;zbadać&rdquo; nowo poznane obiekty.</p>\n",
                             "en": "<p>[en]</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -750,7 +800,7 @@
               "key": "rad-st4-fizyka-lotu-question",
               "name": "rad.st4.fizyka-lotu.question",
               "moduleId": "d9b1b613-0e59-4af0-8349-4628bc8abd3b",
-              "referenceId": "948d6354-55e1-4f35-a7c2-8f0932ed2e7a",
+              "referenceId": null,
               "subModules": [
                 {
                   "moduleType": 2,
@@ -760,7 +810,7 @@
                   "text": {
                     "pl": "<p>Kim był Kajtek, bohater i narrator książki Marii Kownackiej Kajtkowe przygody?</p>\n",
                     "en": "<p>[en]Kim był Kajtek, bohater i narrator książki Marii Kownackiej Kajtkowe przygody?&nbsp;</p>\n",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -794,7 +844,7 @@
                           "text": {
                             "pl": "<p>bocianem</p>\n",
                             "en": "<p>[en]bocianem</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -812,7 +862,7 @@
                           "text": {
                             "pl": "<p>Kajtek był bocianem.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>Inną popularną bohaterką bajek i opowieści jest sroka. Wbrew mitom sroki nie podpalają las&oacute;w kradzionymi błyskotkami. Te wybitnie inteligentne zwierzęta potrafią za to rozpoznawać swoje odbicie w lustrze.&nbsp;</p>\n",
                             "en": "<p>[en]</p>\n\n<p>Kajtek był bocianem.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>Inną popularną bohaterką bajek i opowieści jest sroka. Wbrew mitom sroki nie podpalają las&oacute;w kradzionymi błyskotkami. Te wybitnie inteligentne zwierzęta potrafią za to rozpoznawać swoje odbicie w lustrze.&nbsp;</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -838,7 +888,7 @@
                           "text": {
                             "pl": "<p>kanarkiem</p>\n",
                             "en": "<p>[en]kanarkiem</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -856,7 +906,7 @@
                           "text": {
                             "pl": null,
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -882,7 +932,7 @@
                           "text": {
                             "pl": "<p>jerzykiem</p>\n",
                             "en": "<p>[en]jerzykiem</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -900,7 +950,7 @@
                           "text": {
                             "pl": null,
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -914,7 +964,7 @@
               "key": "rad-st4-fizyka-lotu-question",
               "name": "rad.st4.fizyka-lotu.question",
               "moduleId": "d9b1b613-0e59-4af0-8349-4628bc8abd3b",
-              "referenceId": "e9e6a528-84c3-4fc0-829d-f1c1610a09e4",
+              "referenceId": null,
               "subModules": [
                 {
                   "moduleType": 2,
@@ -924,7 +974,7 @@
                   "text": {
                     "pl": "<p>W dawnych kopalniach znajdowały się klatki z ptakami, kt&oacute;re pozwalały na wykrywanie wybuchowego metanu. Kto ratował życie g&oacute;rnik&oacute;w?&nbsp;</p>\n",
                     "en": "<p>In the old mines, there were bird cages that allowed for the detection of explosive methane. Who saved the lives of the miners?</p>\n",
-                    "ua": "<p>У старих шахтах стояли пташині клітки, які дозволяли виявляти вибухонебезпечний метан. Хто врятував життя шахтарям?</p>\n"
+                    "uk": "<p>У старих шахтах стояли пташині клітки, які дозволяли виявляти вибухонебезпечний метан. Хто врятував життя шахтарям?</p>\n"
                   }
                 },
                 {
@@ -942,7 +992,7 @@
                       "key": "rad-st4-fizyka-lotu-answer",
                       "name": "rad.st4.fizyka-lotu.answer",
                       "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
-                      "referenceId": "d10eaf7e-e58b-4734-b4db-57d4eb80b335",
+                      "referenceId": null,
                       "subModules": [
                         {
                           "key": "correct",
@@ -958,7 +1008,7 @@
                           "text": {
                             "pl": "<p>gołąb&nbsp;</p>\n",
                             "en": "<p>dove</p>\n",
-                            "ua": "<p>голуб</p>\n"
+                            "uk": "<p>голуб</p>\n"
                           }
                         },
                         {
@@ -976,7 +1026,7 @@
                           "text": {
                             "pl": null,
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -986,7 +1036,7 @@
                       "key": "rad-st4-fizyka-lotu-answer",
                       "name": "rad.st4.fizyka-lotu.answer",
                       "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
-                      "referenceId": "8754f14e-367a-452b-a3bc-171cdb8e27a7",
+                      "referenceId": null,
                       "subModules": [
                         {
                           "key": "correct",
@@ -1002,7 +1052,7 @@
                           "text": {
                             "pl": "<p>papuga</p>\n",
                             "en": "<p>[en]papuga</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -1020,7 +1070,7 @@
                           "text": {
                             "pl": null,
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -1030,7 +1080,7 @@
                       "key": "rad-st4-fizyka-lotu-answer",
                       "name": "rad.st4.fizyka-lotu.answer",
                       "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
-                      "referenceId": "b3ffcefd-f869-4517-83af-73ec716c6ad7",
+                      "referenceId": null,
                       "subModules": [
                         {
                           "key": "correct",
@@ -1046,7 +1096,7 @@
                           "text": {
                             "pl": "<p>kanarek</p>\n",
                             "en": "<p>[en]kanarek</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -1064,7 +1114,7 @@
                           "text": {
                             "pl": "<p>W kopalniach korzystano z pomocy kanark&oacute;w.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>Kanarek trzymany jest w klatce, ale pewne stworzenia same wybierają towarzystwo człowieka. Niekt&oacute;re gatunki, tak zwane komensale, rozkwitają w naszym towarzystwie. Spośr&oacute;d ptak&oacute;w takim zwierzęciem jest wr&oacute;bel, kt&oacute;ry wraz z nami rozprzestrzenił się na niemal wszystkie kontynenty.&nbsp;</p>\n",
                             "en": "<p>[en]</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -1078,7 +1128,7 @@
               "key": "rad-st4-fizyka-lotu-question",
               "name": "rad.st4.fizyka-lotu.question",
               "moduleId": "d9b1b613-0e59-4af0-8349-4628bc8abd3b",
-              "referenceId": "d1fd0a80-c01d-4b2d-bdbc-184daf8f784f",
+              "referenceId": null,
               "subModules": [
                 {
                   "moduleType": 2,
@@ -1088,7 +1138,7 @@
                   "text": {
                     "pl": "<p>Bekas kszyk ze względu na wydawane przez siebie dźwięki nazywany jest także:</p>\n",
                     "en": "<p>Due to the sounds it makes, the snipe is also called:</p>\n",
-                    "ua": "<p>Завдяки звукам, які він видає, баранця ще називають:</p>\n"
+                    "uk": "<p>Завдяки звукам, які він видає, баранця ще називають:</p>\n"
                   }
                 },
                 {
@@ -1106,7 +1156,7 @@
                       "key": "rad-st4-fizyka-lotu-answer",
                       "name": "rad.st4.fizyka-lotu.answer",
                       "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
-                      "referenceId": "3b090c3e-d562-418f-8ac1-27575dc91e15",
+                      "referenceId": null,
                       "subModules": [
                         {
                           "key": "correct",
@@ -1122,7 +1172,7 @@
                           "text": {
                             "pl": "<p>bekasem barankiem</p>\n",
                             "en": "<p>snipe lamb</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -1140,7 +1190,7 @@
                           "text": {
                             "pl": "<p>Bekas kszyk &ndash; zwany także bekasem barankiem &ndash; występuje na terenach podmokłych.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>R&oacute;wnież w miastach można spotkać ciekawe gatunki. Przykładowo jerzyki świetnie latają, ale mają bardzo słabe n&oacute;żki &ndash; po wylądowaniu na ziemi często nie potrafią odbić się do ponownego lotu!&nbsp;</p>\n",
                             "en": "<p>[en]</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -1150,7 +1200,7 @@
                       "key": "rad-st4-fizyka-lotu-answer",
                       "name": "rad.st4.fizyka-lotu.answer",
                       "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
-                      "referenceId": "1a96b9b4-697e-483e-8606-f271ef74efa9",
+                      "referenceId": null,
                       "subModules": [
                         {
                           "key": "correct",
@@ -1166,7 +1216,7 @@
                           "text": {
                             "pl": "<p>bekasem kozą</p>\n",
                             "en": "<p>[en]bekasem kozą</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -1184,7 +1234,7 @@
                           "text": {
                             "pl": null,
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -1194,7 +1244,7 @@
                       "key": "rad-st4-fizyka-lotu-answer",
                       "name": "rad.st4.fizyka-lotu.answer",
                       "moduleId": "80793b76-b8d3-445b-8b91-3a13dc7e4445",
-                      "referenceId": "b3982c33-0543-4582-a159-0c3d4572dbde",
+                      "referenceId": null,
                       "subModules": [
                         {
                           "key": "correct",
@@ -1210,7 +1260,7 @@
                           "text": {
                             "pl": "<p>bekasem niedźwiedziem</p>\n",
                             "en": "<p>[en]bekasem niedźwiedziem</p>\n",
-                            "ua": null
+                            "uk": null
                           }
                         },
                         {
@@ -1228,7 +1278,7 @@
                           "text": {
                             "pl": null,
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -1247,7 +1297,7 @@
           "text": {
             "pl": "Poprawne odpowiedzi",
             "en": "[en]Poprawne odpowiedzi",
-            "ua": null
+            "uk": "[UA]Poprawne odpowiedzi"
           }
         },
         {
@@ -1258,7 +1308,18 @@
           "text": {
             "pl": "Błędne odpowiedzi",
             "en": "[en]Błędne odpowiedzi",
-            "ua": null
+            "uk": "[UA]Błędne odpowiedzi"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "summary-text",
+          "name": "summary-text",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p><strong>Gratulacje!</strong> Udało ci się odpowiedzieć na wszystkie pytania w quizie.</p>\n",
+            "en": "<p>[EN]<strong>Gratulacje!</strong> Udało ci się odpowiedzieć na wszystkie pytania w quizie.</p>\n",
+            "uk": "<p>[UA]<strong>Gratulacje!</strong> Udało ci się odpowiedzieć na wszystkie pytania w quizie.</p>\n"
           }
         }
       ]
@@ -1284,7 +1345,7 @@
               "key": "rad-st4-fizyka-lotu-knowledge-slide",
               "name": "rad.st4.fizyka-lotu.knowledge-slide",
               "moduleId": "33136b85-e7f6-459a-915c-51943b481e49",
-              "referenceId": "7ad40fdb-ac7a-4538-bb88-1edcc7cb9ba9",
+              "referenceId": "5bf5e450-d30c-45df-b3bf-5313ab1ab748",
               "subModules": [
                 {
                   "moduleType": 1,
@@ -1294,7 +1355,7 @@
                   "text": {
                     "pl": "Potomkowie dinozaurów",
                     "en": "[en] Potomkowie dinozaurów",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -1305,7 +1366,7 @@
                   "text": {
                     "pl": "<p>Ptaki wywodzą się ewolucyjnie z gad&oacute;w &ndash; a konkretnie od <strong>dinozaur&oacute;w</strong>. Nawet same pi&oacute;ra wyewoluowały z&hellip; łusek!<br />\nPodobieństwo do pradawnych jaszczur&oacute;w dostrzegalne jest szczeg&oacute;lnie w przypadku wymarłych gatunk&oacute;w ptak&oacute;w, takich jak <em><strong>Archaeopteryx</strong></em>, żyjący 145 mln lat temu. Posiadał zęby, a na skrzydłach &ndash; szpony!</p>\n",
                     "en": "<p>[en]</p>\n",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -1323,7 +1384,7 @@
                       "key": "rad-st4-fizyka-lotu-knowledge-slide-image",
                       "name": "rad.st4.fizyka-lotu.knowledge-slide-image",
                       "moduleId": "9c572a1a-5b9c-4de4-bf2a-75a028cdac83",
-                      "referenceId": "adb91d73-92e2-49a3-8e25-0ca53035b222",
+                      "referenceId": "684beb20-4f12-4515-8f80-322ac3b8cdbe",
                       "subModules": [
                         {
                           "moduleType": 4,
@@ -1340,7 +1401,7 @@
                           "text": {
                             "pl": "<p><em>Archaeopteryx</em></p>\n",
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -1354,7 +1415,7 @@
               "key": "rad-st4-fizyka-lotu-knowledge-slide",
               "name": "rad.st4.fizyka-lotu.knowledge-slide",
               "moduleId": "33136b85-e7f6-459a-915c-51943b481e49",
-              "referenceId": "5a59f01b-202a-4ab8-ad5a-ac112c4f51bc",
+              "referenceId": "5b6e2dc5-70fc-45d8-b80e-991164ea8b03",
               "subModules": [
                 {
                   "moduleType": 1,
@@ -1364,7 +1425,7 @@
                   "text": {
                     "pl": "Oderwać się od ziemi!",
                     "en": "[en]Oderwać się od ziemi! ",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -1375,7 +1436,7 @@
                   "text": {
                     "pl": "<p>Umiejętność lotu zazwyczaj uznajemy za cechę wyr&oacute;żniającą ptaki &ndash; chociaż wiele gatunk&oacute;w zatraciło tę zdolność w toku dalszej ewolucji.&nbsp;</p>\n\n<p>Odbicie się od ziemi umożliwiają silne mięśnie, kt&oacute;re poruszają skrzydłami. Stanowią one ok. 10&ndash;15% masy ciała zwierzęcia, a w przypadku kolibr&oacute;w nawet 1/4 ich wagi.&nbsp;</p>\n",
                     "en": "<p>[en]</p>\n\n<p>Umiejętność lotu zazwyczaj uznajemy za cechę wyr&oacute;żniającą ptaki &ndash; chociaż wiele gatunk&oacute;w zatraciło tę zdolność w toku dalszej ewolucji.&nbsp;</p>\n\n<p>Odbicie się od ziemi umożliwiają silne mięśnie, kt&oacute;re poruszają skrzydłami. Stanowią one ok. 10&ndash;15% masy ciała zwierzęcia, a w przypadku kolibr&oacute;w nawet 1/4 ich wagi.&nbsp;</p>\n",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -1393,7 +1454,7 @@
                       "key": "rad-st4-fizyka-lotu-knowledge-slide-image",
                       "name": "rad.st4.fizyka-lotu.knowledge-slide-image",
                       "moduleId": "9c572a1a-5b9c-4de4-bf2a-75a028cdac83",
-                      "referenceId": "1a448402-7788-490a-8a17-f374e2ea880a",
+                      "referenceId": null,
                       "subModules": [
                         {
                           "moduleType": 4,
@@ -1410,7 +1471,7 @@
                           "text": {
                             "pl": "<p>Przekroje ptak&oacute;w, mięśnie</p>\n",
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -1424,7 +1485,7 @@
               "key": "rad-st4-fizyka-lotu-knowledge-slide",
               "name": "rad.st4.fizyka-lotu.knowledge-slide",
               "moduleId": "33136b85-e7f6-459a-915c-51943b481e49",
-              "referenceId": "410d95a1-4a83-4705-b40c-5cac987f0539",
+              "referenceId": "166c314e-6986-4eef-b98e-f2b8220f3d8f",
               "subModules": [
                 {
                   "moduleType": 1,
@@ -1434,7 +1495,7 @@
                   "text": {
                     "pl": "Lekkie jak piórko?",
                     "en": "[en]Lekkie jak piórko?",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -1445,7 +1506,7 @@
                   "text": {
                     "pl": "<p>Pi&oacute;ra posiadały już niekt&oacute;re dinozaury &ndash; ale dopiero ptaki &bdquo;nauczyły&rdquo; się z nich efektywnie korzystać! &nbsp;</p>\n\n<p>Lżejsze od kości, pozwalają uzyskać dużą powierzchnię nośną &ndash; dzięki nim bernikle kanadyjskie mają o 1/3 większą rozpiętość skrzydeł niż gdyby nie były one opierzone.&nbsp;</p>\n",
                     "en": "<p>[en]Pi&oacute;ra posiadały już niekt&oacute;re dinozaury &ndash; ale dopiero ptaki &bdquo;nauczyły&rdquo; się z nich efektywnie korzystać! &nbsp;</p>\n\n<p>Lżejsze od kości, pozwalają uzyskać dużą powierzchnię nośną &ndash; dzięki nim bernikle kanadyjskie mają o 1/3 większą rozpiętość skrzydeł niż gdyby nie były one opierzone.&nbsp;</p>\n",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -1463,7 +1524,7 @@
                       "key": "rad-st4-fizyka-lotu-knowledge-slide-image",
                       "name": "rad.st4.fizyka-lotu.knowledge-slide-image",
                       "moduleId": "9c572a1a-5b9c-4de4-bf2a-75a028cdac83",
-                      "referenceId": "9087154f-04f1-4338-9760-6ffa16e57c1d",
+                      "referenceId": null,
                       "subModules": [
                         {
                           "moduleType": 4,
@@ -1480,7 +1541,7 @@
                           "text": {
                             "pl": null,
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -1494,7 +1555,7 @@
               "key": "rad-st4-fizyka-lotu-knowledge-slide",
               "name": "rad.st4.fizyka-lotu.knowledge-slide",
               "moduleId": "33136b85-e7f6-459a-915c-51943b481e49",
-              "referenceId": "2deb2303-a1ff-4eab-804d-9e32bf64c45b",
+              "referenceId": "30700126-ef62-4a4d-b960-ebcc8049749a",
               "subModules": [
                 {
                   "moduleType": 1,
@@ -1504,7 +1565,7 @@
                   "text": {
                     "pl": "Loty na długie dystanse ",
                     "en": "[en]Loty na długie dystanse ",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -1515,7 +1576,7 @@
                   "text": {
                     "pl": "<p>Skrzydła r&oacute;żnią się w zależności od warunk&oacute;w życia i sposobu poruszania się zwierzęcia. Długie kości skrzydeł oraz zbliżony do szybowania lot albatros&oacute;w pozwalają im pokonywać setki kilometr&oacute;w. &nbsp;</p>\n\n<p>Albatros wędrowny charakteryzuje się największą rozpiętością skrzydeł pośr&oacute;d żyjących gatunk&oacute;w ptak&oacute;w (do ok. 3,5 m).</p>\n",
                     "en": "<p>[en]Skrzydła r&oacute;żnią się w zależności od warunk&oacute;w życia i sposobu poruszania się zwierzęcia. Długie kości skrzydeł oraz zbliżony do szybowania lot albatros&oacute;w pozwalają im pokonywać setki kilometr&oacute;w. &nbsp;</p>\n\n<p>Albatros wędrowny charakteryzuje się największą rozpiętością skrzydeł pośr&oacute;d żyjących gatunk&oacute;w ptak&oacute;w (do ok. 3,5 m).</p>\n",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -1533,7 +1594,7 @@
                       "key": "rad-st4-fizyka-lotu-knowledge-slide-image",
                       "name": "rad.st4.fizyka-lotu.knowledge-slide-image",
                       "moduleId": "9c572a1a-5b9c-4de4-bf2a-75a028cdac83",
-                      "referenceId": "557b961f-667e-48b9-b5e5-cef0657041c5",
+                      "referenceId": null,
                       "subModules": [
                         {
                           "moduleType": 4,
@@ -1550,7 +1611,7 @@
                           "text": {
                             "pl": "<p>Albatrosy</p>\n",
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -1564,7 +1625,7 @@
               "key": "rad-st4-fizyka-lotu-knowledge-slide",
               "name": "rad.st4.fizyka-lotu.knowledge-slide",
               "moduleId": "33136b85-e7f6-459a-915c-51943b481e49",
-              "referenceId": "61a359db-58c5-45f7-ab9e-9a4201fa9565",
+              "referenceId": "15094c48-4c8b-4207-95af-95e852537f8c",
               "subModules": [
                 {
                   "moduleType": 1,
@@ -1574,7 +1635,7 @@
                   "text": {
                     "pl": "(Maleńki) wulkan energii",
                     "en": "[en](Maleńki) wulkan energii ",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -1585,7 +1646,7 @@
                   "text": {
                     "pl": "<p>Długie szybowanie albatros&oacute;w kontrastuje z szybkimi uderzeniami skrzydeł kolibr&oacute;w &ndash; te potrafią machać nimi nawet 80 razy na sekundę! &nbsp;&nbsp;</p>\n\n<p>Oczywiście tak intensywny wysiłek ma swoje wady &ndash; kolibry potrzebują częstych odpoczynk&oacute;w i bogatej w kalorie diety!&nbsp;</p>\n\n<p>Przedstawiciele tego gatunku mają jeszcze jedną wyjątkową umiejętność: w powietrzu potrafią poruszać się do tyłu!&nbsp;</p>\n",
                     "en": "<p>[en]</p>\n",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -1603,7 +1664,7 @@
                       "key": "rad-st4-fizyka-lotu-knowledge-slide-image",
                       "name": "rad.st4.fizyka-lotu.knowledge-slide-image",
                       "moduleId": "9c572a1a-5b9c-4de4-bf2a-75a028cdac83",
-                      "referenceId": "27577f90-0e99-4442-81e1-3d9b5ac46ee1",
+                      "referenceId": null,
                       "subModules": [
                         {
                           "moduleType": 4,
@@ -1620,7 +1681,7 @@
                           "text": {
                             "pl": null,
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -1634,7 +1695,7 @@
               "key": "rad-st4-fizyka-lotu-knowledge-slide",
               "name": "rad.st4.fizyka-lotu.knowledge-slide",
               "moduleId": "33136b85-e7f6-459a-915c-51943b481e49",
-              "referenceId": "1c00d65c-2467-4dd3-a7b4-e2ccfda33f73",
+              "referenceId": "d0f38784-6c08-4e39-a626-7769d832a267",
               "subModules": [
                 {
                   "moduleType": 1,
@@ -1644,7 +1705,7 @@
                   "text": {
                     "pl": "Akrobata i gigant ",
                     "en": "[en]Akrobata i gigant ",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -1655,7 +1716,7 @@
                   "text": {
                     "pl": "<p>Kolibry to najmniejsze z ptak&oacute;w &ndash; niekt&oacute;re gatunki osiągają wagę 2 gram&oacute;w. &nbsp;</p>\n\n<p>Zaraz&hellip; tylko 2 gramy? Za to największe w dziejach ptaki &ndash; wymarłe strusie mamutaki (<em>Aepyornis maximus</em>) &ndash; ważyły po 600 kg!&nbsp;</p>\n\n<p>Innymi imponującymi nielotami były moa, osiągające wagę do niemal ćwierć tony. Oba te gatunki nie były jednak w stanie przetrwać ekspansji człowieka. &nbsp;</p>\n",
                     "en": "<p>[en]</p>\n\n<p>Kolibry to najmniejsze z ptak&oacute;w &ndash; niekt&oacute;re gatunki osiągają wagę 2 gram&oacute;w. &nbsp;</p>\n\n<p>Zaraz&hellip; tylko 2 gramy? Za to największe w dziejach ptaki &ndash; wymarłe strusie mamutaki (Aepyornis maximus) &ndash; ważyły po 600 kg!&nbsp;</p>\n\n<p>Innymi imponującymi nielotami były moa, osiągające wagę do niemal ćwierć tony. Oba te gatunki nie były jednak w stanie przetrwać ekspansji człowieka. &nbsp;</p>\n",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -1673,7 +1734,7 @@
                       "key": "rad-st4-fizyka-lotu-knowledge-slide-image",
                       "name": "rad.st4.fizyka-lotu.knowledge-slide-image",
                       "moduleId": "9c572a1a-5b9c-4de4-bf2a-75a028cdac83",
-                      "referenceId": "c5890ca4-f528-4890-bc04-b01d531c76b1",
+                      "referenceId": null,
                       "subModules": [
                         {
                           "moduleType": 4,
@@ -1690,7 +1751,7 @@
                           "text": {
                             "pl": "<p>Strusie <em>Aepyornis</em></p>\n",
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -1704,7 +1765,7 @@
               "key": "rad-st4-fizyka-lotu-knowledge-slide",
               "name": "rad.st4.fizyka-lotu.knowledge-slide",
               "moduleId": "33136b85-e7f6-459a-915c-51943b481e49",
-              "referenceId": "88e9548b-0bb8-4779-a21f-a9afdbb49476",
+              "referenceId": "71abd88b-fe2d-4e8d-af88-2772621eb8da",
               "subModules": [
                 {
                   "moduleType": 1,
@@ -1714,7 +1775,7 @@
                   "text": {
                     "pl": "Zaginiony świat? ",
                     "en": "[en]Zaginiony świat?",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -1725,7 +1786,7 @@
                   "text": {
                     "pl": "<p>Szczeg&oacute;lnym miejscem na Ziemi jest Nowa Zelandia. Na tych oddzielonych oceanem wyspach ewolucja stworzyła prawdziwe kr&oacute;lestwo ptak&oacute;w, kt&oacute;re do czasu przybycia ludzi nie musiały konkurować ze ssakami.&nbsp;</p>\n\n<p>Niestety wiele spośr&oacute;d tych niezwykłych stworzeń już wyginęło (jak olbrzymie moa czy orły Haasta). Ale ptaki nie wyśpiewały jeszcze ostatniego słowa!&nbsp;</p>\n",
                     "en": "<p>[en]</p>\n\n<p>Szczeg&oacute;lnym miejscem na Ziemi jest Nowa Zelandia. Na tych oddzielonych oceanem wyspach ewolucja stworzyła prawdziwe kr&oacute;lestwo ptak&oacute;w, kt&oacute;re do czasu przybycia ludzi nie musiały konkurować ze ssakami.&nbsp;</p>\n\n<p>Niestety wiele spośr&oacute;d tych niezwykłych stworzeń już wyginęło (jak olbrzymie moa czy orły Haasta). Ale ptaki nie wyśpiewały jeszcze ostatniego słowa!&nbsp;</p>\n",
-                    "ua": null
+                    "uk": null
                   }
                 },
                 {
@@ -1743,7 +1804,7 @@
                       "key": "rad-st4-fizyka-lotu-knowledge-slide-image",
                       "name": "rad.st4.fizyka-lotu.knowledge-slide-image",
                       "moduleId": "9c572a1a-5b9c-4de4-bf2a-75a028cdac83",
-                      "referenceId": "00ac236c-24da-4972-b9a2-a2ec5bc203e6",
+                      "referenceId": null,
                       "subModules": [
                         {
                           "moduleType": 4,
@@ -1760,7 +1821,7 @@
                           "text": {
                             "pl": "<p>Kiwi</p>\n",
                             "en": null,
-                            "ua": null
+                            "uk": null
                           }
                         }
                       ]
@@ -1770,6 +1831,17 @@
               ]
             }
           ]
+        },
+        {
+          "moduleType": 1,
+          "key": "swipe-text",
+          "name": "swipe-text",
+          "isTranslated": true,
+          "text": {
+            "pl": "Przesuń, aby zmienić slajd",
+            "en": "Move to change the slide",
+            "uk": "Перемістіть, щоб змінити слайд"
+          }
         }
       ]
     }

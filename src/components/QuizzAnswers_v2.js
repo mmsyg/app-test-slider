@@ -82,14 +82,18 @@ const QuizzAnswers_v2 = (props) => {
       <div className="score">
         <div className="correct">
           <RightAnswers className="right_answer_tile" />
-          <p className="score_number">{"0" + result}</p>
-          <p className="score_text">Poprawne odpowiedzi</p>
+          <div className="score_number_position">
+          <p className="score_number">{"0" + result}</p></div>
+          <div className="score_text_position">
+          <p className="score_text" dangerouslySetInnerHTML={{ __html: quiz.correctAnswerTxt }}></p></div>
         </div>
         <div className="wrong">
           <WrongAnswers className="wrong_answer_tile" />
-          <p className="score_number">{"0" + (4 - result)}</p>
-          <p className="score_text">Błędne odpoweidzi</p>
-        </div>
+          <div className="score_number_position">
+          <p className="score_number">{"0" + (4 - result)}</p></div>
+          <div className="score_text_position">
+          <p className="score_text" dangerouslySetInnerHTML={{ __html: quiz.wrongAnswerTxt }}></p>
+        </div></div>
       </div>
     );
   }

@@ -10,8 +10,9 @@ const QuizzSummary = (props) => {
     <div className="quiz_summary">
       <Intersect className="intersect_qzz_strt" />
       <GrayShape className="gray_shape_qzz_strt" />{" "}
-      <p className="text_sumary">{data.quizSummary}</p>
-      <div className="stork">
+      <div className="text_sumary_position">
+      <p className="text_sumary" dangerouslySetInnerHTML={{ __html: props.summaryText }}></p>
+      </div><div className="stork">
         <img src={stork} alt="stork" />
       </div>
     </div>

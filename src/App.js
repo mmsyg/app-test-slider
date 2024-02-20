@@ -16,7 +16,7 @@ function App() {
     <HashRouter>
       <AppDataContextProvider>
       <div className="App">
-      <SetRight />
+      <SetRight id={-1}/>
           <div className="content">
             <Routes>
             <Route path="/" element={<StartScreen />}/>

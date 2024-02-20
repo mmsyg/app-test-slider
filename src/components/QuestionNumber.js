@@ -14,8 +14,7 @@ const QuestionNumber = (props) => {
       <div className="question_nmber" style={dynamicQuestionNumberBG}>
         <p className="number_id">{numberFormat(props.id)}</p>
         <div className="max_Nr_BG">
-          <p className="slash">{"/"}</p>
-          <p className="number_all">{numberFormat(props.max)}</p>
+          <p className="number_all">{"/ "+numberFormat(props.max)}</p>
         </div>
       </div>
     </div>

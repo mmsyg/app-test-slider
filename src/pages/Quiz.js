@@ -83,9 +83,11 @@ const Quiz = () => {
           <img src={stork} alt="stork" />
         </div>
         <div className="quiz_title">
-          <p className="quiz_titlee">{parse(quiz.startTitlee)}</p>
+         <div className="quiz_titlee_position">
+          <p className="quiz_titlee">{parse(quiz.startTitlee)}</p></div>
+          <div className="quiz_under_title_position">
           <p className="quiz_under_title">{parse(quiz.startTitle)}</p>
-        </div>
+        </div></div>
 
         <div
           className="start_quiz_btn_strt"
@@ -156,8 +158,8 @@ const Quiz = () => {
       >
         <NextButtonQuizz className="start_button_quizz" />
 
-        <p  className={endQuiz ? "nxt1" : "nxt"}>{parse(data.quizNextButton)}</p>
-        <p  className={endQuiz ? "nxt" : "nxt1"}>{"ZAKOŃCZ QUIZ"}</p>
+        <p  className={endQuiz ? "nxt1" : "nxt"}>{parse(quiz.nextQuestionButton)}</p>
+        <p  className={endQuiz ? "nxt" : "nxt1"}>{parse(quiz.endQuizButton)}</p>
       </div>
     </div>
   );
@@ -165,7 +167,7 @@ const Quiz = () => {
   const Component3 = () => (
     <div>
       <SetLeft backNotVisible={1} />
-      <QuizzSummary id={id} />
+      <QuizzSummary id={id}  summaryText={quiz.summaryText}/>
       <QuizzAnswers_v2 score={1} id={"1"} />
       {console.log("summary")}
 
@@ -178,14 +180,14 @@ const Quiz = () => {
         }}
       >
         <NextButtonQuizz className="start_button_quizz"/>
-        <p className="nxt">{parse(data.quizTriviaButton)}</p>
+        <p className="nxt">{parse(quiz.triviaButton)}</p>
       </div>
       <div
         className="start_quiz_btn"
         onClick={() => handleLiClick("component0")}
       >
         <SummaryTryAgain className="start_button_quizz" />
-        <p className="nxt">{parse(data.quizTryAgain)}</p>
+        <p className="nxt">{parse(quiz.tryAgainButton)}</p>
       </div>
     </div>
   );
@@ -236,8 +238,11 @@ const Quiz = () => {
       </div>
     </div>
   );
+  const appData = useAppContext();
+    const { quiz } = appData.screens;
 
   return (
+    
     <div className="test2">
       <SetRight />
 
